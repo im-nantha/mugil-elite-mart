@@ -16,13 +16,13 @@ function App() {
         <div>
           <Header />
           <Routes>
-            <Route path="/mugil-commerce/" element={<Home />} />
-            <Route path="/mugil-commerce/home-decor" element={<HomeDecor />} />
-            <Route path="/mugil-commerce/search" element={<Home />} />
-            <Route path="/mugil-commerce/about" element={<About />} />
-            <Route path="/mugil-commerce/contact" element={<ContactUs />} />
-            <Route path="/mugil-commerce/products" element={<Products />} />
-            <Route path="/mugil-commerce/bulk-orders" element={<BuldOrder />} />
+            <Route path="/mugil-elite-mart/" element={<Home />} />
+            <Route path="/mugil-elite-mart/home-decor" element={<HomeDecor />} />
+            <Route path="/mugil-elite-mart/search" element={<Home />} />
+            <Route path="/mugil-elite-mart/about" element={<About />} />
+            <Route path="/mugil-elite-mart/contact" element={<ContactUs />} />
+            <Route path="/mugil-elite-mart/products" element={<Products />} />
+            <Route path="/mugil-elite-mart/bulk-orders" element={<BuldOrder />} />
           </Routes>
         </div>
       </Router>

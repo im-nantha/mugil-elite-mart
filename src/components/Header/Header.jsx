@@ -16,23 +16,23 @@ const SubNavbar = () => {
         <nav className="mugil-mart-navbar">
           <ul className="mugil-mart-navbar-content">
             <li>
-              <Link to="/mugil-commerce/" className="mugil-mart-nav-wrap">
+              <Link to="/mugil-elite-mart/" className="mugil-mart-nav-wrap">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/mugil-commerce/home-decor" className="mugil-mart-nav-wrap">
+              <Link to="/mugil-elite-mart/home-decor" className="mugil-mart-nav-wrap">
                 Home Decor
               </Link>
             </li>
             <li>
-              <Link to="/mugil-commerce/about" className="mugil-mart-nav-wrap">
+              <Link to="/mugil-elite-mart/about" className="mugil-mart-nav-wrap">
                 About
               </Link>
             </li>
             <li>
               <Link
-                to="/mugil-commerce/products"
+                to="/mugil-elite-mart/products"
                 className="mugil-mart-nav-wrap"
               >
                 Our Products
@@ -40,7 +40,7 @@ const SubNavbar = () => {
             </li>
             <li>
               <Link
-                to="/mugil-commerce/contact"
+                to="/mugil-elite-mart/contact"
                 className="mugil-mart-nav-wrap"
               >
                 Contact
@@ -48,7 +48,7 @@ const SubNavbar = () => {
             </li>
             <li>
               <Link
-                to="/mugil-commerce/bulk-orders"
+                to="/mugil-elite-mart/bulk-orders"
                 className="mugil-mart-nav-wrap"
               >
                 Bulk Orders
@@ -76,7 +76,7 @@ const Header = () => {
       </div>
       <div className="mugil-mart-header">
         <div className="mugil-mart-logo">
-          <Link to="/mugil-commerce/" className="mugil-mart-logo-wrapper">
+          <Link to="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
             <img className="mugil-mart-img" src={logo} alt="mugil-mart-logo" />
           </Link>
         </div>
