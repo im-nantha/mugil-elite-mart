@@ -45,11 +45,15 @@ const SubNavbar = () => {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                to="/mugil-commerce/bulk-orders"
+                className="mugil-mart-nav-wrap"
+              >
+                Bulk Orders
+              </Link>
+            </li>
           </ul>
-          <button className="hamburger">
-            <i className="menuIcon material-icons">menu</i>
-            <i className="closeIcon material-icons">close</i>
-          </button>
         </nav>
         <div className="mugil-mart-list-wrapper">
           <i className="bi bi-telephone-x"></i>

@@ -7,17 +7,6 @@ import IntroBanner from "../components/IntroBanner/IntroBanner";
 import ProductTabs from "../components/ProductTabs/ProductTabs";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  useEffect(() => {
-    fetch(import.meta.env.VITE_API_URL + "/products?" + searchParams)
-      .then((res) => res.json())
-      .then((res) => setProducts(res.products))
-      .catch((error) => {
-        console.log(error);
-      });
-  }, [searchParams]);
 
   return (
     <Fragment>

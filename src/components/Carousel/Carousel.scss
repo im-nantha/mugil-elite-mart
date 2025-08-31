@@ -1,26 +1,35 @@
 .mugil_banner {
   width: 100%;
+
   &__wrapper {
     width: 100%;
+
     .swiper-button-prev {
       left: 4%;
+      display: none;
     }
+
     .swiper-button-next {
       right: 4%;
+      display: none;
     }
+
     .swiper-button-prev:after,
     .swiper-button-next:after {
       color: var(--blue-gradient);
       font-size: 20px;
     }
+
     .swiper-pagination {
       bottom: 5% !important;
     }
+
     .swiper-pagination-bullet-active {
       background: var(--blue-gradient);
     }
+
     .mugil-banner-img {
-        width: 100%;
+      width: 100%;
     }
   }
 }

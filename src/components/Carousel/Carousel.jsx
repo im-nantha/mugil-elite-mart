@@ -8,11 +8,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./Carousel.scss"
 
-import banner1 from "../../assets/images/banners/banner-1.jpg";
-import banner2 from "../../assets/images/banners/banner-2.jpg";
-import banner3 from "../../assets/images/banners/banner-3.jpg";
-import banner4 from "../../assets/images/banners/banner-4.jpg";
-
 function Carousel() {
   return (
     <section className="mugil_banner">
@@ -24,6 +19,7 @@ function Carousel() {
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
+          speed={1000}
           loop
         >
           <SwiperSlide>
