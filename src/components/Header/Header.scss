@@ -1,6 +1,6 @@
+@use "../../assets/styles/mixin" as *;
+
 .header {
-  box-shadow: 0 3px 45px rgba(0, 0, 0, 0.15);
-  z-index: 10;
   width: 100%;
   background: var(--primary-white);
 
@@ -21,6 +21,11 @@
       @media (max-width: 768px) {
         width: 90px;
       }
+    }
+
+    .mugil-mart-browse {
+      padding: 10px 20px;
+      @include flex-center();
     }
 
     .mugil-mart-logo-wrapper {

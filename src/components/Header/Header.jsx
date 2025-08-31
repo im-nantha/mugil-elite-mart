@@ -4,7 +4,71 @@ import logo from "../../assets/images/mugil-logo.jpg";
 import "./Header.scss";
 import Search from "../Search/Search.jsx"
 
-const Header = ({ cartItems }) => {
+const SubNavbar = () => {
+  return (
+    <header className="header">
+      <div className="mugil-mart-header">
+        <div className="mugil-mart-browse">
+          <a href="#" className="categories-title">
+            <i className="icon icon-categories"></i>browse categories
+          </a>
+        </div>
+        <nav className="mugil-mart-navbar">
+          <ul className="mugil-mart-navbar-content">
+            <li>
+              <Link to="/mugil-commerce/" className="mugil-mart-nav-wrap">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/mugil-commerce/home-decor" className="mugil-mart-nav-wrap">
+                Home Decor
+              </Link>
+            </li>
+            <li>
+              <Link to="/mugil-commerce/about" className="mugil-mart-nav-wrap">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/mugil-commerce/products"
+                className="mugil-mart-nav-wrap"
+              >
+                Our Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/mugil-commerce/contact"
+                className="mugil-mart-nav-wrap"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/mugil-commerce/bulk-orders"
+                className="mugil-mart-nav-wrap"
+              >
+                Bulk Orders
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="mugil-mart-list-wrapper">
+          <i className="bi bi-telephone-x"></i>
+          <a href="tel:7010726530" className="tel-number">
+            +917010726530
+          </a>
+        </div>
+      </div>
+      <SubNavbar />
+    </header>
+  );
+};
+
+const Header = () => {
   return (
     <header className="header">
       <div className="header-wrapper py-2">
@@ -17,21 +81,21 @@ const Header = ({ cartItems }) => {
           </Link>
         </div>
         <nav className="mugil-mart-navbar">
-          <Search/>
+          <Search />
         </nav>
         <div className="mugil-mart-list-wrapper">
           <div className="mugil-mart-items">
             <a href="mailto:murugan@mugilelitemart.com" className="cart-icon-wrapper search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+              </svg>
             </a>
           </div>
           <div className="mugil-mart-items">
             <a href="https://maps.app.goo.gl/tqaaJE2Sig7zpwLk9" target="_blank" className="cart-icon-wrapper search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+              </svg>
             </a>
           </div>
           <div className="mugil-mart-items">

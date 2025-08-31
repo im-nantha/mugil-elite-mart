@@ -24,10 +24,18 @@ body {
   --primary-brown: #574844;
   --primary-white: #ffffff;
   --primary-black: #000000;
-  --blue-gradient: #021f3f;
+  --blue-gradient: #a52c69;
 }
 
-p,h1,h2,h3,h4,h5,h6,ul,li {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -35,22 +43,28 @@ p,h1,h2,h3,h4,h5,h6,ul,li {
 h1 {
   font-size: 34px;
 }
+
 h2 {
   font-size: 30px;
   color: var(--blue-gradient);
 }
+
 h3 {
   font-size: 26px;
 }
+
 h4 {
   font-size: 24px;
 }
+
 h5 {
   font-size: 22px;
 }
+
 h6 {
   font-size: 20px;
 }
+
 p {
   font-size: 16px;
 }
@@ -64,4 +78,16 @@ p {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.mugil-container {
+  padding: 2.5rem 2rem;
+
+  @media (max-width: 1023px) {
+    padding: 1.875rem 1.5rem;
+  }
+
+  @media (max-width: 767px) {
+    padding: 1rem;
+  }
 }

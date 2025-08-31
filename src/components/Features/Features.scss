@@ -4,14 +4,27 @@
 	width: 100%;
 
 	.features-card-wrapper {
-		padding: 32px;
 		display: flex;
-		align-items: center;
+		align-items: start;
 		gap: 16px;
+
+		@media (max-width: 992px) {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 	}
 
 	.features-card {
 		flex: 1;
+
+		@media (max-width: 992px) {
+			flex: unset;
+			width: 48%;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 	}
 
 	.icon-round {

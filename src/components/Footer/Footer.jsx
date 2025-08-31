@@ -4,40 +4,56 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer-head w-100 px-5 py-5">
-        <div className="d-flex justify-content-between">
-          <h2>MUGIL MART</h2>
+    <footer className="mugil-container w-100">
+      <div className="footer-head">
+        <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
+          <h2>Mugil Elite Mart</h2>
           <div className="footer-icons">
-            <i className="bi bi-facebook"></i>
-            <i className="bi bi-instagram"></i>
-            <i className="bi bi-linkedin"></i>
-            <i className="bi bi-twitter-x"></i>
+            <a href="#" className="footer-icons-wrap">
+              <i className="bi bi-facebook"></i>
+            </a>
+            <a href="#" className="footer-icons-wrap">
+              <i className="bi bi-instagram"></i>
+            </a>
+            <a href="#" className="footer-icons-wrap">
+              <i className="bi bi-linkedin"></i>
+            </a>
+            <a href="#" className="footer-icons-wrap">
+              <i className="bi bi-twitter-x"></i>
+            </a>
           </div>
         </div>
       </div>
-      <div className="footer-body px-5 pb-4">
-        <div className="row">
-          <div className="col-sm-4">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Business Contact</h5>
-                <p className="card-text">123 Yarran st, Punchbowl, NSW 2196, Australia</p>
-              </div>
-            </div>
+      <div className="footer-body">
+        <div className="footer-body-wrapper">
+          <div className="footer-body-link-container">
+            <h5 className="card-title pb-4">Business Contact</h5>
+            <ul className="footer-menu-list">
+              <li>
+                <a href="privacy-policy.html">123 Yarran st, Punchbowl, NSW 2196, Australia</a>
+              </li>
+              <li>
+                <a href="term-and-condition.html">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a href="return-and-refund.html">Returns &amp; Refunds</a>
+              </li>
+              <li>
+                <a href="faq.html">FAQ’s</a>
+              </li>
+              <li>
+                <a href="shipping.html">Shipping</a>
+              </li>
+            </ul>
           </div>
-          <div className="col-sm-4">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Subscribe Newsletter</h5>
-                <p className="card-text">We invite you to register to read the latest news, offers and events about our company. We promise not spam your inbox.</p>
-              </div>
-            </div>
+          <div className="footer-body-link-container">
+            <h5 className="card-title pb-4">Subscribe Newsletter</h5>
+            <p className="card-text">We invite you to register to read the latest news, offers and events about our company. We promise not spam your inbox.</p>
           </div>
-          <div className="col-sm-4 d-flex">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">About Us</h5>
+          <div className="footer-body-link-container">
+            <div className="footer-body-sub">
+              <div className="footer-body-link-subcontainer">
+                <h5 className="card-title pb-4">About Us</h5>
                 <ul className="footer-menu-list">
                   <li>
                     <a href="about-us.html">About Us</a>
@@ -53,10 +69,8 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Resource</h5>
+              <div className="footer-body-link-subcontainer">
+                <h5 className="card-title pb-4">Resource</h5>
                 <ul className="footer-menu-list">
                   <li>
                     <a href="privacy-policy.html">Privacy Policies</a>
@@ -79,10 +93,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-bottom w-100 px-5 pb-5">
-        <div className="d-flex">
-          <p>Copyright © 2025 by Mugil Elite mart. All Rights Reserved.</p>
-        </div>
+      <div className="footer-bottom">
+        <p>Copyright © 2025 by Mugil Elite mart. All Rights Reserved.</p>
       </div>
     </footer >
   );

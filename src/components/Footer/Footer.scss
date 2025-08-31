@@ -3,8 +3,77 @@
 footer {
 	background: #ffffff;
 
+	.footer-head {
+		padding-bottom: 40px;
+
+		h2 {
+			@media (max-width: 767px) {
+				padding-bottom: 16px;
+			}
+		}
+	}
+
 	.footer-icons {
 		@include flex-center();
 		gap: 20px;
+
+		.footer-icons-wrap {
+			display: block;
+			color: #000000;
+			width: 52px;
+			height: 52px;
+			border: 1px solid rgb(203, 190, 190);
+			border-radius: 50%;
+			@include flex-center();
+		}
+	}
+
+	.footer-body {
+		width: 100%;
+
+		.footer-body-wrapper {
+			display: flex;
+
+			@media (max-width: 992px) {
+				flex-direction: column;
+			}
+
+			.footer-body-link-container {
+				flex: 1;
+				border: 1px solid #ebebeb;
+				padding: 32px;
+
+				@media (max-width: 992px) {
+					padding: 16px;
+				}
+
+				&:nth-child(2) {
+					flex: 1.5;
+				}
+
+				.footer-body-sub {
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+
+					.footer-body-link-subcontainer {
+						flex: 1;
+					}
+				}
+			}
+
+			.footer-menu-list {
+				list-style: none;
+
+				a {
+					color: #000000;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		padding-top: 32px;
 	}
 }

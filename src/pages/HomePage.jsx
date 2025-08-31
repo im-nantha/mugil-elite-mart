@@ -8,6 +8,7 @@ import ProductTabs from "../components/ProductTabs/ProductTabs";
 import StaticBanner from "../components/StaticBanner/StaticBanner";
 import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
 import Testimonials from "../components/Testimonials/Testimonials";
+import Gallery from "../components/Gallery/Gallery";
 
 const Home = () => {
 
@@ -17,10 +18,11 @@ const Home = () => {
         <Carousel />
         <Features />
         <IntroBanner />
-        <ProductTabs />
+        {/* <ProductTabs /> */}
         <StaticBanner />
         <ShopByCategories />
         <Testimonials />
+        <Gallery />
       </main>
     </Fragment>
   );

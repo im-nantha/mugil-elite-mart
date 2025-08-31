@@ -1,9 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import SubNavbar from "./components/SubNavbar/SubNavbar";
 import Home from "./pages/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import "./assets/styles/main.scss";
 import About from "./pages/AboutPage";
 import ContactUs from "./pages/ContactUsPage";
@@ -17,7 +15,6 @@ function App() {
       <Router>
         <div>
           <Header />
-          <SubNavbar />
           <Routes>
             <Route path="/mugil-commerce/" element={<Home />} />
             <Route path="/mugil-commerce/home-decor" element={<HomeDecor />} />

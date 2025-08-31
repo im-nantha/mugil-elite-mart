@@ -12,7 +12,7 @@ const ProductTabs = () => {
   const [activeTab, setActiveTab] = useState("first");
 
   return (
-    <div className="product-tabs">
+    <div className="product-tabs mugil-container">
       {/* Tab navigation */}
       <ul className="nav nav-tabs">
         <li className="nav-item">
