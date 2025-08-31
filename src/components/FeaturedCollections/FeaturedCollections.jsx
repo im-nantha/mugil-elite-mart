@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FeaturedCollectionData from "../../data/FeaturedCollection.json";
-import useFadeInOnScroll from '../../hooks/useFadeInOnScroll.js';
 import "./FeaturedCollections.scss"
 
-function FeaturedCollectionCards(props) {
-  const [ref, isVisible] = useFadeInOnScroll();
-
+const FeaturedCollectionCards = (props) => {
   return (
-    <div ref={ref} className={`mugil-fc-product fade-in ${isVisible ? 'visible' : ''}`}>
+    <div className="mugil-fc-product">
       <Link to={props.featuredLink} className="fc-img-wrapper-link">
         <div className="fc-img-wrapper">
           <img src={props.featuredImage} alt="image" />
@@ -22,7 +19,7 @@ function FeaturedCollectionCards(props) {
   );
 }
 
-function FeaturedCollections() {
+const FeaturedCollections = () => {
   return (
     <section className="mugil-fc-container">
       <h2 className="mugil-fc-title">Featured Collections</h2>

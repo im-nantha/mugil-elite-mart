@@ -5,6 +5,9 @@ import Carousel from "../components/Carousel/Carousel";
 import Features from "../components/Features/Features";
 import IntroBanner from "../components/IntroBanner/IntroBanner";
 import ProductTabs from "../components/ProductTabs/ProductTabs";
+import StaticBanner from "../components/StaticBanner/StaticBanner";
+import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 const Home = () => {
 
@@ -15,6 +18,9 @@ const Home = () => {
         <Features />
         <IntroBanner />
         <ProductTabs />
+        <StaticBanner />
+        <ShopByCategories />
+        <Testimonials />
       </main>
     </Fragment>
   );

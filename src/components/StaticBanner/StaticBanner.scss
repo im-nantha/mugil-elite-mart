@@ -1,0 +1,29 @@
+.static-banner {
+	width: 100%;
+	display: flex;
+
+	.static-wrapper {
+		width: 50%;
+
+		.static-image-wrapper img {
+			width: 100%;
+		}
+
+		.static-content-wrapper {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(255, 211, 191);
+
+			.static-content {
+				width: 60%;
+
+				h2 {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

@@ -9,6 +9,7 @@ import About from "./pages/AboutPage";
 import ContactUs from "./pages/ContactUsPage";
 import Products from "./pages/productsPage";
 import BuldOrder from "./pages/BulkOrderPage";
+import HomeDecor from "./pages/HomeDecor";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <SubNavbar />
           <Routes>
             <Route path="/mugil-commerce/" element={<Home />} />
+            <Route path="/mugil-commerce/home-decor" element={<HomeDecor />} />
             <Route path="/mugil-commerce/search" element={<Home />} />
             <Route path="/mugil-commerce/about" element={<About />} />
             <Route path="/mugil-commerce/contact" element={<ContactUs />} />

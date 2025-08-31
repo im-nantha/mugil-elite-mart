@@ -20,7 +20,7 @@ const SubNavbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/mugil-commerce/" className="mugil-mart-nav-wrap">
+              <Link to="/mugil-commerce/home-decor" className="mugil-mart-nav-wrap">
                 Home Decor
               </Link>
             </li>
