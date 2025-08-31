@@ -1,8 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: "/mugil-elite-mart/",
   plugins: [react()],
+  base: "/mugil-elite-mart/",
 });
