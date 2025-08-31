@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "master -d dist"
   },
   "dependencies": {
     "bootstrap-icons": "^1.13.1",
