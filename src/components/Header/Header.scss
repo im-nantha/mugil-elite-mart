@@ -1,6 +1,6 @@
 @use "../../assets/styles/mixin" as *;
 
-.header {
+.mugil-header {
   width: 100%;
   background: var(--primary-white);
 
@@ -26,6 +26,17 @@
     .mugil-mart-browse {
       padding: 10px 20px;
       @include flex-center();
+
+      .categories-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .browse-category {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
     }
 
     .mugil-mart-logo-wrapper {
@@ -69,15 +80,19 @@
         text-decoration: none;
         color: var(--dark-blue);
         font-family: var(--roboto-font);
-        font-weight: bold;
       }
     }
 
     .mugil-mart-list-wrapper {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 16px;
       padding: 15px 30px;
+
+      .tel-number {
+        color: #000000;
+        text-decoration: none;
+      }
 
       @media (max-width: 768px) {
         display: none;

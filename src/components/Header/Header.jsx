@@ -6,12 +6,13 @@ import Search from "../Search/Search.jsx"
 
 const SubNavbar = () => {
   return (
-    <div className="header">
+    <div className="mugil-header">
       <div className="mugil-mart-header">
         <div className="mugil-mart-browse">
-          <a href="#" className="categories-title">
-            <i className="icon icon-categories"></i>browse categories
-          </a>
+          <div className="categories-title">
+            <i class="bi bi-list"></i>
+            <p className="browse-category">BROWSE CATEGORIES</p>
+          </div>
         </div>
         <nav className="mugil-mart-navbar">
           <ul className="mugil-mart-navbar-content">
@@ -26,11 +27,6 @@ const SubNavbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/mugil-elite-mart/about" className="mugil-mart-nav-wrap">
-                About
-              </Link>
-            </li>
-            <li>
               <Link
                 to="/mugil-elite-mart/products"
                 className="mugil-mart-nav-wrap"
@@ -39,11 +35,16 @@ const SubNavbar = () => {
               </Link>
             </li>
             <li>
+              <Link to="/mugil-elite-mart/about" className="mugil-mart-nav-wrap">
+                About Us
+              </Link>
+            </li>
+            <li>
               <Link
                 to="/mugil-elite-mart/contact"
                 className="mugil-mart-nav-wrap"
               >
-                Contact
+                Contact Us
               </Link>
             </li>
             <li>
@@ -63,7 +64,6 @@ const SubNavbar = () => {
           </a>
         </div>
       </div>
-      <SubNavbar />
     </div>
   );
 };
@@ -71,7 +71,7 @@ const SubNavbar = () => {
 const Header = () => {
   return (
     <>
-      <header className="header">
+      <header className="mugil-header">
         <div className="header-wrapper py-2">
           <p className="text-center text-white">Welcome to Mugil elite mart</p>
         </div>
@@ -120,7 +120,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      {/* <SubNavbar /> */}
+      <SubNavbar />
     </>
   );
 };
