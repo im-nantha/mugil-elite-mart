@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import "./ProductTabs.scss";
 import FeaturedCollections from "../FeaturedCollections/FeaturedCollections";
-
-
-// Example components
-const FirstComponent = () => <div>Content of First Tab</div>;
-const SecondComponent = () => <div>Content of Second Tab</div>;
-const ThirdComponent = () => <div>Content of Third Tab</div>;
+import Doors from "../../data/FeaturedCollection.json";
+import AsianPaints from "../../data/tabdata/asian-paints.json";
+import Locks from "../../data/tabdata/locks.json";
 
 const ProductTabs = () => {
   const [activeTab, setActiveTab] = useState("first");
@@ -41,11 +38,23 @@ const ProductTabs = () => {
         </li>
       </ul>
 
-      {/* Tab content */}
-      <div className="tab-content p-3">
-        {activeTab === "first" && <FeaturedCollections />}
-        {activeTab === "second" && <FeaturedCollections />}
-        {activeTab === "third" && <FeaturedCollections />}
+      {/* Tab content (mounted once, just hidden/shown) */}
+      <div className="tab-content">
+        <div
+          className={`tab-pane ${activeTab === "first" ? "active" : "d-none"}`}
+        >
+          <FeaturedCollections data={Locks} />
+        </div>
+        <div
+          className={`tab-pane ${activeTab === "second" ? "active" : "d-none"}`}
+        >
+          <FeaturedCollections data={AsianPaints} />
+        </div>
+        <div
+          className={`tab-pane ${activeTab === "third" ? "active" : "d-none"}`}
+        >
+          <FeaturedCollections data={Doors} />
+        </div>
       </div>
     </div>
   );

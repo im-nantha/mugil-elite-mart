@@ -32,14 +32,14 @@ function Carousel() {
               <a className="mugil-banner-button" href="/" data-discover="true">Know more</a>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <img className="mugil-banner-img" src="https://themesflat.co/html/vineta/images/slider/florist/slider-2.jpg" alt="Slide 2" />
             <div className="mugil-carousel-text-wrapper">
               <h1 >Bloom with us</h1>
               <p>Fresh flowers, handpicked daily to brighten your every moment..</p>
               <a className="mugil-banner-button" href="/" data-discover="true">Know more</a>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </section>

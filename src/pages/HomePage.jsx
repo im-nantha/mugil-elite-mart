@@ -18,7 +18,7 @@ const Home = () => {
         <Carousel />
         <Features />
         <IntroBanner />
-        {/* <ProductTabs /> */}
+        <ProductTabs />
         <StaticBanner />
         <ShopByCategories />
         <Testimonials />

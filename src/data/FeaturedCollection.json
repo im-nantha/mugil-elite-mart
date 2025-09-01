@@ -1,32 +1,32 @@
 [
   {
-    "featuredTitle": "MB 1101",
-    "featuredImage": "/mugil-elite-mart/assets/images/featured-collections/MB-1101.jpg",
-    "featuredRate": "MRP ₹ 3,250.00",
-    "featuredLink": "/"
+    "productName": "MB 1101",
+    "productImagePath": "/mugil-elite-mart/assets/images/featured-collections/MB-1101.jpg",
+    "productCategory": "doors",
+    "productRate": "MRP ₹ 3,250.00"
   },
   {
-    "featuredTitle": "MB 1102",
-    "featuredImage": "/mugil-elite-mart/assets/images/featured-collections/MB-1102.jpg",
-    "featuredRate": "MRP ₹ 1,200.00",
-    "featuredLink": "/"
+    "productName": "MB 1102",
+    "productImagePath": "/mugil-elite-mart/assets/images/featured-collections/MB-1102.jpg",
+    "productCategory": "doors",
+    "productRate": "MRP ₹ 1,200.00"
   },
   {
-    "featuredTitle": "MB 1103",
-    "featuredImage": "/mugil-elite-mart/assets/images/featured-collections/MB-1103.jpg",
-    "featuredRate": "MRP ₹ 5,200.00",
-    "featuredLink": "/"
+    "productName": "MB 1103",
+    "productImagePath": "/mugil-elite-mart/assets/images/featured-collections/MB-1103.jpg",
+    "productCategory": "doors",
+    "productRate": "MRP ₹ 5,200.00"
   },
   {
-    "featuredTitle": "MB 1104",
-    "featuredImage": "/mugil-elite-mart/assets/images/featured-collections/MB-1104.jpg",
-    "featuredRate": "MRP ₹ 4,200.00",
-    "featuredLink": "/"
+    "productName": "MB 1104",
+    "productImagePath": "/mugil-elite-mart/assets/images/featured-collections/MB-1104.jpg",
+    "productCategory": "doors",
+    "productRate": "MRP ₹ 4,200.00"
   },
   {
-    "featuredTitle": "MB 1105",
-    "featuredImage": "/mugil-elite-mart/assets/images/featured-collections/MB-1105.jpg",
-    "featuredRate": "MRP ₹ 4,200.00",
-    "featuredLink": "/"
+    "productName": "MB 1105",
+    "productImagePath": "/mugil-elite-mart/assets/images/featured-collections/MB-1105.jpg",
+    "productCategory": "doors",
+    "productRate": "MRP ₹ 4,200.00"
   }
 ]
