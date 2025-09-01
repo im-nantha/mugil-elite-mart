@@ -78,8 +78,16 @@
 
       .mugil-mart-nav-wrap {
         text-decoration: none;
-        color: var(--dark-blue);
+        color: #000000;
+        padding-bottom: 6px;
         font-family: var(--roboto-font);
+
+        &.active {
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
+          color: var(--blue-gradient);
+        }
       }
     }
 
@@ -119,7 +127,7 @@
 
           &:hover {
             transition: background-color 0.5s;
-            background-color: var(--dark-blue);
+            background-color: var(--blue-gradient);
           }
         }
 
@@ -132,7 +140,7 @@
           padding: 6px 23px 6px 10px;
           border-radius: 33px;
           text-decoration: none;
-          color: var(--dark-blue);
+          color: var(--blue-gradient);
 
           p {
             font-family: var(--roboto-font);
@@ -141,7 +149,7 @@
           .cart-icon-wrapper {
             width: 40px;
             height: 40px;
-            background-color: var(--dark-blue);
+            background-color: var(--blue-gradient);
             border-radius: 100px;
             transition: all 0.5s;
             display: flex;
