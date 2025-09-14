@@ -5,4 +5,18 @@
 	.fa-star-half-alt {
 		color: rgb(255, 238, 0) !important;
 	}
+
+	.swiper-button-prev {
+		left: 4%;
+		display: none;
+	}
+
+	.swiper-button-next {
+		right: 4%;
+		display: none;
+	}
+
+	.swiper-pagination {
+		position: unset;
+	}
 }

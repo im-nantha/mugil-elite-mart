@@ -32,6 +32,8 @@ const Testimonials = () => {
         navigation
         pagination={{ clickable: true }}
         speed={300}
+        autoplay={{ delay: 5000 }}
+        loop
       >
         <SwiperSlide>
           <div className="card">

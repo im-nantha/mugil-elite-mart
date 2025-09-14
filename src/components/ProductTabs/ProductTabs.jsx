@@ -44,17 +44,17 @@ const ProductTabs = () => {
         <div
           className={`tab-pane ${activeTab === "first" ? "active" : "d-none"}`}
         >
-          <FeaturedCollections data={Lights} isHomepage={true} />
+          <FeaturedCollections data={Lights} isHomepage={true} isSquare={true} />
         </div>
         <div
           className={`tab-pane ${activeTab === "second" ? "active" : "d-none"}`}
         >
-          <FeaturedCollections data={AsianPaints} isHomepage={true} />
+          <FeaturedCollections data={AsianPaints} isHomepage={true} isSquare={true} />
         </div>
         <div
           className={`tab-pane ${activeTab === "third" ? "active" : "d-none"}`}
         >
-          <FeaturedCollections data={Glassware} isHomepage={true} />
+          <FeaturedCollections data={Glassware} isHomepage={true} isSquare={true} />
         </div>
       </div>
     </div>
