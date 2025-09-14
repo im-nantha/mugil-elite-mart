@@ -10,17 +10,12 @@ const Footer = () => {
         <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
           <h2>Mugil Elite Mart</h2>
           <div className="footer-icons">
-            <a href="#" className="footer-icons-wrap">
-              <i className="bi bi-facebook"></i>
+            <a href="https://youtube.com/@vasiglass2288?si=6ZjOLie23uTgAeAP" target="_blank" className="footer-icons-wrap">
+              <i className="bi bi-youtube"></i>
             </a>
-            <a href="#" className="footer-icons-wrap">
-              <i className="bi bi-instagram"></i>
-            </a>
-            <a href="#" className="footer-icons-wrap">
-              <i className="bi bi-linkedin"></i>
-            </a>
-            <a href="#" className="footer-icons-wrap">
-              <i className="bi bi-twitter-x"></i>
+            <a href="https://api.whatsapp.com/send?phone=9894487698&text=Hi%20Murugan"
+              target="_blank" className="footer-icons-wrap">
+              <i className="bi bi-whatsapp"></i>
             </a>
           </div>
         </div>
