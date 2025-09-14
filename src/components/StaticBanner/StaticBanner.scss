@@ -1,6 +1,7 @@
 .static-banner {
 	width: 100%;
 	display: flex;
+	background: var(--blue-secondary);
 
 	@media (max-width: 992px) {
 		flex-direction: column;
@@ -13,8 +14,14 @@
 			width: 100%;
 		}
 
-		.static-image-wrapper img {
-			width: 100%;
+		.static-image-wrapper {
+			padding: 60px;
+
+			img {
+				box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1);
+				border-radius: 20px;
+				width: 100%;
+			}
 		}
 
 		.static-content-wrapper {
@@ -23,10 +30,9 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			background: var(--blue-secondary);
 
 			.static-content {
-				width: 60%;
+				width: 85%;
 
 				@media (max-width: 767px) {
 					padding: 16px;
@@ -34,15 +40,17 @@
 				}
 
 				h2 {
+					font-size: 60px;
 					margin-bottom: 20px;
+					color: #ffffff;
 
 					@media (max-width: 767px) {
 						text-align: center;
 					}
 				}
 
-				h2,
 				p {
+					font-size: 32px;
 					color: #ffffff;
 				}
 			}

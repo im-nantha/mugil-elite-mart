@@ -20,17 +20,17 @@ const Products = () => {
         <Title title={"Plywood"} subtitle={"Strength and style combined for every design need."} />
         <FeaturedCollections data={Plywood} />
         <Title title={"Locks"} subtitle={"Secure your world with trust and innovation."} />
-        <FeaturedCollections data={Lock} />
+        <FeaturedCollections data={Lock} isSquare={true} />
         <Title title={"Aluminum Profile"} subtitle={"Sleek, durable, and built for modern living."} />
-        <FeaturedCollections data={Aluminium} />
+        <FeaturedCollections data={Aluminium} isSquare={true} />
         <Title title={"Hardware"} subtitle={"Smart solutions that hold everything together."} />
-        <FeaturedCollections data={Hardware} />
+        <FeaturedCollections data={Hardware} isSquare={true} />
         <Title title={"Pipes"} subtitle={"Reliable flow, strength, and performance that lasts."} />
-        <FeaturedCollections data={Pipes} />
+        <FeaturedCollections data={Pipes} isSquare={true} />
         <Title title={"Ceiling Fans"} subtitle={"Cool comfort with style that moves with you."} />
-        <FeaturedCollections data={CeilingFans} />
+        <FeaturedCollections data={CeilingFans} isSquare={true} />
         <Title title={"Exhaust Fans"} subtitle={"Fresh air, clean spaces, and effortless ventilation."} />
-        <FeaturedCollections data={ExhaustFans} />
+        <FeaturedCollections data={ExhaustFans} isSquare={true} />
       </div>
     </>
   );

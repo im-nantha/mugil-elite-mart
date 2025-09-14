@@ -1,13 +1,16 @@
 import React from "react";
 import "./IntroBanner.scss";
+import useRevealOnScroll from "../../hooks/useRevealOnScroll"
 import img1 from "../../assets/images/intro-banner/glass.jpg";
 import img2 from "../../assets/images/intro-banner/plywood.jpg";
 import img3 from "../../assets/images/intro-banner/bath.jpg";
 
 
 const IntroBanner = () => {
+  const [ref, isVisible] = useRevealOnScroll();
   return (
-    <div className="intro-banner mugil-container pt-0">
+    <div ref={ref}
+      className={`intro-banner mugil-container pt-0 mugil-container reveal ${isVisible ? "show" : ""}`}>
       <div className="intro-banner-wrapper">
         <div className="intro-banner-items">
           <div className="intro-image">

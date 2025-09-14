@@ -3,7 +3,7 @@ import "./Title.scss";
 
 const Title = ({ title, subtitle }) => {
   return (
-    <div>
+    <div id={title.toLowerCase().replace(/\s+/g, "-")}>
       <h2 className="px-4 pt-4 pb-2">{title}</h2>
       {subtitle && <h5 className="px-4 pt-2 pb-4">{subtitle}</h5>}
     </div>

@@ -1,10 +1,15 @@
 import React from "react";
 import "./Features.scss";
+import useRevealOnScroll from "../../hooks/useRevealOnScroll"
 
 
 const Features = () => {
+
+  const [ref, isVisible] = useRevealOnScroll();
+
   return (
-    <div className="features mugil-container">
+    <div ref={ref}
+      className={`features mugil-container reveal ${isVisible ? "show" : ""}`}>
       <div className="features-card-wrapper">
         <div className="features-card">
           <div className="custom-card">

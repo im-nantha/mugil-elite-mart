@@ -20,17 +20,17 @@ const HomeDecor = () => {
         <Title title={"Glassware"} subtitle={"Stylish & durable for every home."} />
         <FeaturedCollections data={GlasswareData} />
         <Title title={"Lights"} subtitle={"Brighten your world with modern designs."} />
-        <FeaturedCollections data={Lights} />
+        <FeaturedCollections data={Lights} isSquare={true} />
         <Title title={"Mirrors"} subtitle={"Reflect beauty with elegance."} />
         <FeaturedCollections data={Mirrors} />
         <Title title={"Faucets"} subtitle={"Flowing perfection for kitchens & baths."} />
-        <FeaturedCollections data={Faucets} />
+        <FeaturedCollections data={Faucets} isSquare={true} />
         <Title title={"Showers"} subtitle={"Experience refreshing luxury."} />
         <FeaturedCollections data={Showers} />
         <Title title={"Chimneys"} subtitle={"Sleek performance with style."} />
-        <FeaturedCollections data={Chimneys} />
+        <FeaturedCollections data={Chimneys} isSquare={true} />
         <Title title={"Sinks"} subtitle={"Crafted for utility & class."} />
-        <FeaturedCollections data={Sinks} />
+        <FeaturedCollections data={Sinks} isSquare={true} />
       </div>
     </>
   );

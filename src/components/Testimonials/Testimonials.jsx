@@ -21,7 +21,7 @@ const Testimonials = () => {
 
       <div className="row d-flex justify-content-center">
         <div className="col-md-10 col-xl-8 text-center">
-          <h2 className="mb-4">Testimonials</h2>
+          <h2 className="my-4">Testimonials</h2>
         </div>
       </div>
 
@@ -40,9 +40,9 @@ const Testimonials = () => {
                 <img src={logo5}
                   className="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 className="font-weight-bold">Raghavan, sankarapuram
+              <h5 className="font-weight-bold text-center">Raghavan, sankarapuram
               </h5>
-              <h6 className="font-weight-bold my-3">Plywood</h6>
+              <h6 className="font-weight-bold my-3 text-center">Plywood</h6>
               <ul className="list-unstyled d-flex justify-content-center">
                 <li>
                   <i className="fas fa-star fa-sm text-info"></i>
@@ -73,8 +73,8 @@ const Testimonials = () => {
                 <img src={logo4}
                   className="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 className="font-weight-bold">Priya, Chennai</h5>
-              <h6 className="font-weight-bold my-3">Glassware</h6>
+              <h5 className="font-weight-bold text-center">Priya, Chennai</h5>
+              <h6 className="font-weight-bold my-3 text-center">Glassware</h6>
               <ul className="list-unstyled d-flex justify-content-center">
                 <li>
                   <i className="fas fa-star fa-sm text-info"></i>
@@ -105,9 +105,9 @@ const Testimonials = () => {
                 <img src={logo6}
                   className="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 className="font-weight-bold">Saravanan, Chinnasalem
+              <h5 className="font-weight-bold text-center">Saravanan, Chinnasalem
               </h5>
-              <h6 className="font-weight-bold my-3">switches,Lights
+              <h6 className="font-weight-bold my-3 text-center">switches,Lights
               </h6>
               <ul className="list-unstyled d-flex justify-content-center">
                 <li>
@@ -139,9 +139,9 @@ const Testimonials = () => {
                 <img src={logo3}
                   className="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 className="font-weight-bold">Nithya, Veeracholapuram
+              <h5 className="font-weight-bold text-center">Nithya, Veeracholapuram
               </h5>
-              <h6 className="font-weight-bold my-3">Modular Kitchens
+              <h6 className="font-weight-bold my-3 text-center">Modular Kitchens
               </h6>
               <ul className="list-unstyled d-flex justify-content-center">
                 <li>
@@ -173,9 +173,9 @@ const Testimonials = () => {
                 <img src={logo1}
                   className="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 className="font-weight-bold">Arunachalam, Kallakurichi
+              <h5 className="font-weight-bold text-center">Arunachalam, Kallakurichi
               </h5>
-              <h6 className="font-weight-bold my-3">Sensor LED
+              <h6 className="font-weight-bold my-3 text-center">Sensor LED
               </h6>
               <ul className="list-unstyled d-flex justify-content-center">
                 <li>
@@ -207,9 +207,9 @@ const Testimonials = () => {
                 <img src={logo2}
                   className="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 className="font-weight-bold">Karthik, Madurai
+              <h5 className="font-weight-bold text-center">Karthik, Madurai
               </h5>
-              <h6 className="font-weight-bold my-3">Digital Locks</h6>
+              <h6 className="font-weight-bold my-3 text-center">Digital Locks</h6>
               <ul className="list-unstyled d-flex justify-content-center">
                 <li>
                   <i className="fas fa-star fa-sm text-info"></i>

@@ -3,7 +3,8 @@ import "./ProductTabs.scss";
 import FeaturedCollections from "../FeaturedCollections/FeaturedCollections";
 import Doors from "../../data/FeaturedCollection.json";
 import AsianPaints from "../../data/tabdata/asian-paints.json";
-import Locks from "../../data/tabdata/locks.json";
+import Lights from "../../data/homepage/Lights.json";
+import Glassware from "../../data/product-collections/glassware.json";
 
 const ProductTabs = () => {
   const [activeTab, setActiveTab] = useState("first");
@@ -43,7 +44,7 @@ const ProductTabs = () => {
         <div
           className={`tab-pane ${activeTab === "first" ? "active" : "d-none"}`}
         >
-          <FeaturedCollections data={Locks} isHomepage={true} />
+          <FeaturedCollections data={Lights} isHomepage={true} />
         </div>
         <div
           className={`tab-pane ${activeTab === "second" ? "active" : "d-none"}`}
@@ -53,7 +54,7 @@ const ProductTabs = () => {
         <div
           className={`tab-pane ${activeTab === "third" ? "active" : "d-none"}`}
         >
-          <FeaturedCollections data={Doors} isHomepage={true} />
+          <FeaturedCollections data={Glassware} isHomepage={true} />
         </div>
       </div>
     </div>

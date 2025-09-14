@@ -1,26 +1,35 @@
-.text-banner {
-  width: 100%;
-  padding: 64px 0px;
-  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+.text-banner-wrapper {
+  padding: 1rem 2rem 0rem 2rem;
 
-  .box-title {
-    gap: 24px;
+  @media (max-width: 767px) {
+    padding: 1rem;
   }
 
-  .text-banner-width {
-    width: 70%;
-    margin: 0 auto;
-  }
+  .text-banner {
+    width: 100%;
+    padding: 64px 0px;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    border-radius: 16px;
 
-  .breadcrumb-item {
-    color: grey;
-
-    &.current {
-      color: #000000;
+    .box-title {
+      gap: 24px;
     }
 
-    &::before {
-      padding: 0 10px;
+    .text-banner-width {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .breadcrumb-item {
+      color: grey;
+
+      &.current {
+        color: #000000;
+      }
+
+      &::before {
+        padding: 0 10px;
+      }
     }
   }
 }

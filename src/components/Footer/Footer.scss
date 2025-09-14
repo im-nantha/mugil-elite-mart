@@ -25,6 +25,17 @@ footer {
 			border: 1px solid rgb(203, 190, 190);
 			border-radius: 50%;
 			@include flex-center();
+			transition: background 0.4s;
+
+			&:hover {
+				transition: background 0.4s;
+				background: rgba(143, 31, 123, 0.15);
+			}
+
+			svg {
+				width: 20px;
+				height: 20px;
+			}
 		}
 	}
 
@@ -39,7 +50,6 @@ footer {
 			}
 
 			.footer-body-link-container {
-				flex: 1;
 				border: 1px solid #ebebeb;
 				padding: 32px;
 
@@ -47,8 +57,16 @@ footer {
 					padding: 16px;
 				}
 
+				&:first-child {
+					width: 30%;
+				}
+
 				&:nth-child(2) {
-					flex: 1.5;
+					width: 30%;
+				}
+
+				&:last-child {
+					width: 40%;
 				}
 
 				.footer-body-sub {
@@ -58,7 +76,13 @@ footer {
 					gap: 16px;
 
 					.footer-body-link-subcontainer {
-						flex: 1;
+						&:first-child {
+							width: 40%;
+						}
+
+						&:last-child {
+							width: 60%;
+						}
 					}
 				}
 			}

@@ -17,7 +17,7 @@ function Carousel() {
       <div className="mugil_banner__wrapper">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
+          spaceBetween={0}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}

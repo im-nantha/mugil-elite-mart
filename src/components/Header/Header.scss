@@ -9,14 +9,26 @@
   }
 
   .mugil-mart-header {
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .mugil-mart-main-logo {
+      width: 80px;
+      height: 80px;
+      padding: 10px 10px 10px 0;
+    }
+
     .mugil-mart-logo {
       width: 200px;
       height: 80px;
-      padding: 10px;
+      padding: 10px 10px 10px 0;
 
       @media (max-width: 768px) {
         width: 90px;
@@ -24,13 +36,21 @@
     }
 
     .mugil-mart-browse {
-      padding: 10px 20px;
+      padding: 10px 0;
+      position: relative;
+      cursor: pointer;
       @include flex-center();
 
       .categories-title {
         display: flex;
         align-items: center;
         gap: 8px;
+
+        &:hover+.mugil-tooltip {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
 
         .browse-category {
           font-weight: bold;
@@ -85,11 +105,33 @@
         color: #000000;
         padding-bottom: 6px;
         font-family: var(--roboto-font);
+        position: relative;
+        display: inline-block;
+        color: inherit;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-color: var(--blue-gradient);
+          transform: scaleX(0);
+          transform-origin: left;
+          opacity: 0;
+          transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+
+        &:not(.active):hover::after {
+          transform: scaleX(1);
+          opacity: 1;
+        }
 
         &.active {
           text-decoration: underline;
           text-decoration-thickness: 2px;
-          text-underline-offset: 6px;
+          text-underline-offset: 10px;
           color: var(--blue-gradient);
         }
       }
@@ -99,7 +141,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      padding: 15px 30px;
+      padding: 15px 0 15px 30px;
 
       .tel-number {
         color: #000000;
@@ -115,11 +157,24 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 20px;
-          height: 20px;
           background-color: var(--light-green);
           border-radius: 50%;
           transition: background-color 0.5s;
+          width: 42px;
+          height: 42px;
+          border: 1px solid rgb(203, 190, 190);
+          border-radius: 50%;
+          transition: background 0.4s;
+
+          &:hover {
+            transition: background 0.4s;
+            background: rgba(143, 31, 123, 0.15);
+          }
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
 
           .search-icon-wrapper {
             width: 21px;

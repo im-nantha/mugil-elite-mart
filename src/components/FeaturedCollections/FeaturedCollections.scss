@@ -6,13 +6,28 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 
+    &.homepage {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
     .mugil-fc-product {
+      padding: 10px;
+      box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1);
       flex: 1;
       background: #ffffff;
-      border: 1px solid var(--line);
+      border: 1px solid #ebebeb;
       border-radius: 16px;
-      padding: 24px;
       height: 368px;
+      transition: all 0.7s;
+
+      &.square {
+        height: 250px;
+      }
+
+      &:hover {
+        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .5);
+        transition: all 0.7s;
+      }
 
       .fc-img-wrapper-link {
         height: 100%;
@@ -20,13 +35,19 @@
       }
 
       .fc-img-wrapper {
+        overflow: hidden;
         width: inherit;
         height: inherit;
 
         img {
           width: 100%;
           height: 100%;
+          transition: transform 0.5s ease;
           object-fit: cover;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
 
