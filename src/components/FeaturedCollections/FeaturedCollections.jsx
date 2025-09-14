@@ -18,17 +18,27 @@ const FeaturedCollectionCards = ({ productName, productImagePath, productRate })
   );
 };
 
-const FeaturedCollections = ({ data = DefaultFeaturedCollectionData }) => {
+const FeaturedCollections = ({ data = DefaultFeaturedCollectionData, isHomepage = false }) => {
   return (
-    <section className="mugil-fc-container">
+    <section className="mugil-fc-container pt-4">
       <div className="mugil-fc-wrapper">
-        {data.slice(0, 5).map((item, index) => (
-          <FeaturedCollectionCards
-            key={index}
-            productImagePath={item?.productImagePath}
-          />
-        ))}
+        {isHomepage === true ? (
+          data.slice(0, 4).map((item, index) => (
+            <FeaturedCollectionCards
+              key={index}
+              productImagePath={item?.productImagePath}
+            />
+          ))
+        ) : (
+          data.map((item, index) => (
+            <FeaturedCollectionCards
+              key={index}
+              productImagePath={item?.productImagePath}
+            />
+          ))
+        )}
       </div>
+
     </section>
   );
 };

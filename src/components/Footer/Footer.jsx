@@ -47,13 +47,14 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-body-link-container">
-            <h5 className="card-title pb-4">Subscribe Newsletter</h5>
-            <p className="card-text">We invite you to register to read the latest news, offers and events about our company. We promise not spam your inbox.</p>
+            <h5 className="card-title pb-4">Your Trusted Home Solutions Partner</h5>
+            <p className="card-text">Mugil Elite Mart provides a wide range of plywood, glass, bathroom fittings, kitchen accessories, and home décor products.
+              We combine quality, variety, and affordability to cater to both retail and wholesale customers.</p>
           </div>
           <div className="footer-body-link-container">
             <div className="footer-body-sub">
               <div className="footer-body-link-subcontainer">
-                <h5 className="card-title pb-4">About Us</h5>
+                <h5 className="card-title pb-4">Sitemap</h5>
                 <ul className="footer-menu-list">
                   <li>
                     <a href="about-us.html">About Us</a>
