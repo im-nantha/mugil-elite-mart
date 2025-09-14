@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Footer.scss";
 
 
@@ -30,19 +31,8 @@ const Footer = () => {
             <h5 className="card-title pb-4">Business Contact</h5>
             <ul className="footer-menu-list">
               <li>
-                <a href="privacy-policy.html">123 Yarran st, Punchbowl, NSW 2196, Australia</a>
-              </li>
-              <li>
-                <a href="term-and-condition.html">Terms &amp; Conditions</a>
-              </li>
-              <li>
-                <a href="return-and-refund.html">Returns &amp; Refunds</a>
-              </li>
-              <li>
-                <a href="faq.html">FAQ’s</a>
-              </li>
-              <li>
-                <a href="shipping.html">Shipping</a>
+                <a href="privacy-policy.html">54, Near Tolgate, near, Chennai Salem Highway, oop.
+                  admk office, Kallakurichi, Tamil Nadu 606202</a>
               </li>
             </ul>
           </div>
@@ -57,16 +47,22 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Sitemap</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <a href="about-us.html">About Us</a>
+                    <a href="/mugil-elite-mart/">Home</a>
                   </li>
                   <li>
-                    <a href="contact-us.html">Contact Us</a>
+                    <a href="/mugil-elite-mart/home-decor">Home Decor</a>
                   </li>
                   <li>
-                    <a href="store-location.html">Our Store</a>
+                    <a href="/mugil-elite-mart/products">Interior Decorations</a>
                   </li>
                   <li>
-                    <a href="about-us.html">Our Story</a>
+                    <a href="/mugil-elite-mart/about">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/mugil-elite-mart/contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="/mugil-elite-mart/bulk-orders">Bulk Order</a>
                   </li>
                 </ul>
               </div>
@@ -74,19 +70,25 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Resource</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <a href="privacy-policy.html">Privacy Policies</a>
+                    <a href="/mugil-elite-mart/privacy-policy">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="term-and-condition.html">Terms &amp; Conditions</a>
+                    <a href="/mugil-elite-mart/terms-and-conditions">Terms & Conditions</a>
                   </li>
                   <li>
-                    <a href="return-and-refund.html">Returns &amp; Refunds</a>
+                    <a href="/mugil-elite-mart/security-policy">Security Policy</a>
                   </li>
                   <li>
-                    <a href="faq.html">FAQ’s</a>
+                    <a href="/mugil-elite-mart/cancellation-policy">Cancellation & Returns Policy</a>
                   </li>
                   <li>
-                    <a href="shipping.html">Shipping</a>
+                    <a href="/mugil-elite-mart/grievance-policy">Grievance Redressal Policy</a>
+                  </li>
+                  <li>
+                    <a href="/mugil-elite-mart/disclaimer-policy">Disclaimer & Liability Policy</a>
+                  </li>
+                  <li>
+                    <a href="/mugil-elite-mart/cookie-policy">Cookie Policy</a>
                   </li>
                 </ul>
               </div>
