@@ -1,5 +1,6 @@
 import React from "react";
 import "./StaticBanner.scss";
+import staticbanner from "../../assets/images/shop-banner.jpg";
 
 
 const StaticBanner = () => {
@@ -7,7 +8,7 @@ const StaticBanner = () => {
     <div className="static-banner">
       <div className="static-wrapper">
         <div className="static-image-wrapper">
-          <img src="https://themesflat.co/html/vineta/images/banner/florist1.jpg" data-src="images/banner/florist1.jpg" alt="image" className="static-img" />
+          <img src={staticbanner} alt="image" className="static-img" />
         </div>
       </div>
       <div className="static-wrapper">

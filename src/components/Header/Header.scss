@@ -111,7 +111,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 16px;
+          width: 20px;
+          height: 20px;
           background-color: var(--light-green);
           border-radius: 50%;
           transition: background-color 0.5s;
@@ -123,11 +124,6 @@
 
           svg {
             fill: black;
-          }
-
-          &:hover {
-            transition: background-color 0.5s;
-            background-color: var(--blue-gradient);
           }
         }
 

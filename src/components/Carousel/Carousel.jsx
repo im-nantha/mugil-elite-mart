@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import banner1 from "../../assets/images/banners/banner-1.jpg";
+import banner2 from "../../assets/images/banners/banner-3.jpg";
+import banner3 from "../../assets/images/banners/banner-4.jpg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,23 +26,35 @@ function Carousel() {
           loop
         >
           <SwiperSlide>
-            <img className="mugil-banner-img" src="https://themesflat.co/html/vineta/images/slider/florist/slider-1.jpg" alt="Slide 1" />
+            <img className="mugil-banner-img" src={banner1} alt="Slide 1" />
             <div className="mugil-carousel-text-wrapper">
-              <h1 >Fresh Blooms, Daily Joy</h1>
+              {/* <h1 >Fresh Blooms, Daily Joy</h1>
               <p>
                 Fresh flowers, handpicked daily to brighten your every moment..
-              </p>
-              <a className="mugil-banner-button" href="/" data-discover="true">Know more</a>
+              </p> */}
+              {/* <a className="mugil-banner-button" href="/" data-discover="true">Know more</a> */}
             </div>
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <img className="mugil-banner-img" src="https://themesflat.co/html/vineta/images/slider/florist/slider-2.jpg" alt="Slide 2" />
+          <SwiperSlide>
+            <img className="mugil-banner-img" src={banner3} alt="Slide 2" />
             <div className="mugil-carousel-text-wrapper">
-              <h1 >Bloom with us</h1>
-              <p>Fresh flowers, handpicked daily to brighten your every moment..</p>
-              <a className="mugil-banner-button" href="/" data-discover="true">Know more</a>
+              {/* <h1 >Fresh Blooms, Daily Joy</h1>
+              <p>
+                Fresh flowers, handpicked daily to brighten your every moment..
+              </p> */}
+              {/* <a className="mugil-banner-button" href="/" data-discover="true">Know more</a> */}
             </div>
-          </SwiperSlide> */}
+          </SwiperSlide>
+          <SwiperSlide>
+            <img className="mugil-banner-img" src={banner2} alt="Slide 3" />
+            <div className="mugil-carousel-text-wrapper">
+              {/* <h1 >Fresh Blooms, Daily Joy</h1>
+              <p>
+                Fresh flowers, handpicked daily to brighten your every moment..
+              </p> */}
+              {/* <a className="mugil-banner-button" href="/" data-discover="true">Know more</a> */}
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>

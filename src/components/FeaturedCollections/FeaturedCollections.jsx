@@ -9,10 +9,10 @@ const FeaturedCollectionCards = ({ productName, productImagePath, productRate })
         <div className="fc-img-wrapper">
           <img src={productImagePath} alt={productName} />
         </div>
-        <div className="fc-text-wrapper">
+        {/* <div className="fc-text-wrapper">
           <p className="fc-price-title">{productName}</p>
           {productRate && (<p className="fc-price">{productRate}</p>)}
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -25,9 +25,7 @@ const FeaturedCollections = ({ data = DefaultFeaturedCollectionData }) => {
         {data.slice(0, 5).map((item, index) => (
           <FeaturedCollectionCards
             key={index}
-            productName={item?.productName}
             productImagePath={item?.productImagePath}
-            productRate={item?.productRate}
           />
         ))}
       </div>

@@ -1,6 +1,10 @@
 import React from "react";
 import "./ShopByCategories.scss";
-
+import shop1 from "../../assets/images/shop-by-category/door.jpg";
+import shop2 from "../../assets/images/shop-by-category/kitchen.jpg";
+import shop3 from "../../assets/images/shop-by-category/solutions.jpg";
+import shop4 from "../../assets/images/shop-by-category/electricals.jpg";
+import shop5 from "../../assets/images/shop-by-category/plywood.png";
 
 const ShopByCategories = () => {
   return (
@@ -11,7 +15,7 @@ const ShopByCategories = () => {
       <div className="sbc-container">
         <div className="sbc-cards">
           <a className="sbc-card-img-wrapper" href="#">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/florist/cate-1.jpg" alt="images" />
+            <img src={shop1} alt="images" />
           </a>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Designer Doors</p>
@@ -19,7 +23,7 @@ const ShopByCategories = () => {
         </div>
         <div className="sbc-cards">
           <a className="sbc-card-img-wrapper" href="#">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/florist/cate-2.jpg" alt="images" />
+            <img src={shop2} alt="images" />
           </a>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Kitchen</p>
@@ -27,7 +31,7 @@ const ShopByCategories = () => {
         </div>
         <div className="sbc-cards">
           <a className="sbc-card-img-wrapper" href="#">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/florist/cate-3.jpg" alt="images" />
+            <img src={shop3} alt="images" />
           </a>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Modular Solutions</p>
@@ -35,7 +39,7 @@ const ShopByCategories = () => {
         </div>
         <div className="sbc-cards">
           <a className="sbc-card-img-wrapper" href="#">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/florist/cate-4.jpg" alt="images" />
+            <img src={shop4} alt="images" />
           </a>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Electricals</p>
@@ -43,7 +47,7 @@ const ShopByCategories = () => {
         </div>
         <div className="sbc-cards">
           <a className="sbc-card-img-wrapper" href="#">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/florist/cate-5.jpg" alt="images" />
+            <img src={shop5} alt="images" />
           </a>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Plywood</p>

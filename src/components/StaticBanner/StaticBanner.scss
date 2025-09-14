@@ -23,7 +23,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			background-color: rgb(255, 211, 191);
+			background: var(--blue-secondary);
 
 			.static-content {
 				width: 60%;
@@ -39,6 +39,11 @@
 					@media (max-width: 767px) {
 						text-align: center;
 					}
+				}
+
+				h2,
+				p {
+					color: #ffffff;
 				}
 			}
 		}

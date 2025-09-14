@@ -1,5 +1,8 @@
 import React from "react";
 import "./IntroBanner.scss";
+import img1 from "../../assets/images/intro-banner/glass.jpg";
+import img2 from "../../assets/images/intro-banner/plywood.jpg";
+import img3 from "../../assets/images/intro-banner/bath.jpg";
 
 
 const IntroBanner = () => {
@@ -8,35 +11,35 @@ const IntroBanner = () => {
       <div className="intro-banner-wrapper">
         <div className="intro-banner-items">
           <div className="intro-image">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/grid-cls/florist1.jpg" />
+            <img src={img1} />
           </div>
           <div className="intro-text">
             <h4 className="intro-title">
               Glass & Mirror Creations
             </h4>
-            <a href="#" className="intro-redirect">Explore</a>
+            {/* <a href="#" className="intro-redirect">Explore</a> */}
           </div>
         </div>
         <div className="intro-banner-items">
           <div className="intro-image">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/grid-cls/florist2.jpg" />
+            <img src={img2} />
           </div>
           <div className="intro-text">
             <h4 className="intro-title">
               Premium Plywood & Wall Solutions
             </h4>
-            <a href="#" className="intro-redirect">Explore</a>
+            {/* <a href="#" className="intro-redirect">Explore</a> */}
           </div>
         </div>
         <div className="intro-banner-items">
           <div className="intro-image">
-            <img src="https://themesflat.co/html/vineta/images/cls-categories/grid-cls/florist3.jpg" />
+            <img src={img3} />
           </div>
           <div className="intro-text">
             <h4 className="intro-title">
               Bath Elegance & Accessories
             </h4>
-            <a href="#" className="intro-redirect">Explore</a>
+            {/* <a href="#" className="intro-redirect">Explore</a> */}
           </div>
         </div>
       </div>
