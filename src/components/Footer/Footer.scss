@@ -59,14 +59,26 @@ footer {
 
 				&:first-child {
 					width: 30%;
+
+					@media (max-width: 992px) {
+						width: 100%;
+					}
 				}
 
 				&:nth-child(2) {
 					width: 30%;
+
+					@media (max-width: 992px) {
+						width: 100%;
+					}
 				}
 
 				&:last-child {
 					width: 40%;
+
+					@media (max-width: 992px) {
+						width: 100%;
+					}
 				}
 
 				.footer-body-sub {

@@ -4,6 +4,10 @@
   width: 100%;
   background: var(--primary-white);
 
+  @media (max-width: 992px) {
+    display: none;
+  }
+
   .header-wrapper {
     background: var(--blue-gradient);
   }

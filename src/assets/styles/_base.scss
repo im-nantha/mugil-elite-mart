@@ -95,11 +95,12 @@ p {
 
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(35%);
+  transition: transform 0.5s;
 }
 
 .reveal.show {
-  opacity: 1;
   transform: translateY(0);
+  transition: all 1s ease-in-out;
+  opacity: 1;
 }

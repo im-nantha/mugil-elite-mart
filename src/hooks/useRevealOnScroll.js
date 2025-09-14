@@ -10,7 +10,10 @@ const useRevealOnScroll = (threshold = 0.3) => {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setIsVisible(true); // ✅ reveal once
+          observer.unobserve(entry.target); // ✅ stop observing after first reveal
+        }
       },
       { threshold }
     );
@@ -18,7 +21,7 @@ const useRevealOnScroll = (threshold = 0.3) => {
     observer.observe(element);
 
     return () => {
-      if (element) observer.unobserve(element);
+      observer.disconnect();
     };
   }, [threshold]);
 
