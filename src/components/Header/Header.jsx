@@ -93,8 +93,8 @@ const SubNavbar = () => {
         </nav>
         <div className="mugil-mart-list-wrapper">
           <i className="bi bi-telephone-x"></i>
-          <a href="tel:7010726530" className="tel-number">
-            +917010726530
+          <a href="tel:9894487698" className="tel-number">
+            +919894487698
           </a>
         </div>
       </div>
