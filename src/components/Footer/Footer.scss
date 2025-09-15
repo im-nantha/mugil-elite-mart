@@ -6,6 +6,16 @@ footer {
 	.footer-head {
 		padding-bottom: 40px;
 
+		.mugil-footer-logo-wrapper {
+			width: 80px;
+			height: 80px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
 		h2 {
 			@media (max-width: 767px) {
 				padding-bottom: 16px;
@@ -14,7 +24,9 @@ footer {
 	}
 
 	.footer-icons {
-		@include flex-center();
+		display: flex;
+		justify-content: start;
+		align-items: center;
 		gap: 20px;
 
 		.footer-icons-wrap {
