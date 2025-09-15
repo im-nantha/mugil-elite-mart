@@ -27,7 +27,7 @@ const Testimonials = () => {
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={30}
+        spaceBetween={16}
         slidesPerView={3}
         navigation
         pagination={{ clickable: true }}
@@ -36,7 +36,7 @@ const Testimonials = () => {
         loop
       >
         <SwiperSlide>
-          <div className="card">
+          <div>
             <div className="card-body py-4 mt-2">
               <div className="d-flex justify-content-center mb-4">
                 <img src={logo5}
@@ -69,7 +69,7 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card">
+          <div>
             <div className="card-body py-4 mt-2">
               <div className="d-flex justify-content-center mb-4">
                 <img src={logo4}
@@ -101,7 +101,7 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card">
+          <div>
             <div className="card-body py-4 mt-2">
               <div className="d-flex justify-content-center mb-4">
                 <img src={logo6}
@@ -135,7 +135,7 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card">
+          <div>
             <div className="card-body py-4 mt-2">
               <div className="d-flex justify-content-center mb-4">
                 <img src={logo3}
@@ -169,7 +169,7 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card">
+          <div>
             <div className="card-body py-4 mt-2">
               <div className="d-flex justify-content-center mb-4">
                 <img src={logo1}
@@ -203,7 +203,7 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card">
+          <div>
             <div className="card-body py-4 mt-2">
               <div className="d-flex justify-content-center mb-4">
                 <img src={logo2}

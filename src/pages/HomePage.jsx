@@ -10,6 +10,7 @@ import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Gallery from "../components/Gallery/Gallery";
 import Faq from "../components/Faq/Faq";
+import BackToTop from "../components/BackToTop/BackToTop";
 
 const Home = () => {
 

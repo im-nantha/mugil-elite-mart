@@ -31,17 +31,5 @@
         }
       }
     }
-
-    .breadcrumb-item {
-      color: grey;
-
-      &.current {
-        color: #000000;
-      }
-
-      &::before {
-        padding: 0 10px;
-      }
-    }
   }
 }

@@ -15,6 +15,8 @@ import GrievanceRedressalPolicy from "./pages/GrievanceRedressalPolicy";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import SecurityPolicy from "./pages/SecurityPolicy";
 import TermsConditions from "./pages/TermsConditions";
+import FaqPage from "./pages/FaqPage";
+import ScrollToHashElement from "./hooks/ScrollToHashElement";
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
       <Router>
         <div>
           <Header />
+          <ScrollToHashElement />
           <Routes>
             <Route path="/mugil-elite-mart/" element={<Home />} />
             <Route path="/mugil-elite-mart/home-decor" element={<HomeDecor />} />
@@ -37,6 +40,7 @@ function App() {
             <Route path="/mugil-elite-mart/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/mugil-elite-mart/security-policy" element={<SecurityPolicy />} />
             <Route path="/mugil-elite-mart/terms-and-conditions" element={<TermsConditions />} />
+            <Route path="/mugil-elite-mart/faqs" element={<FaqPage />} />
           </Routes>
         </div>
       </Router>

@@ -17,45 +17,45 @@ const ShopByCategories = () => {
       <div className="sbc-container">
         <div ref={ref}
           className={`sbc-cards reveal ${isVisible ? "show" : ""}`}>
-          <a className="sbc-card-img-wrapper" href="#">
+          <div className="sbc-card-img-wrapper" href="#">
             <img src={shop1} alt="images" />
-          </a>
+          </div>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Designer Doors</p>
           </div>
         </div>
         <div ref={ref}
           className={`sbc-cards reveal ${isVisible ? "show" : ""}`}>
-          <a className="sbc-card-img-wrapper" href="#">
+          <div className="sbc-card-img-wrapper" href="#">
             <img src={shop2} alt="images" />
-          </a>
+          </div>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Kitchen</p>
           </div>
         </div>
         <div ref={ref}
           className={`sbc-cards reveal ${isVisible ? "show" : ""}`}>
-          <a className="sbc-card-img-wrapper" href="#">
+          <div className="sbc-card-img-wrapper" href="#">
             <img src={shop3} alt="images" />
-          </a>
+          </div>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Modular Solutions</p>
           </div>
         </div>
         <div ref={ref}
           className={`sbc-cards reveal ${isVisible ? "show" : ""}`}>
-          <a className="sbc-card-img-wrapper" href="#">
+          <div className="sbc-card-img-wrapper" href="#">
             <img src={shop4} alt="images" />
-          </a>
+          </div>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Electricals</p>
           </div>
         </div>
         <div ref={ref}
           className={`sbc-cards reveal ${isVisible ? "show" : ""}`}>
-          <a className="sbc-card-img-wrapper" href="#">
+          <div className="sbc-card-img-wrapper" href="#">
             <img src={shop5} alt="images" />
-          </a>
+          </div>
           <div className="sbc-card-text-wrapper">
             <p className="text-center">Plywood</p>
           </div>

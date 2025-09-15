@@ -15,7 +15,7 @@ import ExhaustFans from "../../src/data/product-collections/Exhaust-Fans.json";
 const Products = () => {
   return (
     <>
-      <TextBanner breadcrumb={true} bannerText={"Quality materials that power modern living"} />
+      <TextBanner bannerText={"Quality materials that power modern living"} />
       <div className="mugil-container" style={{ "background": "#f4f4f4" }}>
         <Title title={"Plywood"} subtitle={"Strength and style combined for every design need."} />
         <FeaturedCollections data={Plywood} />

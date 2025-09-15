@@ -15,7 +15,7 @@ import Sinks from "../../src/data/product-collections/Sinks.json";
 const HomeDecor = () => {
   return (
     <>
-      <TextBanner breadcrumb={true} bannerText={"Transform your living space into a masterpiece with timeless elegance"} />
+      <TextBanner bannerText={"Transform your living space into a masterpiece with timeless elegance"} />
       <div className="mugil-container" style={{ "background": "#f4f4f4" }}>
         <Title title={"Glassware"} subtitle={"Stylish & durable for every home."} />
         <FeaturedCollections data={GlasswareData} />

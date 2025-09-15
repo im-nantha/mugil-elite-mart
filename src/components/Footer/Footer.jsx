@@ -29,9 +29,8 @@ const Footer = () => {
           <div className="footer-body-link-container">
             <h5 className="card-title pb-4">Business Contact</h5>
             <ul className="footer-menu-list">
-              <li>
-                <a href="privacy-policy.html">54, Near Tolgate, near, Chennai Salem Highway, oop.
-                  admk office, Kallakurichi, Tamil Nadu 606202</a>
+              <li>54, Near Tolgate, near, Chennai Salem Highway, oop.
+                admk office, Kallakurichi, Tamil Nadu 606202
               </li>
             </ul>
           </div>
@@ -61,7 +60,10 @@ const Footer = () => {
                     <a href="/mugil-elite-mart/contact">Contact Us</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/bulk-orders">Bulk Order</a>
+                    <a href="/mugil-elite-mart/bulk-orders">Bulk Orders</a>
+                  </li>
+                  <li>
+                    <a href="/mugil-elite-mart/faqs">Faq's</a>
                   </li>
                 </ul>
               </div>

@@ -6,6 +6,19 @@
 		color: rgb(255, 238, 0) !important;
 	}
 
+	.swiper-slide {
+		border: 1px solid var(--blue-gradient);
+		border-radius: 16px;
+		padding: 16px;
+		height: 448px;
+		transition: background 0.4s;
+
+		&:hover {
+			transition: background 0.4s;
+			background: rgba(143, 31, 123, 0.15);
+		}
+	}
+
 	.swiper-button-prev {
 		left: 4%;
 		display: none;
@@ -18,5 +31,9 @@
 
 	.swiper-pagination {
 		position: unset;
+
+		.swiper-pagination-bullet {
+			background: var(--blue-gradient);
+		}
 	}
 }
