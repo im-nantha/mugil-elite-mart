@@ -13,6 +13,10 @@
 		height: 448px;
 		transition: background 0.4s;
 
+		@media (max-width: 992px) {
+			height: auto;
+		}
+
 		&:hover {
 			transition: background 0.4s;
 			background: rgba(143, 31, 123, 0.15);

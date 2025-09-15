@@ -14,5 +14,5 @@ export default function ScrollToHashElement() {
     }
   }, [hash]);
 
-  return null; // renders nothing
+  return null;
 }

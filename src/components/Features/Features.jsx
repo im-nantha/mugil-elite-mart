@@ -13,7 +13,7 @@ const Features = () => {
       <div className="features-card-wrapper">
         <div className="features-card">
           <div className="custom-card">
-            <div className="d-flex align-items-start gap-2">
+            <div className="d-flex align-items-start gap-3">
               <div className="icon-round">
                 <i className="bi bi-truck"></i>
               </div>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 export default function useFadeInOnScroll() {
   const ref = useRef();
@@ -9,7 +9,7 @@ export default function useFadeInOnScroll() {
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
 
     if (ref.current) observer.observe(ref.current);

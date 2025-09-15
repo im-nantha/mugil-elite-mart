@@ -34,6 +34,14 @@ const Testimonials = () => {
         speed={300}
         autoplay={{ delay: 5000 }}
         loop
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          991: {
+            slidesPerView: 3,
+          },
+        }}
       >
         <SwiperSlide>
           <div>

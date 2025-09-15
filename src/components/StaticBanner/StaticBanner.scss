@@ -17,11 +17,19 @@
 		.static-image-wrapper {
 			padding: 60px;
 
+			@media (max-width: 767px) {
+				padding: 0;
+			}
+
 			img {
 				border: 12px solid rgb(117, 50, 117);
 				box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1);
 				border-radius: 20px;
 				width: 100%;
+
+				@media (max-width: 767px) {
+					border-width: 6px;
+				}
 			}
 		}
 
@@ -46,13 +54,17 @@
 					color: #ffffff;
 
 					@media (max-width: 767px) {
-						text-align: center;
+						font-size: 24px;
 					}
 				}
 
 				p {
 					font-size: 32px;
 					color: #ffffff;
+
+					@media (max-width: 767px) {
+						font-size: 18px;
+					}
 				}
 			}
 		}
