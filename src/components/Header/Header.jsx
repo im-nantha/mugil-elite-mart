@@ -143,7 +143,7 @@ const Header = () => {
             </div>
           </div>
           <nav className="mugil-mart-navbar">
-            {/* <Search /> */}
+            <Search />
           </nav>
           <div className="mugil-mart-list-wrapper">
             <div className="mugil-mart-items">
