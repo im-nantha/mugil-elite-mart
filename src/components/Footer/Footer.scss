@@ -10,6 +10,11 @@ footer {
 			width: 80px;
 			height: 80px;
 
+			@media (max-width: 767px) {
+				width: 60px;
+				height: 60px;
+			}
+
 			img {
 				width: 100%;
 				height: 100%;

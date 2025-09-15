@@ -1,5 +1,6 @@
 import React from "react";
 import TextBanner from "../components/TextBanner/TextBanner";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 const BuldOrder = () => {
   return (
@@ -16,6 +17,9 @@ const BuldOrder = () => {
           <p className="pb-4">
             “Partner with Mugil Elite Mart for your bulk order requirements. From plywood, doors, and glass to digital locks, modular kitchen solutions, and bathroom fittings, we ensure high-quality products, competitive pricing, and timely delivery. Ideal for contractors, builders, and retailers seeking trusted home improvement solutions.”
           </p>
+        </div>
+        <div className="mugil-container">
+          <ContactForm />
         </div>
       </main>
     </div>
