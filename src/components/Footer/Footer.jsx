@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Footer.scss";
-import footerlogo from "../../assets/images/mem-logo.png";
+import mainlogo from "../../assets/images/mem-logo.png";
 
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
           <div className="d-flex align-items-center gap-2">
             <NavLink className="mugil-footer-logo-wrapper" to="/mugil-elite-mart/" >
-              <img className="mugil-mart-img" alt="mugil-mart-logo" src={footerlogo} />
+              <img className="mugil-mart-img" src={mainlogo} />
             </NavLink>
             <h2>Mugil Elite Mart</h2>
           </div>
