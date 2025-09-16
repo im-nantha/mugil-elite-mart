@@ -10,7 +10,7 @@ import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Gallery from "../components/Gallery/Gallery";
 import Faq from "../components/Faq/Faq";
-import BackToTop from "../components/BackToTop/BackToTop";
+import PartnersCarousel from "../components/PartnersCarousel/PartnersCarousel";
 
 const Home = () => {
 
@@ -23,6 +23,7 @@ const Home = () => {
         <ProductTabs />
         <StaticBanner />
         <ShopByCategories />
+        <PartnersCarousel />
         <Testimonials />
         <Gallery />
         <Faq />
