@@ -3,7 +3,7 @@ import "./ProductTabs.scss";
 import FeaturedCollections from "../FeaturedCollections/FeaturedCollections";
 import AsianPaints from "../../data/tabdata/asian-paints.json";
 import Lights from "../../data/homepage/Lights.json";
-import Glassware from "../../data/product-collections/glassware.json";
+import Glassware from "../../data/homepage/bath-elegence.json";
 
 const ProductTabs = () => {
   const [activeTab, setActiveTab] = useState("first");

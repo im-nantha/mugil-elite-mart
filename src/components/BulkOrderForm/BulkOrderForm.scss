@@ -1,0 +1,96 @@
+.bulk-order-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+
+  .form-container {
+    width: 80%;
+    background: #f4f4f4;
+    border-radius: 16px;
+    padding: 30px;
+
+    .title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .sub-title {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        label {
+          font-weight: 500;
+          margin-bottom: 0.4rem;
+        }
+
+        input,
+        textarea {
+          padding: 0.6rem;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 1rem;
+          background: transparent;
+
+          &:focus {
+            border-color: #0077cc;
+            outline: none;
+          }
+
+          &.error {
+            border-color: red;
+          }
+        }
+
+        textarea {
+          min-height: 100px;
+          resize: vertical;
+        }
+
+        .error-msg {
+          color: red;
+          font-size: 0.85rem;
+          margin-top: 0.2rem;
+        }
+      }
+
+      .submit-btn {
+        background: #0077cc;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #005fa3;
+        }
+      }
+
+      .success-msg {
+        margin-top: 1rem;
+        color: green;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // Responsive
+  @media (max-width: 991px) {
+    .form-container {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}
