@@ -122,6 +122,12 @@ footer {
 				a {
 					color: #000000;
 					text-decoration: none;
+					transition: color 0.5s;
+
+					&:hover {
+						transition: color 0.5s;
+						color: rgb(174, 0, 255);
+					}
 				}
 			}
 		}

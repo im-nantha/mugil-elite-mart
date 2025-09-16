@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/mugil-logo.jpg";
 import mainlogo from "../../assets/images/mem-logo.png";
@@ -114,8 +115,41 @@ const SubNavbar = () => {
 };
 
 const Header = () => {
+
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [triggerOffset, setTriggerOffset] = useState(0);
+
+  useEffect(() => {
+    // Find the first element with class 'features mugil-container'
+    const featuresEl = document.querySelector(".features.mugil-container");
+    if (featuresEl) {
+      setTriggerOffset(featuresEl.offsetTop);
+    }
+
+    const handleScroll = () => {
+      if (window.scrollY > triggerOffset) {
+        if (window.scrollY > lastScrollY) {
+          // Scrolling down → hide
+          setShowHeader(false);
+        } else {
+          // Scrolling up → show
+          setShowHeader(true);
+        }
+      } else {
+        // Always show when above the element
+        setShowHeader(true);
+      }
+
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY, triggerOffset]);
+
   return (
-    <>
+    <div className={`mugil-header ${showHeader ? "show" : "hide"}`}>
       <BackToTop />
       <header className="mugil-header">
         <div className="header-wrapper py-2">
@@ -196,7 +230,7 @@ const Header = () => {
       </header>
       <SubNavbar />
       {/* <HeaderMobileView /> */}
-    </>
+    </div>
   );
 };
 

@@ -20,7 +20,6 @@ const PartnersCarousel = () => {
         spaceBetween={20}
         loop={true}
         freeMode={true}
-        freeModeMomentum={false}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
@@ -41,7 +40,6 @@ const PartnersCarousel = () => {
         spaceBetween={20}
         loop={true}
         freeMode={true}
-        freeModeMomentum={false}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,

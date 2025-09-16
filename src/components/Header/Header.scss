@@ -3,13 +3,26 @@
 .mugil-header {
   width: 100%;
   background: var(--primary-white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  transition: transform 0.5s ease;
 
-  @media (max-width: 992px) {
-    display: none;
+  &.hide {
+    transform: translateY(-100%);
+  }
+
+  &.show {
+    transform: translateY(0);
   }
 
   .header-wrapper {
     background: var(--blue-gradient);
+  }
+
+  @media (max-width: 992px) {
+    display: none;
   }
 
   .mugil-mart-header {
