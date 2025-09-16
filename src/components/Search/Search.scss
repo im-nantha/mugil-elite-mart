@@ -33,16 +33,27 @@
 
   .suggestions {
     position: absolute;
-    top: 110%;
+    top: 98%;
     left: 0;
     right: 0;
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 16px;
     max-height: 200px;
     overflow-y: auto;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .suggestion-wrap {
+      display: flex;
+      gap: 16px;
+    }
+
+    .suggestion-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
 
     li {
       padding: 0.6rem 1rem;

@@ -1,38 +1,67 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Search.scss";
+import shop1 from "../../assets/images/shop-by-category/door.jpg";
+import shop2 from "../../assets/images/shop-by-category/kitchen.jpg";
+import shop3 from "../../assets/images/shop-by-category/solutions.jpg";
+import shop4 from "../../assets/images/shop-by-category/electricals.jpg";
+import shop5 from "../../assets/images/shop-by-category/plywood.png";
+import shop6 from "../../assets/images/shop-by-category/door.jpg";
+import shop7 from "../../assets/images/shop-by-category/kitchen.jpg";
+import shop8 from "../../assets/images/shop-by-category/solutions.jpg";
+import shop9 from "../../assets/images/shop-by-category/electricals.jpg";
+import shop10 from "../../assets/images/shop-by-category/plywood.png";
+import shop11 from "../../assets/images/shop-by-category/door.jpg";
+import shop12 from "../../assets/images/shop-by-category/kitchen.jpg";
+import shop13 from "../../assets/images/shop-by-category/electricals.jpg";
+import shop14 from "../../assets/images/shop-by-category/plywood.png";
 
 const products = [
   // Home Decor
-  { name: "Glassware", page: "home-decor" },
-  { name: "Lights", page: "home-decor" },
-  { name: "Mirrors", page: "home-decor" },
-  { name: "Faucets", page: "home-decor" },
-  { name: "Showers", page: "home-decor" },
-  { name: "Chimneys", page: "home-decor" },
-  { name: "Sinks", page: "home-decor" },
+  { name: "Glassware", page: "home-decor", image: shop1 },
+  { name: "Lights", page: "home-decor", image: shop2 },
+  { name: "Mirrors", page: "home-decor", image: shop3 },
+  { name: "Faucets", page: "home-decor", image: shop4 },
+  { name: "Showers", page: "home-decor", image: shop5 },
+  { name: "Chimneys", page: "home-decor", image: shop6 },
+  { name: "Sinks", page: "home-decor", image: shop7 },
 
   // Products
-  { name: "Plywood", page: "products" },
-  { name: "Locks", page: "products" },
-  { name: "Aluminum Profile", page: "products" },
-  { name: "Hardware", page: "products" },
-  { name: "Pipes", page: "products" },
-  { name: "Ceiling Fans", page: "products" },
-  { name: "Exhaust Fans", page: "products" },
+  { name: "Plywood", page: "products", image: shop8 },
+  { name: "Locks", page: "products", image: shop9 },
+  {
+    name: "Aluminum Profile",
+    page: "products",
+    image: shop10,
+  },
+  { name: "Hardware", page: "products", image: shop11 },
+  { name: "Pipes", page: "products", image: shop12 },
+  {
+    name: "Ceiling Fans",
+    page: "products",
+    image: shop13,
+  },
+  {
+    name: "Exhaust Fans",
+    page: "products",
+    image: shop14,
+  },
 ];
 
 const Search = () => {
   const [keyword, setKeyword] = useState("");
   const [filtered, setFiltered] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isPinned, setIsPinned] = useState(false);
   const navigate = useNavigate();
+  const boxRef = useRef(null);
 
   const handleChange = (e) => {
     const value = e.target.value;
     setKeyword(value);
 
     if (value.trim() === "") {
-      setFiltered([]);
+      setFiltered(products); // show all when input empty
       return;
     }
 
@@ -43,20 +72,58 @@ const Search = () => {
   };
 
   const handleSelect = (product) => {
-    const id = product.name.toLowerCase().replace(/\s+/g, "-"); // convert to kebab-case
+    const id = product.name.toLowerCase().replace(/\s+/g, "-"); // kebab-case
     navigate(`/mugil-elite-mart/${product.page}#${id}`);
-    setKeyword(""); // clear input
-    setFiltered([]);
+    setKeyword("");
+    setFiltered(products);
+    setIsOpen(false);
+    setIsPinned(false);
   };
 
+  // Outside click handler
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (boxRef.current && !boxRef.current.contains(e.target)) {
+        if (isPinned || keyword.trim() !== "") {
+          setIsOpen(false);
+          setIsPinned(false);
+        }
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isPinned, keyword]);
+
   return (
-    <div className="search-box">
+    <div
+      className="search-box"
+      ref={boxRef}
+      onMouseEnter={() => {
+        if (!isPinned) {
+          setFiltered(products);
+          setIsOpen(true);
+        }
+      }}
+      onMouseLeave={() => {
+        if (!isPinned) {
+          setIsOpen(false);
+        }
+      }}
+    >
       <div className="input-group">
         <input
           type="text"
           id="search_field"
           value={keyword}
           onChange={handleChange}
+          onClick={() => {
+            setIsPinned(true);
+            setFiltered(products);
+            setIsOpen(true);
+          }}
           className="form-control"
           placeholder="Enter Product Name ..."
         />
@@ -67,11 +134,12 @@ const Search = () => {
         </div>
       </div>
 
-      {filtered.length > 0 && (
+      {isOpen && filtered.length > 0 && (
         <ul className="suggestions">
           {filtered.map((product, index) => (
-            <li key={index} onClick={() => handleSelect(product)}>
-              {product.name}
+            <li className="suggestion-wrap" key={index} onClick={() => handleSelect(product)}>
+              <img src={product.image} className="suggestion-img" />
+              <span>{product.name}</span>
             </li>
           ))}
         </ul>

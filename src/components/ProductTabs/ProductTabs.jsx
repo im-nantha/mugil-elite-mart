@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./ProductTabs.scss";
 import FeaturedCollections from "../FeaturedCollections/FeaturedCollections";
-import Doors from "../../data/FeaturedCollection.json";
 import AsianPaints from "../../data/tabdata/asian-paints.json";
 import Lights from "../../data/homepage/Lights.json";
 import Glassware from "../../data/product-collections/glassware.json";
@@ -39,23 +38,17 @@ const ProductTabs = () => {
         </li>
       </ul>
 
-      {/* Tab content (mounted once, just hidden/shown) */}
+      {/* Tab content (rerender every time tab changes) */}
       <div className="tab-content">
-        <div
-          className={`tab-pane ${activeTab === "first" ? "active" : "d-none"}`}
-        >
+        {activeTab === "first" && (
           <FeaturedCollections data={Lights} isHomepage={true} isSquare={true} />
-        </div>
-        <div
-          className={`tab-pane ${activeTab === "second" ? "active" : "d-none"}`}
-        >
+        )}
+        {activeTab === "second" && (
           <FeaturedCollections data={AsianPaints} isHomepage={true} isSquare={true} />
-        </div>
-        <div
-          className={`tab-pane ${activeTab === "third" ? "active" : "d-none"}`}
-        >
+        )}
+        {activeTab === "third" && (
           <FeaturedCollections data={Glassware} isHomepage={true} isSquare={true} />
-        </div>
+        )}
       </div>
     </div>
   );
