@@ -25,18 +25,18 @@ const MissionVision = () => {
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/link.png",
           title: "Legacy of Excellence",
-          description: ["25 Years of Expertise and Trust.” For over two decades, Mugil Elite Mart has been a pillar in the home improvement industry, delivering high-quality products and exceptional service. Our legacy is built on consistency, reliability, and a deep understanding of customer needs, making us a trusted choice across Tamil Nadu."],
+          description: ["25 Years of Expertise and Trust.” For over two decades, Mugil Elite Mart has been a pillar in the home improvement industry."],
         },
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/search.png",
           title: "Quality You Can Rely On",
-          description: ["Premium Products, Guaranteed Performance.” We ensure that every product, from plywood and glass to bathroom fittings and kitchen accessories, meets strict quality standards. By partnering with renowned brands and certified suppliers, we deliver durable, reliable, and aesthetically superior solutions for homes and commercial projects alike."],
-        },
-        {
-          icon: "https://img.icons8.com/ios-filled/50/ffffff/database.png",
-          title: "Customer-Centric Approach",
-          description: ["Your Satisfaction is Our Priority.” At Mugil Elite Mart, we put the customer at the heart of everything we do. From personalized guidance to timely delivery and post-purchase support, our team is dedicated to making every interaction smooth, transparent, and satisfying, ensuring a hassle-free experience."],
-        },
+          description: ["Premium Products, Guaranteed Performance.” We ensure that every product, from plywood and glass to bathroom fittings and kitchen accessories, meets strict quality standards."],
+        }
+        // {
+        //   icon: "https://img.icons8.com/ios-filled/50/ffffff/database.png",
+        //   title: "Customer-Centric Approach",
+        //   description: ["Your Satisfaction is Our Priority.” At Mugil Elite Mart, we put the customer at the heart of everything we do."],
+        // },
       ],
     },
     {
@@ -45,7 +45,7 @@ const MissionVision = () => {
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/calendar.png",
           title: "Wide Product Spectrum",
-          description: ["Everything You Need, Under One Roof.” Our extensive range covers basic essentials to advanced premium solutions, including plywood, doors, glass, locks, bathroom and kitchen fittings, modular profiles, and décor items. Whether for retail or bulk orders, we provide a comprehensive selection to meet diverse needs with quality and reliability."],
+          description: ["Everything You Need, Under One Roof.” Our extensive range covers basic essentials to advanced premium solutions."],
         },
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/wallet.png",
