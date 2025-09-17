@@ -1,106 +1,132 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/1.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "Bulb_Standard"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/2.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "StairStep_Bulb"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/3.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "Sensor_Module"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/4.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "SmartBatten"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/5.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "ColorShift"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/6.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "FilamentRetro_Bulb"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/7.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "TubeLight_Batten"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/8.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "Emergency_Bulb"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/9.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "Decorative_Spotlight"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/10.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "SensorNightBulb"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/11.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "ExtraBatten_Light"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/12.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "CeilingPanel"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/13.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "WallSconce"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/14.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "Downlight_Spot"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/15.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "FloodLight"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/16.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "TrackLight_Module"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/17.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "PendantLight"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/18.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "RecessedBatten"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/19.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "MotionSensor"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/20.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "RGBMood"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/21.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "Solar_Bulb"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/22.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "Dimmable"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/23.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "VanityLED"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/24.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "OutdoorWall"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/25.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "StepLight"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/26.jpg",
-    "productCategory": "lights"
+    "productCategory": "lights",
+    "productName": "AccentSpot"
   }
 ]

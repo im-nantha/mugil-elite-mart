@@ -1,20 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Search.scss";
-import shop1 from "../../assets/images/shop-by-category/door.jpg";
-import shop2 from "../../assets/images/shop-by-category/kitchen.webp";
-import shop3 from "../../assets/images/shop-by-category/solutions.jpg";
-import shop4 from "../../assets/images/shop-by-category/electricals.jpg";
-import shop5 from "../../assets/images/shop-by-category/plywood.png";
-import shop6 from "../../assets/images/shop-by-category/door.jpg";
-import shop7 from "../../assets/images/shop-by-category/kitchen.webp";
-import shop8 from "../../assets/images/shop-by-category/solutions.jpg";
-import shop9 from "../../assets/images/shop-by-category/electricals.jpg";
-import shop10 from "../../assets/images/shop-by-category/plywood.png";
-import shop11 from "../../assets/images/shop-by-category/door.jpg";
-import shop12 from "../../assets/images/shop-by-category/kitchen.webp";
-import shop13 from "../../assets/images/shop-by-category/electricals.jpg";
-import shop14 from "../../assets/images/shop-by-category/plywood.png";
+import shop1 from "../../assets/images/search/1.jpg";
+import shop2 from "../../assets/images/search/2.jpg";
+import shop3 from "../../assets/images/search/3.jpg";
+import shop4 from "../../assets/images/search/4.jpg";
+import shop5 from "../../assets/images/search/5.jpg";
+import shop6 from "../../assets/images/search/6.jpg";
+import shop7 from "../../assets/images/search/7.jpg";
+import shop8 from "../../assets/images/search/8.jpg";
+import shop9 from "../../assets/images/search/9.webp";
+import shop10 from "../../assets/images/search/10.jpg";
+import shop11 from "../../assets/images/search/11.jpg";
+import shop12 from "../../assets/images/search/12.jpg";
+import shop13 from "../../assets/images/search/13.jpg";
+import shop14 from "../../assets/images/search/14.jpg";
 
 const products = [
   // Home Decor
@@ -25,8 +25,6 @@ const products = [
   { name: "Showers", page: "home-decor", image: shop5 },
   { name: "Chimneys", page: "home-decor", image: shop6 },
   { name: "Sinks", page: "home-decor", image: shop7 },
-
-  // Products
   { name: "Plywood", page: "products", image: shop8 },
   { name: "Locks", page: "products", image: shop9 },
   {
@@ -137,7 +135,11 @@ const Search = () => {
       {isOpen && filtered.length > 0 && (
         <ul className="suggestions">
           {filtered.map((product, index) => (
-            <li className="suggestion-wrap" key={index} onClick={() => handleSelect(product)}>
+            <li
+              className="suggestion-wrap"
+              key={index}
+              onClick={() => handleSelect(product)}
+            >
               <img src={product.image} className="suggestion-img" />
               <span>{product.name}</span>
             </li>

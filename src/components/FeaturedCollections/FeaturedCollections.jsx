@@ -12,10 +12,11 @@ const FeaturedCollectionCards = ({ productName, productImagePath, isSquare }) =>
         <div className="fc-img-wrapper">
           <img loading="lazy" src={productImagePath} alt={productName} />
         </div>
-        {/* <div className="fc-text-wrapper">
-          <p className="fc-price-title">{productName}</p>
-          {productRate && (<p className="fc-price">{productRate}</p>)}
-        </div> */}
+        {productName && (
+          <div className="fc-text-wrapper">
+            <p className="fc-price-title">{productName}</p>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -39,6 +40,7 @@ const FeaturedCollections = ({ data = DefaultFeaturedCollectionData, isHomepage 
               isSquare={isSquare}
               key={index}
               productImagePath={item?.productImagePath}
+              productName={item?.productName}
             />
           ))
         )}

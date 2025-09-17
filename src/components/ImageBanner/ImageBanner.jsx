@@ -1,6 +1,6 @@
 import React from "react";
 import "./ImageBanner.scss";
-import image from "../../assets/images/about-us/image.webp";
+import image from "../../assets/images/about-us/vasi-logo-circle.png";
 
 function ImageBanner() {
   return (

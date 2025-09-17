@@ -1,66 +1,82 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/1.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "CeilingFan_Modern"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/2.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "WallMounted_ExhaustFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/3.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "TableFan_Compact"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/4.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "DesignerTableFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/5.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "SmartWallFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/6.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "TurboCeilingFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/7.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "EnergyEfficient_CeilingFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/8.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "ModularStylish_CeilingFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/9.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "SilentWallFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/10.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "HighFlow_DesignerFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/11.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "PremiumCeilingFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/12.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "ElegantWallFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/13.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "LuxuryTableFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/14.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "ClassicBreezeFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/15.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "AeroDynamicFan"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/ceiling-fan/16.jpg",
-    "productCategory": "ceiling-fan"
+    "productCategory": "ceiling-fan",
+    "productName": "UltraCool_Fan"
   }
 ]

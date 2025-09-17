@@ -1,118 +1,147 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/1.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "TemperedDoor_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/2.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "FrostedPartition_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/3.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "LaminatedWindow_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/4.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "AcousticWall_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/5.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "StainedDecorative_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/6.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "ClearTinted_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/7.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "DoubleGlazed_WindowGlass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/8.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "FlutedGlassPanel"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/9.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "CubicShower_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/10.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "CustomDesign_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/11.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "BalconyGlassPanel"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/12.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "GardenGlassPartition"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/13.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "FloorSafety_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/14.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "StaircaseGlass_Railing"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/15.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "WindowView_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/16.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "GlassFloor_Tile"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/17.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "SlidingGlassDoor"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/18.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "FramelessGlassPartition"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/19.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "ColoredTint_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/20.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "PrivacyFrosted_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/21.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "CustomShape_Glas"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/22.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "ModularGlassPanel"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/23.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "InsulatedGlassUnit"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/24.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "DesignerBalcony_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/25.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "AntiReflective_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/26.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "UVProtected_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/27.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "ImpactResistant_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/28.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "TexturedPattern_Glass"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/glassware/29.jpg",
-    "productCategory": "glass"
+    "productCategory": "glass",
+    "productName": "MirrorGlass_Panel"
   }
 ]

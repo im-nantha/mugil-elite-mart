@@ -1,74 +1,92 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/1.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "SingleQuartz"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/2.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "CompactSteel"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/3.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "DuoQuartz"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/4.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "TwinBowl_Stainless"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/5.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "RoundUndermount"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/6.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "ElegantCeramic"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/7.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "DeepBowl"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/8.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "EcoQuartz"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/9.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "DesignerEdge"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/10.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "ModernSquare"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/11.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "SingleTopMount"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/12.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "ClassicUndermount"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/13.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "MiniQuartz"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/14.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "SleekSingle"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/15.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "DoubleMount_Undermount"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/16.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "DoubleClassic_TopMount"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/17.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "RetroStainless"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/sinks/18.jpg",
-    "productCategory": "sinks"
+    "productCategory": "sinks",
+    "productName": "SlimFit_Stainless"
   }
 ]

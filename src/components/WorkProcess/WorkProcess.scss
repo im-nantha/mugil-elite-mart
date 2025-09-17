@@ -30,12 +30,21 @@
   &__card {
     position: relative;
     background: #eaeaea;
+    color: transparent;
     padding: 2rem 1.5rem;
     border-radius: 12px;
     flex: 1 1 300px;
     max-width: 350px;
     min-height: 260px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s;
+
+    &:hover {
+      background: #ffffff;
+      color: rgb(208, 208, 208);
+      background: linear-gradient(225.52deg, rgb(202, 164, 115) -0.42%, rgb(160, 106, 200) 84.05%) text;
+      transition: all 0.5s;
+    }
 
     @media (max-width: 767px) {
       max-width: unset;
@@ -59,7 +68,8 @@
     &-number {
       position: absolute;
       bottom: 10px;
-      right: 15px;
+      right: 50%;
+      transform: translateX(50%);
       font-size: 5rem;
       font-weight: bold;
       color: rgba(0, 0, 0, 0.08);

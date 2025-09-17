@@ -10,12 +10,12 @@ const MissionVision = () => {
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/barcode.png",
           title: "Our Mission",
-          description: ["Map unique payment codes", "directly to customer orders."],
+          description: ["To be the go-to destination for all home improvement and interior solutions, delivering products and services that combine innovation, reliability, and aesthetic appeal."],
         },
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/contract.png",
-          title: "Auto Agreements",
-          description: ["Automate payment confirmations", "for seamless onboarding."],
+          title: "Our Vision",
+          description: ["To transform spaces across Tamil Nadu and beyond by providing trusted, high-quality products and exceptional service, making every project a success story. Our Goal"],
         },
       ],
     },
@@ -24,18 +24,18 @@ const MissionVision = () => {
       items: [
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/link.png",
-          title: "Entry Linking",
-          description: ["Connect every payment", "to specific CRM entries."],
+          title: "Legacy of Excellence",
+          description: ["25 Years of Expertise and Trust.” For over two decades, Mugil Elite Mart has been a pillar in the home improvement industry, delivering high-quality products and exceptional service. Our legacy is built on consistency, reliability, and a deep understanding of customer needs, making us a trusted choice across Tamil Nadu."],
         },
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/search.png",
-          title: "Instant Lookup",
-          description: ["Quickly trace payments", "to user accounts in real-time."],
+          title: "Quality You Can Rely On",
+          description: ["Premium Products, Guaranteed Performance.” We ensure that every product, from plywood and glass to bathroom fittings and kitchen accessories, meets strict quality standards. By partnering with renowned brands and certified suppliers, we deliver durable, reliable, and aesthetically superior solutions for homes and commercial projects alike."],
         },
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/database.png",
-          title: "Ledger Sync",
-          description: ["Update ledgers instantly", "with mapped transactions."],
+          title: "Customer-Centric Approach",
+          description: ["Your Satisfaction is Our Priority.” At Mugil Elite Mart, we put the customer at the heart of everything we do. From personalized guidance to timely delivery and post-purchase support, our team is dedicated to making every interaction smooth, transparent, and satisfying, ensuring a hassle-free experience."],
         },
       ],
     },
@@ -44,13 +44,13 @@ const MissionVision = () => {
       items: [
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/calendar.png",
-          title: "Scheduled Mapping",
-          description: ["Automate mapping for", "recurring transactions."],
+          title: "Wide Product Spectrum",
+          description: ["Everything You Need, Under One Roof.” Our extensive range covers basic essentials to advanced premium solutions, including plywood, doors, glass, locks, bathroom and kitchen fittings, modular profiles, and décor items. Whether for retail or bulk orders, we provide a comprehensive selection to meet diverse needs with quality and reliability."],
         },
         {
           icon: "https://img.icons8.com/ios-filled/50/ffffff/wallet.png",
-          title: "Wallet Entries",
-          description: ["Map digital wallets", "to specific purchase entries."],
+          title: "Premium Quality Services",
+          description: ["Providing premium good quality services and products with 25 years of excellance."],
         },
       ],
     },
@@ -58,16 +58,6 @@ const MissionVision = () => {
 
   return (
     <div>
-      <section className="payment-mapping-section">
-        <div className="section-header">
-          <h2>Payment-to-Entry Mapping</h2>
-          <p>
-            Seamlessly connect every transaction to its purpose — automate
-            tracking, reduce errors, and streamline operations.
-          </p>
-        </div>
-        <div className="mapping-cards"></div>
-      </section>
 
       <section className="split-columns">
         {cardData.map((col, index) => (

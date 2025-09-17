@@ -1,78 +1,97 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/1.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "ClassicWooden"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/2.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "RusticOak"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/3.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "TeakFinish"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/4.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "WalnutElegance"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/5.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "MahoganyCharm"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/6.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "PinePanel"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/7.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "CedarCraft"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/8.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "VintageWood"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/9.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "SolidWoodDesign"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/10.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "ModernWoodGrain"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/11.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "AntiqueWoodStyle"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/12.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "DesignerWoodFrame"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/13.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "SmoothWoodSurface"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/14.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "CarvedWoodPattern"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/15.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "NaturalWoodTexture"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/16.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "PremiumWoodFinish"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/17.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "CustomWood_1"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/18.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "CustomWood_2"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/plywood/19.jpg",
-    "productCategory": "plywood"
+    "productCategory": "plywood",
+    "productName": "CustomWood_3"
   }
 ]

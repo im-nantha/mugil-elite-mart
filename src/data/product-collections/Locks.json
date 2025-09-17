@@ -1,50 +1,62 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/1.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "SmartMortise_Digital"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/2.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "FaceID_Mortise"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/3.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "FingerprintMortise_Pro"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/4.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "ClassicLeverMortise"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/5.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "RoseGoldMortise"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/6.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "CylindricalMortiseLock"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/7.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "AntiqueMortise_Lock"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/8.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "ElectronicMortise_Secure"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/9.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "MechanicalMortise_Lock"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/10.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "ModularMortise_Design"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/11.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "StainlessSteelMortise"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.webp",
-    "productCategory": "locks"
+    "productCategory": "locks",
+    "productName": "HeavyDutyMortiseLock"
   }
 ]

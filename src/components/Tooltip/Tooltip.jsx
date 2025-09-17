@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Tooltip.scss";
-import shop1 from "../../assets/images/shop-by-category/door.jpg";
-import shop2 from "../../assets/images/shop-by-category/kitchen.webp";
-import shop3 from "../../assets/images/shop-by-category/solutions.jpg";
-import shop4 from "../../assets/images/shop-by-category/electricals.jpg";
-import shop5 from "../../assets/images/shop-by-category/plywood.png";
+import shop1 from "../../assets/images/browse-category/1.jpg";
+import shop2 from "../../assets/images/browse-category/2.jpg";
+import shop3 from "../../assets/images/browse-category/3.jpg";
+import shop4 from "../../assets/images/browse-category/4.jpg";
+import shop5 from "../../assets/images/browse-category/5.jpg";
 
 
 const Tooltip = () => {

@@ -1,58 +1,72 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/1.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "GlenWallMounted_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/2.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "FaberIsland_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/3.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "AutoCleanWall_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/4.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "FilterlessIsland_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/5.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "DuctlessWall_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/6.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "ModernBuiltIn_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/7.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "DesignerIsland_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/8.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "StainlessSteel_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/9.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "SlimWall_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/10.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "EcoCleanBuiltIn_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/11.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "WallDuctless_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/12.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "ClassicIsland_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/13.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "SensorAutoClean_Chimney"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/chimney/14.webp",
-    "productCategory": "chimney"
+    "productCategory": "chimney",
+    "productName": "FilterFreeWall_Chimney"
   }
 ]
