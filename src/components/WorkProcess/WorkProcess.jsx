@@ -22,7 +22,6 @@ const steps = [
 function WorkProcess() {
   return (
     <section className="work-process">
-      <p className="work-process__subtitle">( Discover Work Process )</p>
       <h2 className="work-process__title">How we works</h2>
 
       <div className="work-process__cards">
