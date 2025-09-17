@@ -2,13 +2,12 @@
 <html>
 
 <head>
-  <meta http-equiv="refresh" content="0; url=/mugil-elite-mart/">
-  <script>
-    // For GitHub Pages SPA
-    var pathname = window.location.pathname;
-    if (pathname !== "/mugil-elite-mart/" && pathname !== "/mugil-elite-mart/index.html") {
-      window.location.replace("/mugil-elite-mart/" + pathname.replace(/^\/mugil-elite-mart\//, ""));
-    }
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    // Save the path and redirect to index.html
+    sessionStorage.redirect = location.pathname + location.search + location.hash;
+    window.location.href = "/mugil-elite-mart/";
   </script>
 </head>
 
