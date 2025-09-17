@@ -3,11 +3,11 @@
 .mugil-header {
   width: 100%;
   background: var(--primary-white);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #fff;
-  transition: transform 0.5s ease;
+  // position: sticky;
+  // top: 0;
+  // z-index: 1000;
+  // background: #fff;
+  // transition: transform 0.5s ease;
 
   &.hide {
     transform: translateY(-100%);
@@ -140,6 +140,10 @@
           transition: transform 0.5s ease, opacity 0.5s ease;
         }
 
+        &:hover {
+          color: var(--blue-gradient);
+        }
+
         &:not(.active):hover::after {
           transform: scaleX(1);
           opacity: 1;
@@ -188,7 +192,8 @@
             background: rgba(143, 31, 123, 0.15);
           }
 
-          svg {
+          svg,
+          img {
             width: 20px;
             height: 20px;
           }

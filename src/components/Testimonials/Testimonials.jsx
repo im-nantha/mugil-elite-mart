@@ -217,7 +217,7 @@ const Testimonials = () => {
                 <img src={logo2}
                   className="rounded-circle shadow-1-strong" width="100" height="100" />
               </div>
-              <h5 className="font-weight-bold text-center">Karthik, Madurai
+              <h5 className="font-weight-bold text-center">Karthik, Villuppuram
               </h5>
               <h6 className="font-weight-bold my-3 text-center">Digital Locks</h6>
               <ul className="list-unstyled d-flex justify-content-center">

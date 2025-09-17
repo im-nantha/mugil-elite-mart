@@ -12,7 +12,7 @@ const Tooltip = () => {
   return (
     <div className="mugil-tooltip">
       <div className="mugil-tooltip-wrapper">
-        <Link href="/mugil-elite-mart/home-decor#glassware" className="tooltip-items">
+        <Link to="/mugil-elite-mart/home-decor#glassware" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop1} alt="images" />
           </div>
@@ -20,7 +20,7 @@ const Tooltip = () => {
             <p className="text-center">Glassware</p>
           </div>
         </Link>
-        <Link href="/mugil-elite-mart/home-decor#mirrors" className="tooltip-items">
+        <Link to="/mugil-elite-mart/home-decor#mirrors" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop2} alt="images" />
           </div>
@@ -28,7 +28,7 @@ const Tooltip = () => {
             <p className="text-center">Mirrors</p>
           </div>
         </Link>
-        <Link href="/mugil-elite-mart/home-decor#lights" className="tooltip-items">
+        <Link to="/mugil-elite-mart/home-decor#lights" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop3} alt="images" />
           </div>
@@ -36,7 +36,7 @@ const Tooltip = () => {
             <p className="text-center">Lights</p>
           </div>
         </Link>
-        <Link href="/mugil-elite-mart/products#plywood" className="tooltip-items">
+        <Link to="/mugil-elite-mart/products#plywood" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop4} alt="images" />
           </div>
@@ -44,7 +44,7 @@ const Tooltip = () => {
             <p className="text-center">Plywood</p>
           </div>
         </Link>
-        <Link href="/mugil-elite-mart/products#hardware" className="tooltip-items">
+        <Link to="/mugil-elite-mart/products#hardware" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop5} alt="images" />
           </div>

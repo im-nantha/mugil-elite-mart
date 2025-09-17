@@ -25,18 +25,18 @@ function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    // Show loader on route change
-    setLoading(true);
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // minimum 2.5 seconds
-    return () => clearTimeout(timer);
-  }, [location]);
+  // useEffect(() => {
+  //   // Show loader on route change
+  //   setLoading(true);
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000); // minimum 2.5 seconds
+  //   return () => clearTimeout(timer);
+  // }, [location]);
 
   return (
     <>
-      {loading && <Loader />}
+      {/* {loading && <Loader />} */}
       <Header />
       <ScrollToHashElement />
       <Routes>

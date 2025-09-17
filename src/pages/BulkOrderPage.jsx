@@ -8,7 +8,7 @@ const BuldOrder = () => {
     <div>
       <main>
         <TextBanner bannerText={"Bulk Orders"} />
-        <div className="mugil-container">
+        {/* <div className="mugil-container">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6 p-3 bg-light">
@@ -26,7 +26,7 @@ const BuldOrder = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="mugil-container">
           <BulkOrderForm />
         </div>

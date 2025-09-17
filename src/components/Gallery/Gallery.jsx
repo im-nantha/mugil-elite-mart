@@ -10,7 +10,7 @@ import gallery5 from "../../assets/images/gallery/5.jpg";
 import gallery6 from "../../assets/images/gallery/6.jpg";
 import gallery7 from "../../assets/images/gallery/7.jpg";
 import gallery8 from "../../assets/images/gallery/8.jpg";
-import gallery9 from "../../assets/images/gallery/9.jpg";
+import gallery9 from "../../assets/images/gallery/9.webp";
 import gallery10 from "../../assets/images/gallery/10.jpg";
 
 const Gallery = () => {

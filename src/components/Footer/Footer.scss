@@ -20,12 +20,6 @@ footer {
 				height: 100%;
 			}
 		}
-
-		h2 {
-			@media (max-width: 767px) {
-				padding-bottom: 16px;
-			}
-		}
 	}
 
 	.footer-icons {
@@ -135,5 +129,11 @@ footer {
 
 	.footer-bottom {
 		padding-top: 32px;
+	}
+
+	.mugil-footer-logo-wrapper {
+		width: 80px;
+		height: 80px;
+		padding: 10px 10px 10px 0;
 	}
 }

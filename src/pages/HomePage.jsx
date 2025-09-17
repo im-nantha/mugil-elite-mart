@@ -6,11 +6,17 @@ import Features from "../components/Features/Features";
 import IntroBanner from "../components/IntroBanner/IntroBanner";
 import ProductTabs from "../components/ProductTabs/ProductTabs";
 import StaticBanner from "../components/StaticBanner/StaticBanner";
-import ShopByCategories from "../components/ShopByCategories/MugilGallery";
+import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Gallery from "../components/Gallery/Gallery";
-import Faq from "../components/Faq/Faq";
 import PartnersCarousel from "../components/PartnersCarousel/PartnersCarousel";
+import FaqTabs from "../components/FaqTabs/FaqTabs";
+
+const homeFaqs = [
+  { question: "What types of plywood does Mugil Elite Mart offer?", answer: "We provide a wide range of plywood including BWP, Marine, Commercial, Fire Retardant, Laminated, Acrylic, PVC, HDMR, and Block Boards suitable for furniture, interiors, and construction." },
+  { question: "Does Mugil Elite Mart supply glass for doors and windows?", answer: "Yes, we offer tempered, frosted, laminated, acoustic, stained, double-glazed, fluted, and custom design glass for residential and commercial projects." },
+  { question: "What kinds of doors are available at Mugil Elite Mart?", answer: "Our collection includes wooden, flush, PVC, glass panel, laminated, sliding, WPC, UV-coated, and steel security doors for every design and security need." },
+];
 
 const Home = () => {
 
@@ -26,7 +32,7 @@ const Home = () => {
         <PartnersCarousel />
         <Testimonials />
         <Gallery />
-        <Faq />
+        <FaqTabs faqs={homeFaqs} showMore={true} />
       </main>
     </Fragment>
   );
