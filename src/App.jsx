@@ -21,7 +21,7 @@ import ScrollToHashElement from "./hooks/ScrollToHashElement";
 import Loader from "./components/Loader/Loader";
 import AutoScrollToTop from "./components/AutoScrollToTop/AutoScrollToTop";
 import { HelmetProvider } from "react-helmet-async";
-const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/";
+const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/mugil-elite-mart";
 
 function AppContent() {
   const location = useLocation();
@@ -42,21 +42,21 @@ function AppContent() {
       <Header />
       <ScrollToHashElement />
       <Routes>
-        <Route path="/mugil-elite-mart/" element={<Home />} />
-        <Route path="/mugil-elite-mart/home-decor" element={<HomeDecor />} />
-        <Route path="/mugil-elite-mart/search" element={<Home />} />
-        <Route path="/mugil-elite-mart/about" element={<About />} />
-        <Route path="/mugil-elite-mart/contact" element={<ContactUs />} />
-        <Route path="/mugil-elite-mart/products" element={<Products />} />
-        <Route path="/mugil-elite-mart/bulk-orders" element={<BuldOrder />} />
-        <Route path="/mugil-elite-mart/cancellation-policy" element={<CancellationReturnPolicy />} />
-        <Route path="/mugil-elite-mart/cookie-policy" element={<CookiePolicy />} />
-        <Route path="/mugil-elite-mart/disclaimer-policy" element={<DisclaimerLiabilityPolicy />} />
-        <Route path="/mugil-elite-mart/grievance-policy" element={<GrievanceRedressalPolicy />} />
-        <Route path="/mugil-elite-mart/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/mugil-elite-mart/security-policy" element={<SecurityPolicy />} />
-        <Route path="/mugil-elite-mart/terms-and-conditions" element={<TermsConditions />} />
-        <Route path="/mugil-elite-mart/faqs" element={<FaqPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home-decor" element={<HomeDecor />} />
+        <Route path="/search" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/bulk-orders" element={<BuldOrder />} />
+        <Route path="/cancellation-policy" element={<CancellationReturnPolicy />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/disclaimer-policy" element={<DisclaimerLiabilityPolicy />} />
+        <Route path="/grievance-policy" element={<GrievanceRedressalPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/security-policy" element={<SecurityPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsConditions />} />
+        <Route path="/faqs" element={<FaqPage />} />
       </Routes>
     </>
   );
