@@ -26,7 +26,7 @@ const SubNavbar = () => {
           <ul className="mugil-mart-navbar-content">
             <li>
               <ReloadNavLink
-                to="/"
+                to="/mugil-elite-mart/"
                 end
                 className={({ isActive }) =>
                   isActive
@@ -39,7 +39,7 @@ const SubNavbar = () => {
             </li>
             <li>
               <ReloadNavLink
-                to="/home-decor"
+                to="/mugil-elite-mart/home-decor"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -51,7 +51,7 @@ const SubNavbar = () => {
             </li>
             <li>
               <ReloadNavLink
-                to="/products"
+                to="/mugil-elite-mart/products"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -63,7 +63,7 @@ const SubNavbar = () => {
             </li>
             <li>
               <ReloadNavLink
-                to="/about"
+                to="/mugil-elite-mart/about"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -75,7 +75,7 @@ const SubNavbar = () => {
             </li>
             <li>
               <ReloadNavLink
-                to="/contact"
+                to="/mugil-elite-mart/contact"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -87,7 +87,7 @@ const SubNavbar = () => {
             </li>
             <li>
               <ReloadNavLink
-                to="/bulk-orders"
+                to="/mugil-elite-mart/bulk-orders"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -160,7 +160,7 @@ const Header = () => {
           <div className="mugil-mart-header">
             <div className="logo">
               <div className="mugil-mart-main-logo">
-                <ReloadNavLink to="/" className="mugil-mart-logo-wrapper">
+                <ReloadNavLink to="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={mainlogo}
@@ -169,7 +169,7 @@ const Header = () => {
                 </ReloadNavLink>
               </div>
               <div className="mugil-mart-logo">
-                <ReloadNavLink to="/" className="mugil-mart-logo-wrapper">
+                <ReloadNavLink to="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={logo}
