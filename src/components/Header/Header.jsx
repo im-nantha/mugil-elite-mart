@@ -8,6 +8,7 @@ import "./Header.scss";
 import Search from "../Search/Search.jsx";
 import Tooltip from "../Tooltip/Tooltip.jsx";
 import BackToTop from "../BackToTop/BackToTop.jsx";
+import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
 // import HeaderMobileView from "../HeaderMobileView/HeaderMobileView.jsx";
 
 const SubNavbar = () => {
@@ -24,7 +25,7 @@ const SubNavbar = () => {
         <nav className="mugil-mart-navbar">
           <ul className="mugil-mart-navbar-content">
             <li>
-              <NavLink
+              <ReloadNavLink
                 to="/mugil-elite-mart/"
                 end
                 className={({ isActive }) =>
@@ -34,10 +35,10 @@ const SubNavbar = () => {
                 }
               >
                 Home
-              </NavLink>
+              </ReloadNavLink>
             </li>
             <li>
-              <NavLink
+              <ReloadNavLink
                 to="/mugil-elite-mart/home-decor"
                 className={({ isActive }) =>
                   isActive
@@ -46,10 +47,10 @@ const SubNavbar = () => {
                 }
               >
                 Home Decor
-              </NavLink>
+              </ReloadNavLink>
             </li>
             <li>
-              <NavLink
+              <ReloadNavLink
                 to="/mugil-elite-mart/products"
                 className={({ isActive }) =>
                   isActive
@@ -58,10 +59,10 @@ const SubNavbar = () => {
                 }
               >
                 Interior Solutions
-              </NavLink>
+              </ReloadNavLink>
             </li>
             <li>
-              <NavLink
+              <ReloadNavLink
                 to="/mugil-elite-mart/about"
                 className={({ isActive }) =>
                   isActive
@@ -70,10 +71,10 @@ const SubNavbar = () => {
                 }
               >
                 About Us
-              </NavLink>
+              </ReloadNavLink>
             </li>
             <li>
-              <NavLink
+              <ReloadNavLink
                 to="/mugil-elite-mart/contact"
                 className={({ isActive }) =>
                   isActive
@@ -82,10 +83,10 @@ const SubNavbar = () => {
                 }
               >
                 Contact Us
-              </NavLink>
+              </ReloadNavLink>
             </li>
             <li>
-              <NavLink
+              <ReloadNavLink
                 to="/mugil-elite-mart/bulk-orders"
                 className={({ isActive }) =>
                   isActive
@@ -94,7 +95,7 @@ const SubNavbar = () => {
                 }
               >
                 Bulk Orders
-              </NavLink>
+              </ReloadNavLink>
             </li>
           </ul>
         </nav>
@@ -159,22 +160,22 @@ const Header = () => {
           <div className="mugil-mart-header">
             <div className="logo">
               <div className="mugil-mart-main-logo">
-                <Link to="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+                <ReloadNavLink to="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={mainlogo}
                     alt="mugil-mart-logo"
                   />
-                </Link>
+                </ReloadNavLink>
               </div>
               <div className="mugil-mart-logo">
-                <Link to="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+                <ReloadNavLink to="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={logo}
                     alt="mugil-mart-logo"
                   />
-                </Link>
+                </ReloadNavLink>
               </div>
             </div>
             <nav className="mugil-mart-navbar">

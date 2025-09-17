@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Footer.scss";
 import mainlogo from "../../assets/images/mem-logo.png";
+import ReloadNavLink from "../../utils/ReloadNavLink";
 
 
 const Footer = () => {
@@ -10,9 +11,9 @@ const Footer = () => {
       <div className="footer-head">
         <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
           <div className="d-flex align-items-center gap-2">
-            <Link className="mugil-footer-logo-wrapper" to="/mugil-elite-mart/" >
+            <ReloadNavLink className="mugil-footer-logo-wrapper" to="/mugil-elite-mart/" >
               <img className="mugil-mart-img" src={mainlogo} />
-            </Link>
+            </ReloadNavLink>
             <h2>Mugil Elite Mart</h2>
           </div>
         </div>
@@ -64,25 +65,25 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Sitemap</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <NavLink to="/mugil-elite-mart/">Home</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/">Home</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/home-decor">Home Decor</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/home-decor">Home Decor</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/products">Interior Decorations</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/products">Interior Decorations</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/about">About Us</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/about">About Us</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/contact">Contact Us</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/contact">Contact Us</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/bulk-orders">Bulk Orders</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/bulk-orders">Bulk Orders</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/faqs">Faq's</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/faqs">Faq's</ReloadNavLink>
                   </li>
                 </ul>
               </div>
@@ -90,25 +91,25 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Resource</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <NavLink to="/mugil-elite-mart/privacy-policy">Privacy Policy</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/privacy-policy">Privacy Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/terms-and-conditions">Terms & Conditions</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/terms-and-conditions">Terms & Conditions</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/security-policy">Security Policy</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/security-policy">Security Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/cancellation-policy">Cancellation & Returns Policy</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/cancellation-policy">Cancellation & Returns Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/grievance-policy">Grievance Redressal Policy</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/grievance-policy">Grievance Redressal Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/disclaimer-policy">Disclaimer & Liability Policy</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/disclaimer-policy">Disclaimer & Liability Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <NavLink to="/mugil-elite-mart/cookie-policy">Cookie Policy</NavLink>
+                    <ReloadNavLink to="/mugil-elite-mart/cookie-policy">Cookie Policy</ReloadNavLink>
                   </li>
                 </ul>
               </div>

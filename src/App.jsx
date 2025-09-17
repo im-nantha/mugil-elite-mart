@@ -21,6 +21,7 @@ import ScrollToHashElement from "./hooks/ScrollToHashElement";
 import Loader from "./components/Loader/Loader";
 import AutoScrollToTop from "./components/AutoScrollToTop/AutoScrollToTop";
 import { HelmetProvider } from "react-helmet-async";
+const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/";
 
 function AppContent() {
   const location = useLocation();
@@ -64,7 +65,7 @@ function AppContent() {
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename={basename}>
         <AutoScrollToTop />
         <AppContent />
         <Footer />

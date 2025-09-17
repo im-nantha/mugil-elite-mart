@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./FaqTabs.scss";
+import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
 
 const FaqTabs = ({ faqs, showMore }) => {
   const [activeIndex, setActiveIndex] = useState(0);       // desktop tabs
@@ -59,9 +59,9 @@ const FaqTabs = ({ faqs, showMore }) => {
 
       {showMore && (
         <div className="faq-tabs__button">
-          <Link to="/mugil-elite-mart/faqs">
+          <ReloadNavLink to="/mugil-elite-mart/faqs">
             <button>Show More</button>
-          </Link>
+          </ReloadNavLink>
         </div>
       )}
     </section>
