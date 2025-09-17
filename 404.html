@@ -1,4 +1,17 @@
-<script type="text/javascript">
-  const redirectTo = window.location.pathname;
-  window.location.replace("/mugil-elite-mart/index.html?" + redirectTo);
-</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="refresh" content="0; url=/mugil-elite-mart/">
+  <script>
+    // For GitHub Pages SPA
+    var pathname = window.location.pathname;
+    if (pathname !== "/mugil-elite-mart/" && pathname !== "/mugil-elite-mart/index.html") {
+      window.location.replace("/mugil-elite-mart/" + pathname.replace(/^\/mugil-elite-mart\//, ""));
+    }
+  </script>
+</head>
+
+<body></body>
+
+</html>
