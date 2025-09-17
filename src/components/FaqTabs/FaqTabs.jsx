@@ -59,7 +59,7 @@ const FaqTabs = ({ faqs, showMore }) => {
 
       {showMore && (
         <div className="faq-tabs__button">
-          <ReloadNavLink to="/mugil-elite-mart/faqs">
+          <ReloadNavLink to="/faqs">
             <button>Show More</button>
           </ReloadNavLink>
         </div>

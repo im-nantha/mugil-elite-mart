@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-head">
         <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
           <div className="d-flex align-items-center gap-2">
-            <ReloadNavLink className="mugil-footer-logo-wrapper" to="/mugil-elite-mart/" >
+            <ReloadNavLink className="mugil-footer-logo-wrapper" to="/" >
               <img className="mugil-mart-img" src={mainlogo} />
             </ReloadNavLink>
             <h2>Mugil Elite Mart</h2>
@@ -65,25 +65,25 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Sitemap</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/">Home</ReloadNavLink>
+                    <ReloadNavLink to="/">Home</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/home-decor">Home Decor</ReloadNavLink>
+                    <ReloadNavLink to="/home-decor">Home Decor</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/products">Interior Decorations</ReloadNavLink>
+                    <ReloadNavLink to="/products">Interior Decorations</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/about">About Us</ReloadNavLink>
+                    <ReloadNavLink to="/about">About Us</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/contact">Contact Us</ReloadNavLink>
+                    <ReloadNavLink to="/contact">Contact Us</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/bulk-orders">Bulk Orders</ReloadNavLink>
+                    <ReloadNavLink to="/bulk-orders">Bulk Orders</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/faqs">Faq's</ReloadNavLink>
+                    <ReloadNavLink to="/faqs">Faq's</ReloadNavLink>
                   </li>
                 </ul>
               </div>
@@ -91,25 +91,25 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Resource</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/privacy-policy">Privacy Policy</ReloadNavLink>
+                    <ReloadNavLink to="/privacy-policy">Privacy Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/terms-and-conditions">Terms & Conditions</ReloadNavLink>
+                    <ReloadNavLink to="/terms-and-conditions">Terms & Conditions</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/security-policy">Security Policy</ReloadNavLink>
+                    <ReloadNavLink to="/security-policy">Security Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/cancellation-policy">Cancellation & Returns Policy</ReloadNavLink>
+                    <ReloadNavLink to="/cancellation-policy">Cancellation & Returns Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/grievance-policy">Grievance Redressal Policy</ReloadNavLink>
+                    <ReloadNavLink to="/grievance-policy">Grievance Redressal Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/disclaimer-policy">Disclaimer & Liability Policy</ReloadNavLink>
+                    <ReloadNavLink to="/disclaimer-policy">Disclaimer & Liability Policy</ReloadNavLink>
                   </li>
                   <li>
-                    <ReloadNavLink to="/mugil-elite-mart/cookie-policy">Cookie Policy</ReloadNavLink>
+                    <ReloadNavLink to="/cookie-policy">Cookie Policy</ReloadNavLink>
                   </li>
                 </ul>
               </div>
