@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Tooltip.scss";
 import shop1 from "../../assets/images/shop-by-category/door.jpg";
-import shop2 from "../../assets/images/shop-by-category/kitchen.jpg";
+import shop2 from "../../assets/images/shop-by-category/kitchen.webp";
 import shop3 from "../../assets/images/shop-by-category/solutions.jpg";
 import shop4 from "../../assets/images/shop-by-category/electricals.jpg";
 import shop5 from "../../assets/images/shop-by-category/plywood.png";

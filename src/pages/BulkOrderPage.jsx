@@ -2,10 +2,18 @@ import React from "react";
 import TextBanner from "../components/TextBanner/TextBanner";
 import ContactForm from "../components/ContactForm/ContactForm";
 import BulkOrderForm from "../components/BulkOrderForm/BulkOrderForm";
+import { Helmet } from "react-helmet-async";
 
 const BuldOrder = () => {
   return (
     <div>
+      <Helmet>
+        <title>Bulk orders - Mugil Elite Mart</title>
+        <meta name="description" content="Explore beautiful home decor items at Mugil Elite Mart." />
+        <meta property="og:title" content="Home Decor - Mugil Elite Mart" />
+        <meta property="og:description" content="Explore beautiful home decor items at Mugil Elite Mart." />
+        <meta property="og:url" content="https://username.github.io/mugil-elite-mart/home-decor" />
+      </Helmet>
       <main>
         <TextBanner bannerText={"Bulk Orders"} />
         {/* <div className="mugil-container">

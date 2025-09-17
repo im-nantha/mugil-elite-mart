@@ -20,6 +20,7 @@ import FaqPage from "./pages/FaqPage";
 import ScrollToHashElement from "./hooks/ScrollToHashElement";
 import Loader from "./components/Loader/Loader";
 import AutoScrollToTop from "./components/AutoScrollToTop/AutoScrollToTop";
+import { HelmetProvider } from "react-helmet-async";
 
 function AppContent() {
   const location = useLocation();
@@ -62,11 +63,13 @@ function AppContent() {
 
 function App() {
   return (
-    <Router>
-      <AutoScrollToTop />
-      <AppContent />
-      <Footer />
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <AutoScrollToTop />
+        <AppContent />
+        <Footer />
+      </Router>
+    </HelmetProvider>
   );
 }
 

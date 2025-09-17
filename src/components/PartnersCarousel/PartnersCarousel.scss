@@ -1,46 +1,77 @@
 .partners-carousel {
   background: #f4f4f4;
   text-align: center;
+  padding: 40px 0;
+  overflow: hidden;
 
   .section-title {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 2rem;
+    color: #333;
   }
 
-  .logos-swiper {
-    margin-bottom: 2rem;
+  .logos-row {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    position: relative;
 
-    .logo-card {
-      width: 282px !important;
-      height: 110px;
-      padding: 20px;
-      border-radius: 16px;
-      background: #fff;
+    .logos-track {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      width: max-content;
+      animation: scroll-left 45s linear infinite;
 
-      img {
-        width: 235px;
-        height: 68px;
-        object-fit: contain;
+      .logo-card {
+        width: 282px;
+        height: 110px;
+        margin-right: 20px;
+        padding: 20px;
+        border-radius: 16px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+        img {
+          width: 235px;
+          height: 68px;
+          object-fit: contain;
+        }
       }
+    }
+
+    // ✅ Add delay only for the second row
+    &:nth-of-type(2) .logos-track {
+      animation-delay: 8s; // adjust this value (e.g., 5s, 10s)
+    }
+  }
+
+  // Keyframes for smooth infinite scrolling
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
     }
   }
 
   // Mobile adjustments
   @media (max-width: 768px) {
-    .logos-swiper {
-      .logo-card {
-        width: 200px !important;
-        height: 90px;
-        padding: 12px;
+    .logos-row {
+      .logos-track {
+        .logo-card {
+          width: 200px;
+          height: 90px;
+          padding: 12px;
 
-        img {
-          width: 160px;
-          height: 50px;
+          img {
+            width: 160px;
+            height: 50px;
+          }
         }
       }
     }
