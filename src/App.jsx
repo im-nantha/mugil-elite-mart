@@ -21,6 +21,7 @@ import ScrollToHashElement from "./hooks/ScrollToHashElement";
 import Loader from "./components/Loader/Loader";
 import AutoScrollToTop from "./components/AutoScrollToTop/AutoScrollToTop";
 import { HelmetProvider } from "react-helmet-async";
+import LoginPage from "./pages/LoginPage";
 const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/mugil-elite-mart";
 
 function AppContent() {
@@ -57,6 +58,7 @@ function AppContent() {
         <Route path="/security-policy" element={<SecurityPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/faqs" element={<FaqPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </>
   );

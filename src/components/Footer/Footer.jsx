@@ -85,6 +85,9 @@ const Footer = () => {
                   <li>
                     <ReloadNavLink to="/faqs">Faq's</ReloadNavLink>
                   </li>
+                  <li>
+                    <ReloadNavLink to="/login">Login</ReloadNavLink>
+                  </li>
                 </ul>
               </div>
               <div className="footer-body-link-subcontainer">
