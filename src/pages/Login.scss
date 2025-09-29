@@ -1,14 +1,12 @@
-.login {
+.login-page {
   width: 100%;
-
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: grey;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
 
   .login-card {
     background: #fff;
@@ -64,8 +62,7 @@
       margin-bottom: 1rem;
     }
 
-    .btn-login,
-    .btn-logout {
+    .btn-login {
       width: 100%;
       padding: 12px;
       background: #76057a;
@@ -82,47 +79,57 @@
         box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
       }
     }
+  }
+
+  .admin-dashboard {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease-in-out;
 
     .btn-logout {
-      background: #ff4d4d;
-      margin-bottom: 1.5rem;
+      width: 200px;
+      padding: 12px;
+      background: #76057a;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
 
       &:hover {
-        background: #e63939;
-        box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+        background: #76057a;
+        box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
       }
     }
-  }
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    .btn-logout {
+      display: block;
+      margin: 0 auto 1.5rem auto;
+    }
 
-.welcome {
-  height: 600px;
+    h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+    }
 
-  @media (max-width: 767px) {
-    height: 400px;
-  }
+    .table-wrapper {
+      overflow-x: auto;
+    }
 
-  h2 {
-    margin-bottom: 1rem;
-    color: #333;
-  }
-
-  .table-section {
-    margin-top: 1.5rem;
-
-    table {
+    .users-table {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 1.5rem;
@@ -132,6 +139,7 @@
         border: 1px solid #ddd;
         padding: 10px;
         text-align: left;
+        min-width: 120px;
       }
 
       th {
@@ -154,5 +162,32 @@
       color: #555;
       margin-top: 1rem;
     }
+  }
+
+  @media (max-width: 767px) {
+    padding: 1rem;
+
+    .login-card,
+    .admin-dashboard {
+      width: 100%;
+      padding: 1.5rem;
+    }
+
+    .users-table th,
+    .users-table td {
+      padding: 8px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
