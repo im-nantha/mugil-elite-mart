@@ -86,9 +86,41 @@
     }
   }
 
+  // Loading, Success & Error Screens
+  .loading-screen,
+  .success-screen,
+  .error-screen {
+    width: 80%;
+    background: #a18cd1;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .success-screen {
+    color: green;
+  }
+
+  .error-screen {
+    color: red;
+  }
+
   // Responsive
   @media (max-width: 991px) {
-    .form-container {
+
+    .form-container,
+    .loading-screen,
+    .success-screen,
+    .error-screen {
       width: 100%;
       padding: 20px;
     }

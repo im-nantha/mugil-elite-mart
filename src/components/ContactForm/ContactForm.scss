@@ -4,24 +4,28 @@
   border-radius: 16px;
   padding: 30px;
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: 991px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0;
   }
 
+  // Shared title styles
   .title {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    color: #fff;
   }
 
   .sub-title {
     font-size: 1rem;
-    color: #000000;
+    color: #000;
     margin-bottom: 1.5rem;
   }
 
+  // Left side - info
   .content-left {
     width: 50%;
     padding: 1rem 2rem;
@@ -33,19 +37,28 @@
 
       li {
         margin-bottom: 0.8rem;
+        font-size: 0.95rem;
+        color: #000;
+
+        strong {
+          color: #222;
+        }
 
         a {
           color: #000000;
           text-decoration: none;
+          transition: 0.2s ease;
 
           &:hover {
             text-decoration: underline;
+            color: #5a2d91;
           }
         }
       }
     }
   }
 
+  // Right side - form
   .content-right {
     width: 50%;
     padding: 1rem 2rem;
@@ -59,6 +72,7 @@
         label {
           font-weight: 500;
           margin-bottom: 0.4rem;
+          color: #222;
         }
 
         input,
@@ -67,10 +81,12 @@
           border: 1px solid #ccc;
           border-radius: 6px;
           font-size: 1rem;
-          background: transparent;
+          background: #fff;
+          transition: border 0.2s ease;
+          color: #000000;
 
           &:focus {
-            border-color: #0077cc;
+            border-color: #5a2d91;
             outline: none;
           }
 
@@ -102,22 +118,54 @@
         transition: all 0.3s ease;
 
         &:hover {
-          background: #005fa3;
+          background: #4c1f78;
         }
-      }
-
-      .success-msg {
-        margin-top: 1rem;
-        color: green;
-        font-weight: 500;
       }
     }
   }
 
+  // --- New States ---
+  &.loading-screen,
+  &.success-screen,
+  &.error-screen {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .loading-screen {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+  }
+
+  &.success-screen {
+    background: #e6ffed;
+    border: 1px solid #2ecc71;
+    color: #2d7a46;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.error-screen {
+    background: #ffe6e6;
+    border: 1px solid #e74c3c;
+    color: #a94442;
+    display: flex;
+    flex-direction: column;
+  }
+
   // Responsive
   @media (max-width: 991px) {
-    display: flex;
-    flex-direction: column-reverse;
 
     .content-left,
     .content-right {

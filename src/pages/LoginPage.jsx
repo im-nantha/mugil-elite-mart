@@ -14,36 +14,7 @@ const LoginPage = () => {
   const [loadingUsers, setLoadingUsers] = useState(false);
   const [loadingOrders, setLoadingOrders] = useState(false);
 
-  useEffect(() => {
-    const loggedIn = sessionStorage.getItem("isLoggedIn");
-    if (loggedIn === "true") {
-      setIsLoggedIn(true);
-      subscribeUsers();
-      subscribeBulkOrders();
-    }
-  }, []);
-
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    setError("");
-
-    if (!email || !password) {
-      setError("Email and password are required.");
-      return;
-    }
-
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      sessionStorage.setItem("isLoggedIn", "true");
-      setIsLoggedIn(true);
-      subscribeUsers();
-      subscribeBulkOrders();
-    } catch (err) {
-      setError(err.message);
-    }
-  };
-
-  // Subscribe to users collection in real-time
+  // Firestore subscriptions
   const subscribeUsers = () => {
     setLoadingUsers(true);
     const usersRef = collection(db, "users");
@@ -66,7 +37,6 @@ const LoginPage = () => {
     return unsubscribe;
   };
 
-  // Subscribe to bulkorders collection in real-time
   const subscribeBulkOrders = () => {
     setLoadingOrders(true);
     const ordersRef = collection(db, "bulkorders");
@@ -89,12 +59,52 @@ const LoginPage = () => {
     return unsubscribe;
   };
 
+  // Handle login
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setError("");
+
+    if (!email || !password) {
+      setError("Email and password are required.");
+      return;
+    }
+
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      sessionStorage.setItem("isLoggedIn", "true");
+      setIsLoggedIn(true);
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  // Handle logout
   const handleLogout = () => {
     setIsLoggedIn(false);
     setUsersData([]);
     setBulkOrdersData([]);
     sessionStorage.removeItem("isLoggedIn");
   };
+
+  // Main effect to manage subscriptions
+  useEffect(() => {
+    const loggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+    setIsLoggedIn(loggedIn);
+
+    let unsubscribeUsers = () => { };
+    let unsubscribeOrders = () => { };
+
+    if (loggedIn) {
+      unsubscribeUsers = subscribeUsers();
+      unsubscribeOrders = subscribeBulkOrders();
+    }
+
+    // Cleanup subscriptions on unmount
+    return () => {
+      unsubscribeUsers();
+      unsubscribeOrders();
+    };
+  }, [isLoggedIn]);
 
   return (
     <div className="login-page">
@@ -145,6 +155,8 @@ const LoginPage = () => {
                     <th>Email</th>
                     <th>Mobile No</th>
                     <th>Message</th>
+                    <th>Created Date</th>
+                    <th>Created Time</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -154,6 +166,8 @@ const LoginPage = () => {
                       <td>{user.email || "-"}</td>
                       <td>{user.mobileNo || "-"}</td>
                       <td>{user.message || "-"}</td>
+                      <td>{user.createdDate || "-"}</td>
+                      <td>{user.createdTime || "-"}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -176,6 +190,8 @@ const LoginPage = () => {
                     <th>Contact Info</th>
                     <th>Quantity</th>
                     <th>Special Request</th>
+                    <th>Created Date</th>
+                    <th>Created Time</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -185,6 +201,8 @@ const LoginPage = () => {
                       <td>{order.contactInfo || "-"}</td>
                       <td>{order.quantity || "-"}</td>
                       <td>{order.specialRequest || "-"}</td>
+                      <td>{order.createdDate || "-"}</td>
+                      <td>{order.createdTime || "-"}</td>
                     </tr>
                   ))}
                 </tbody>

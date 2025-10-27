@@ -26,7 +26,7 @@ const products = [
   { name: "Chimneys", page: "home-decor", image: shop6 },
   { name: "Sinks", page: "home-decor", image: shop7 },
   { name: "Plywood", page: "products", image: shop8 },
-  { name: "Locks", page: "products", image: shop9 },
+  { name: "Mortise Locks", page: "products", image: shop9 },
   {
     name: "Aluminum Profile",
     page: "products",
