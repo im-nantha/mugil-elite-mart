@@ -27,19 +27,25 @@ const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/mugil-elite-mart
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
+  const [hasShownLoader, setHasShownLoader] = useState(false);
 
-  // useEffect(() => {
-  //   // Show loader on route change
-  //   setLoading(true);
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000); // minimum 2.5 seconds
-  //   return () => clearTimeout(timer);
-  // }, [location]);
+  useEffect(() => {
+    // Show loader ONLY when user opens homepage (first time)
+    if (location.pathname === "/" && !hasShownLoader) {
+      setLoading(true);
+      const timer = setTimeout(() => {
+        setLoading(false);
+        setHasShownLoader(true);
+      }, 4000); // Show loader for 4 seconds
+      return () => clearTimeout(timer);
+    } else {
+      setLoading(false);
+    }
+  }, [location, hasShownLoader]);
 
   return (
     <>
-      {/* {loading && <Loader />} */}
+      {loading && <Loader />}
       <Header />
       <ScrollToHashElement />
       <Routes>

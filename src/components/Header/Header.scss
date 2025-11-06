@@ -22,7 +22,9 @@
   }
 
   @media (max-width: 992px) {
-    display: none;
+    &>.browse {
+      display: none;
+    }
   }
 
   .mugil-mart-header {
@@ -30,6 +32,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
 
     .logo {
       display: flex;
@@ -47,8 +57,8 @@
       height: 80px;
       padding: 10px 10px 10px 0;
 
-      @media (max-width: 768px) {
-        width: 90px;
+      @media (max-width: 992px) {
+        width: 180px;
       }
     }
 
@@ -81,8 +91,8 @@
       width: 100%;
       height: 100%;
 
-      @media (max-width: 768px) {
-        width: 90px;
+      @media (max-width: 992px) {
+        width: 100%;
       }
 
       .mugil-mart-img {
@@ -96,6 +106,20 @@
     .mugil-mart-navbar {
       background-color: #ffffff;
       padding: 15px 30px;
+
+      @media (max-width: 992px) {
+        padding: 16px 0;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .hamburgers {
+        display: none;
+
+        @media (max-width: 992px) {
+          display: block;
+        }
+      }
 
       .input-group {
         visibility: unset;
@@ -169,7 +193,7 @@
         text-decoration: none;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         display: none;
       }
 
@@ -242,57 +266,5 @@
         }
       }
     }
-  }
-
-  .hamburger {
-    display: none;
-    border: none;
-    background: transparent;
-  }
-
-  @media (max-width: 768px) {
-    .mugil-mart-navbar-content {
-      padding: 45px 20px 0px 0px;
-      position: fixed;
-      transform: translateX(100%);
-      transition: transform 1.5s;
-      z-index: 100;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: var(--grey-background);
-
-      .mugil-mart-nav-wrap {
-        padding: 15px;
-        display: block;
-      }
-    }
-
-    .mugil-mart-navbar-content.showMenu {
-      transform: translateX(0);
-    }
-
-    .hamburger {
-      display: block;
-
-      .menuIcon {
-        display: block;
-        position: relative;
-        z-index: 110;
-        color: #000000 !important;
-      }
-
-      .closeIcon {
-        display: none;
-        position: relative;
-        z-index: 110;
-        color: #000000 !important;
-      }
-    }
-  }
-
-  .menuIcon {
-    display: block;
   }
 }

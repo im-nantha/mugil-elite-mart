@@ -1,6 +1,6 @@
 import React from "react";
 import "./Loader.scss";
-import loaderimage from "../../assets/images/mem-loader.gif";
+import loaderimage from "../../assets/images/loader.gif";
 
 const Loader = () => {
   return (

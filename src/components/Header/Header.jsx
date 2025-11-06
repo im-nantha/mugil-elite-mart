@@ -13,7 +13,7 @@ import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
 
 const SubNavbar = () => {
   return (
-    <div className="mugil-header">
+    <div className="mugil-header browse">
       <div className="mugil-mart-header">
         <div className="mugil-mart-browse">
           <div className="categories-title">
@@ -180,6 +180,11 @@ const Header = () => {
             </div>
             <nav className="mugil-mart-navbar">
               <Search />
+              <div className="hamburgers">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+                  <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+              </div>
             </nav>
             <div className="mugil-mart-list-wrapper">
               <div className="mugil-mart-items">
