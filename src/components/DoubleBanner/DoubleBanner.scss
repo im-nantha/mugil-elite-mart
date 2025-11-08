@@ -1,0 +1,14 @@
+.kanban-banner {
+  display: flex;
+  padding: 2.5rem 2rem;
+
+  .left,
+  .right {
+    flex: 1;
+    padding: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
