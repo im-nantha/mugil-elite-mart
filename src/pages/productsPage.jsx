@@ -2,6 +2,8 @@ import React from "react";
 import FeaturedCollections from "../components/FeaturedCollections/FeaturedCollections";
 import Title from "../components/Title/Title";
 import TextBanner from "../components/TextBanner/TextBanner";
+import Gallery from "../components/Gallery/Gallery";
+
 
 import Plywood from "../../src/data/product-collections/Plywood.json";
 import Lock from "../../src/data/product-collections/Locks.json";
@@ -18,7 +20,7 @@ const Products = () => {
     <>
       <TextBanner bannerText={"Quality materials that power modern living"} />
       <div className="mugil-container" style={{ "background": "#f4f4f4" }}>
-        <Title title={"Mortise Locks"} subtitle={"Secure your world with trust and innovation."} />
+        <Title title={"Door Handles"} subtitle={"Secure your world with trust and innovation."} />
         <FeaturedCollections data={Lock} isSquare={true} />
         <Title title={"Handles"} subtitle={"Secure your world with trust and innovation."} />
         <FeaturedCollections data={Handles} isSquare={true} />
@@ -35,7 +37,7 @@ const Products = () => {
         <Title title={"Paints"} subtitle={"Fresh air, clean spaces, and effortless ventilation."} />
         <FeaturedCollections data={Paints} isSquare={true} />
         <Title title={"Plywood"} subtitle={"Strength and style combined for every design need."} />
-        <FeaturedCollections data={Plywood} />
+        <Gallery />
       </div>
     </>
   );

@@ -58,5 +58,20 @@
     "productImagePath": "/mugil-elite-mart/assets/images/products/handles/handle-12.webp",
     "productCategory": "handles",
     "productName": "Minimalist Handle"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/10.webp",
+    "productCategory": "locks",
+    "productName": "ModularMortise_Design"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/11.webp",
+    "productCategory": "locks",
+    "productName": "StainlessSteelMortise"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.webp",
+    "productCategory": "locks",
+    "productName": "HeavyDutyMortiseLock"
   }
 ]

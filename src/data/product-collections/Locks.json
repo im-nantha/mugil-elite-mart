@@ -1,62 +1,112 @@
 [
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/1.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/1.jpg",
     "productCategory": "locks",
-    "productName": "SmartMortise_Digital"
+    "productName": "401"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/2.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/2.jpg",
     "productCategory": "locks",
-    "productName": "FaceID_Mortise"
+    "productName": "2404"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/3.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/3.jpg",
     "productCategory": "locks",
-    "productName": "FingerprintMortise_Pro"
+    "productName": "Audi"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/4.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/4.jpg",
     "productCategory": "locks",
-    "productName": "ClassicLeverMortise"
+    "productName": "Calice"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/5.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/5.jpg",
     "productCategory": "locks",
-    "productName": "RoseGoldMortise"
+    "productName": "Carbine"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/6.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/6.jpg",
     "productCategory": "locks",
-    "productName": "CylindricalMortiseLock"
+    "productName": "Curve"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/7.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/7.jpg",
     "productCategory": "locks",
-    "productName": "AntiqueMortise_Lock"
+    "productName": "Delta"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/8.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/8.jpg",
     "productCategory": "locks",
-    "productName": "ElectronicMortise_Secure"
+    "productName": "double door kit"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/9.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/9.jpg",
     "productCategory": "locks",
-    "productName": "MechanicalMortise_Lock"
+    "productName": "elando"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/10.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/10.jpg",
     "productCategory": "locks",
-    "productName": "ModularMortise_Design"
+    "productName": "Eon"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/11.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/11.jpg",
     "productCategory": "locks",
-    "productName": "StainlessSteelMortise"
+    "productName": "Excel"
   },
   {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.webp",
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
     "productCategory": "locks",
-    "productName": "HeavyDutyMortiseLock"
+    "productName": "Floral"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "gajanan"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "kelly"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "Mouse"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "Ninja"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "pearl"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "petals"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "queen"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "single door kit"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "Sque"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/locks/12.jpg",
+    "productCategory": "locks",
+    "productName": "Whale"
   }
 ]

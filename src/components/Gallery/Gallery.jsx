@@ -13,13 +13,16 @@ import gallery8 from "../../assets/images/gallery/8.jpg";
 import gallery9 from "../../assets/images/gallery/5.jpg";
 import gallery10 from "../../assets/images/gallery/10.jpg";
 
-const Gallery = () => {
+const Gallery = ({ storeTitle, images }) => {
   const [ref, isVisible] = useRevealOnScroll();
   return (
     <div className="gallery">
-      <div className="sbc-title">
-        <h2 className="text-center py-2">Our Store</h2>
-      </div>
+      {storeTitle && (
+        <div className="sbc-title">
+          <h2 className="text-center py-2">{storeTitle}</h2>
+        </div>
+      )}
+
       <div className="sbc-container">
         <div className="sbc-cards">
           <div className="sbc-card-img-wrapper">

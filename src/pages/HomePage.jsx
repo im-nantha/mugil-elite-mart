@@ -31,7 +31,7 @@ const Home = () => {
         <ShopByCategories />
         <PartnersCarousel />
         <Testimonials />
-        <Gallery />
+        <Gallery storeTitle={"Our Store"} />
         <FaqTabs faqs={homeFaqs} showMore={true} />
       </main>
     </Fragment>

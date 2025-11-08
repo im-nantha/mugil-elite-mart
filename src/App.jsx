@@ -36,7 +36,7 @@ function AppContent() {
       const timer = setTimeout(() => {
         setLoading(false);
         setHasShownLoader(true);
-      }, 4000); // Show loader for 4 seconds
+      }, 2000);
       return () => clearTimeout(timer);
     } else {
       setLoading(false);
