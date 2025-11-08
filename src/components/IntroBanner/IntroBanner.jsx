@@ -88,7 +88,6 @@ const IntroBanner = () => {
               alt={selectedTitle}
               className="fc-popup-image"
             />
-            <p className="fc-popup-name">{selectedTitle}</p>
           </div>
         </div>
       )}

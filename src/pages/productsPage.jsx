@@ -14,6 +14,7 @@ import Hardware from "../../src/data/product-collections/Hardware.json";
 import CeilingFans from "../../src/data/product-collections/Ceiling-Fans.json";
 import ExhaustFans from "../../src/data/product-collections/Exhaust-Fans.json";
 import Paints from "../../src/data/product-collections/Paints.json";
+import doors from "../../src/data/product-collections/doors.json";
 
 const Products = () => {
   return (
@@ -38,8 +39,8 @@ const Products = () => {
         <FeaturedCollections data={ExhaustFans} isSquare={true} />
         <Title title={"Paints"} subtitle={"Fresh air, clean spaces, and effortless ventilation."} />
         <FeaturedCollections data={Paints} isSquare={true} />
-        <Title title={"Plywood"} subtitle={"Strength and style combined for every design need."} />
-        <Gallery />
+        <Title title={"Doors"} subtitle={"Strength and style combined for every design need."} />
+        <Gallery images={doors} spacing={true} fourCards={true} />
       </div>
     </>
   );

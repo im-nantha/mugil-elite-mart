@@ -14,6 +14,7 @@ import FaqTabs from "../components/FaqTabs/FaqTabs";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
 import bannerImage from "../../src/assets/images/banners/godrij-banner.png";
 import DoubleBanner from "../components/DoubleBanner/DoubleBanner";
+import godrejImages from "../../src/data/homepage/godrej.json";
 
 const homeFaqs = [
   { question: "What types of plywood does Mugil Elite Mart offer?", answer: "We provide a wide range of plywood including BWP, Marine, Commercial, Fire Retardant, Laminated, Acrylic, PVC, HDMR, and Block Boards suitable for furniture, interiors, and construction." },
@@ -32,6 +33,7 @@ const Home = () => {
         <DoubleBanner />
         <ProductTabs />
         <HeroBanner src={bannerImage} />
+        <Gallery images={godrejImages} spacing={true} />
         <StaticBanner />
         <ShopByCategories />
         <PartnersCarousel />

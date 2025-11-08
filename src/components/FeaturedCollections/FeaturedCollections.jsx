@@ -64,7 +64,6 @@ const FeaturedCollections = ({ data = DefaultFeaturedCollectionData, isHomepage 
               &times;
             </button>
             <img src={selectedImage} alt={selectedName} className="fc-popup-image" />
-            <p className="fc-popup-name">{selectedName}</p>
           </div>
         </div>
       )}

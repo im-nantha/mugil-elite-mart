@@ -1,14 +1,72 @@
 .kanban-banner {
   display: flex;
+  justify-content: space-between;
   padding: 2.5rem 2rem;
+  gap: 1rem;
 
-  .left,
-  .right {
-    flex: 1;
-    padding: 40px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-    img {
+  .left {
+    width: 54%;
+    position: relative;
+
+    @media (max-width: 767px) {
       width: 100%;
     }
+  }
+
+  .right {
+    width: 44%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+
+    @media (max-width: 767px) {
+      border-radius: 8px;
+    }
+  }
+
+  .kanb-logo {
+    position: absolute;
+    top: 0;
+    width: 157px;
+    height: 92px;
+
+    @media (max-width: 767px) {
+      width: 100px;
+      height: 60px;
+    }
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 18px;
+    color: var(--blue-gradient);
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--blue-gradient);
+
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }

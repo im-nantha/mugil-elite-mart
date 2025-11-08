@@ -27,21 +27,30 @@ const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/mugil-elite-mart
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
-  const [hasShownLoader, setHasShownLoader] = useState(false);
+  // const [prevPathname, setPrevPathname] = useState(location.pathname);
+
+  // useEffect(() => {
+  //   // Trigger loader only when pathname (not hash) changes
+  //   if (location.pathname !== prevPathname) {
+  //     setLoading(true);
+  //     setPrevPathname(location.pathname);
+
+  //     const timer = setTimeout(() => {
+  //       setLoading(false);
+  //     }, 2000); // loader visible for 2 seconds
+
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [location.pathname, prevPathname]);
 
   useEffect(() => {
-    // Show loader ONLY when user opens homepage (first time)
-    if (location.pathname === "/" && !hasShownLoader) {
-      setLoading(true);
-      const timer = setTimeout(() => {
-        setLoading(false);
-        setHasShownLoader(true);
-      }, 2000);
-      return () => clearTimeout(timer);
-    } else {
+    // Show loader on route change
+    setLoading(true);
+    const timer = setTimeout(() => {
       setLoading(false);
-    }
-  }, [location, hasShownLoader]);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [location]);
 
   useEffect(() => {
     if (loading) {
@@ -49,8 +58,6 @@ function AppContent() {
     } else {
       document.body.style.overflow = "auto";
     }
-
-    // Cleanup when component unmounts
     return () => {
       document.body.style.overflow = "auto";
     };
