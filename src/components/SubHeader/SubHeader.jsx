@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import calllogo from "../../assets/images/icons/call-icon.png";
+import loginicon from "../../assets/images/icons/login.jpg";
 import "./SubHeader.scss";
 import Tooltip from "../Tooltip/Tooltip.jsx";
 import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
@@ -187,6 +188,15 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
           <a href="tel:9894487698" className="tel-number">
             +919894487698
           </a>
+          <div className="mugil-mart-items">
+            <a
+              href="/mugil-elite-mart/login"
+              className="cart-icon-wrapper search-icon login-icon"
+              rel="noreferrer"
+            >
+              <img className="border-50" src={loginicon} />
+            </a>
+          </div>
         </div>
       </div>
     </div>

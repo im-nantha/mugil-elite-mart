@@ -3,6 +3,7 @@ import { auth, db } from "../firebase/firebase.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { collection, onSnapshot } from "firebase/firestore";
 import "./Login.scss";
+import loginimg from "../../src/assets/images/banners/admin-img.jpg"
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -109,33 +110,38 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       {!isLoggedIn ? (
-        <div className="login-card">
-          <h2 className="title">Admin Login</h2>
-          <form onSubmit={handleLogin}>
-            <div className="input-group">
-              <label>Email</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter email"
-              />
-            </div>
-            <div className="input-group">
-              <label>Password</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter password"
-              />
-            </div>
-            {error && <p className="error">{error}</p>}
-            <button type="submit" className="btn-login">
-              Login
-            </button>
-          </form>
-        </div>
+        <>
+          <div className="login-img">
+            <img className="login-image" src={loginimg} alt="image" />
+          </div>
+          <div className="login-card">
+            <h2 className="title">Admin Login</h2>
+            <form onSubmit={handleLogin}>
+              <div className="input-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter email"
+                />
+              </div>
+              <div className="input-group">
+                <label>Password</label>
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Enter password"
+                />
+              </div>
+              {error && <p className="error">{error}</p>}
+              <button type="submit" className="btn-login">
+                Login
+              </button>
+            </form>
+          </div>
+        </>
       ) : (
         <div className="admin-dashboard">
           <h2>Welcome, Admin!</h2>
