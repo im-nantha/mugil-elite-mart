@@ -1,19 +1,9 @@
 import React from "react";
 import "./Gallery.scss";
 import useRevealOnScroll from "../../hooks/useRevealOnScroll";
+import GalleryData from "../../data/homepage/gallery-data.json";
 
-import gallery1 from "../../assets/images/gallery/1.jpg";
-import gallery4 from "../../assets/images/gallery/2.jpg";
-import gallery3 from "../../assets/images/gallery/3.jpg";
-import gallery2 from "../../assets/images/gallery/4.jpg";
-import gallery5 from "../../assets/images/gallery/9.jpg";
-import gallery6 from "../../assets/images/gallery/6.jpg";
-import gallery7 from "../../assets/images/gallery/7.jpg";
-import gallery8 from "../../assets/images/gallery/8.jpg";
-import gallery9 from "../../assets/images/gallery/5.jpg";
-import gallery10 from "../../assets/images/gallery/10.jpg";
-
-const Gallery = ({ storeTitle, images }) => {
+const Gallery = ({ storeTitle, images = GalleryData }) => {
   const [ref, isVisible] = useRevealOnScroll();
   return (
     <div className="gallery">
@@ -24,56 +14,13 @@ const Gallery = ({ storeTitle, images }) => {
       )}
 
       <div className="sbc-container">
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery1} alt="images" />
+        {images.map((item, index) => (
+          <div className="sbc-cards" key={item.id || index}>
+            <div className="sbc-card-img-wrapper">
+              <img src={item.imagePath} alt={`gallery-${item.id}`} loading="lazy" />
+            </div>
           </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery2} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery3} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery4} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery5} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery6} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery7} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery8} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery9} alt="images" />
-          </div>
-        </div>
-        <div className="sbc-cards">
-          <div className="sbc-card-img-wrapper">
-            <img src={gallery10} alt="images" />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

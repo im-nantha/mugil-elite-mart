@@ -1,158 +1,21 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import logo from "../../assets/images/mugil-logo.jpg";
 import mainlogo from "../../assets/images/mem-logo.png";
-import calllogo from "../../assets/images/icons/call-icon.png";
 import "./Header.scss";
 import Search from "../Search/Search.jsx";
-import Tooltip from "../Tooltip/Tooltip.jsx";
 import BackToTop from "../BackToTop/BackToTop.jsx";
 import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
+import SubHeader from "../SubHeader/SubHeader.jsx"
 // import HeaderMobileView from "../HeaderMobileView/HeaderMobileView.jsx";
 
-const SubNavbar = () => {
-  return (
-    <div className="mugil-header browse">
-      <div className="mugil-mart-header">
-        <div className="mugil-mart-browse">
-          <div className="categories-title">
-            <i className="bi bi-list"></i>
-            <p className="browse-category">BROWSE CATEGORIES</p>
-          </div>
-          <Tooltip />
-        </div>
-        <nav className="mugil-mart-navbar">
-          <ul className="mugil-mart-navbar-content">
-            <li>
-              <ReloadNavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
-                Home
-              </ReloadNavLink>
-            </li>
-            <li>
-              <ReloadNavLink
-                to="/home-decor"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
-                Home Decor
-              </ReloadNavLink>
-            </li>
-            <li>
-              <ReloadNavLink
-                to="/products"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
-                Interior Solutions
-              </ReloadNavLink>
-            </li>
-            <li>
-              <ReloadNavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
-                About Us
-              </ReloadNavLink>
-            </li>
-            <li>
-              <ReloadNavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
-                Contact Us
-              </ReloadNavLink>
-            </li>
-            <li>
-              <ReloadNavLink
-                to="/bulk-orders"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
-                Bulk Orders
-              </ReloadNavLink>
-            </li>
-          </ul>
-        </nav>
-        <div className="mugil-mart-list-wrapper">
-          <div className="mugil-mart-items">
-            <a href="tel:9894487698" className="cart-icon-wrapper search-icon">
-              <img src={calllogo} />
-            </a>
-          </div>
-          <a href="tel:9894487698" className="tel-number">
-            +919894487698
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const Header = () => {
-
-  const [showHeader, setShowHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const [triggerOffset, setTriggerOffset] = useState(0);
-
-  useEffect(() => {
-    // Find the first element with class 'features mugil-container'
-    const featuresEl = document.querySelector(".features.mugil-container");
-    if (featuresEl) {
-      setTriggerOffset(featuresEl.offsetTop);
-    }
-
-    const handleScroll = () => {
-      if (window.scrollY > triggerOffset) {
-        if (window.scrollY > lastScrollY) {
-          // Scrolling down → hide
-          setShowHeader(false);
-        } else {
-          // Scrolling up → show
-          setShowHeader(true);
-        }
-      } else {
-        // Always show when above the element
-        setShowHeader(true);
-      }
-
-      setLastScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, triggerOffset]);
-
+  const [menuOpen, setMenuOpen] = useState(false);
+  const openMenu = () => setMenuOpen(true);
   return (
     <>
       <BackToTop />
-      {/* <div className={`mugil-header ${showHeader ? "show" : "hide"}`}> */}
-      <div className={`mugil-header`}>
+      <div className={`mugil-header whole-header`}>
         <header className="mugil-header">
           <div className="header-wrapper py-2">
             <p className="text-center text-white">Welcome to Mugil elite mart</p>
@@ -180,7 +43,7 @@ const Header = () => {
             </div>
             <nav className="mugil-mart-navbar">
               <Search />
-              <div className="hamburgers">
+              <div className="hamburgers" onClick={openMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                   <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                 </svg>
@@ -235,9 +98,9 @@ const Header = () => {
             </div>
           </div>
         </header>
-        <SubNavbar />
         {/* <HeaderMobileView /> */}
       </div>
+      <SubHeader menuOpen={menuOpen} onCloseMenu={() => setMenuOpen(false)} />
     </>
   );
 };

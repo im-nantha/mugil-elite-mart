@@ -1,8 +1,48 @@
 @use "../../assets/styles/mixin" as *;
 
-.mugil-header {
+.sub-header {
   width: 100%;
   background: var(--primary-white);
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  background: #fff;
+  transition: transform 0.5s ease;
+
+  @media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    transition: right 1s ease;
+
+    &.open {
+      right: 0; // slides in from right
+    }
+
+    .mugil-mart-header {
+      display: block !important;
+
+      .mugil-mart-browse {
+        display: none !important;
+      }
+
+    }
+  }
+
+  &.whole-header {
+    z-index: 998;
+  }
+
+  &.hide {
+    transform: translateY(-100%);
+  }
+
+  &.show {
+    transform: translateY(0);
+  }
 
   .header-wrapper {
     background: var(--blue-gradient);
@@ -22,9 +62,6 @@
 
     @media (max-width: 992px) {
       padding: 0;
-    }
-
-    @media (max-width: 992px) {
       flex-direction: column;
     }
 
@@ -90,14 +127,27 @@
       }
     }
 
+    .x-icon {
+      display: none;
+
+      @media (max-width: 992px) {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.5rem;
+        line-height: 100%;
+      }
+    }
+
     .mugil-mart-navbar {
       background-color: #ffffff;
       padding: 15px 30px;
 
       @media (max-width: 992px) {
-        padding: 16px 0;
+        padding: 2rem;
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
       }
 
       .hamburgers {
@@ -181,7 +231,8 @@
       }
 
       @media (max-width: 992px) {
-        display: none;
+        display: flex;
+
       }
 
       .mugil-mart-items {

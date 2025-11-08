@@ -43,6 +43,19 @@ function AppContent() {
     }
   }, [location, hasShownLoader]);
 
+  useEffect(() => {
+    if (loading) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup when component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [loading]);
+
   return (
     <>
       {loading && <Loader />}

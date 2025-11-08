@@ -20,6 +20,8 @@ const Products = () => {
     <>
       <TextBanner bannerText={"Quality materials that power modern living"} />
       <div className="mugil-container" style={{ "background": "#f4f4f4" }}>
+        <Title title={"Plywoods"} subtitle={"Secure your world with trust and innovation."} />
+        <FeaturedCollections data={Plywood} />
         <Title title={"Door Handles"} subtitle={"Secure your world with trust and innovation."} />
         <FeaturedCollections data={Lock} isSquare={true} />
         <Title title={"Handles"} subtitle={"Secure your world with trust and innovation."} />

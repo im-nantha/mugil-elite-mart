@@ -11,6 +11,7 @@ import Faucets from "../../src/data/product-collections/Faucets.json";
 import Showers from "../../src/data/product-collections/Showers.json";
 import Chimneys from "../../src/data/product-collections/Chimneys.json";
 import Sinks from "../../src/data/product-collections/Sinks.json";
+import BathElegence from "../../src/data/product-collections/BathElegence.json";
 
 const HomeDecor = () => {
   return (
@@ -31,6 +32,8 @@ const HomeDecor = () => {
         <FeaturedCollections data={Chimneys} isSquare={true} />
         <Title title={"Sinks"} subtitle={"Crafted for utility & class."} />
         <FeaturedCollections data={Sinks} isSquare={true} />
+        <Title title={"Bath Elegence"} subtitle={"Best in class."} />
+        <FeaturedCollections data={BathElegence} />
       </div>
     </>
   );
