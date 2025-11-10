@@ -23,7 +23,7 @@ const HomeDecor = () => {
         <Title title={"Lights"} subtitle={"Brighten your world with modern designs."} />
         <FeaturedCollections data={Lights} isSquare={true} />
         <Title title={"Mirrors"} subtitle={"Reflect beauty with elegance."} />
-        <FeaturedCollections data={Mirrors} isSquare={true} />
+        <FeaturedCollections data={Mirrors} />
         <Title title={"Faucets"} subtitle={"Flowing perfection for kitchens & baths."} />
         <FeaturedCollections data={Faucets} isSquare={true} />
         <Title title={"Showers"} subtitle={"Experience refreshing luxury."} />
