@@ -1,147 +1,122 @@
 [
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/1.jpg",
-    "productCategory": "hardware",
-    "productName": "AntiqueHinge_Brass"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/2.jpg",
-    "productCategory": "hardware",
-    "productName": "DoorStopper_PSS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/3.jpg",
-    "productCategory": "hardware",
-    "productName": "Door Clamp"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/4.jpg",
-    "productCategory": "hardware",
-    "productName": "AnchorClamp"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/5.jpg",
-    "productCategory": "hardware",
-    "productName": "DoorStopper_BRASS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/6.jpg",
-    "productCategory": "hardware",
-    "productName": "DoorHolder_SS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/7.jpg",
-    "productCategory": "hardware",
-    "productName": "DoorHolder_BRASS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/8.jpg",
-    "productCategory": "hardware",
-    "productName": "DoorHolder_BRASS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/9.jpg",
-    "productCategory": "hardware",
-    "productName": "Aldrop_SS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/10.jpg",
-    "productCategory": "hardware",
-    "productName": "ClassicHinge_SS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/11.jpg",
-    "productCategory": "hardware",
-    "productName": "AdjustableClamp_SS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/12.jpg",
-    "productCategory": "hardware",
-    "productName": "ModularBracket_Brass"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/13.jpg",
-    "productCategory": "hardware",
-    "productName": "ModularBracket_BRASS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/14.jpg",
-    "productCategory": "hardware",
-    "productName": "ScrewKit_Assorted"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/15.jpg",
-    "productCategory": "hardware",
-    "productName": "AntiRustHinge_SS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/16.jpg",
-    "productCategory": "hardware",
-    "productName": "ScrewPack_HomeUse"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/17.jpg",
-    "productCategory": "hardware",
-    "productName": "Hinge_Lock"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/18.jpg",
-    "productCategory": "hardware",
-    "productName": "Door stop"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/19.jpg",
-    "productCategory": "hardware",
-    "productName": "Clamp"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/20.jpg",
-    "productCategory": "hardware",
-    "productName": "ScrewClamp_SS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/21.jpg",
-    "productCategory": "hardware",
-    "productName": "TowerBolt_Standard"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/22.jpg",
-    "productCategory": "hardware",
-    "productName": "ScrewClamp_BRASS"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/23.jpg",
-    "productCategory": "hardware",
-    "productName": "RoseGold_Aldrop"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/24.jpg",
-    "productCategory": "hardware",
-    "productName": "HeavyDutyScrew"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/25.jpg",
-    "productCategory": "hardware",
-    "productName": "Compact Door"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/26.jpg",
-    "productCategory": "hardware",
-    "productName": "PC_TowerBolt"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/27.jpg",
-    "productCategory": "hardware",
-    "productName": "MultiWire_Set"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/28.jpg",
-    "productCategory": "hardware",
-    "productName": "WirePack_Copper"
+    "productCategory": "hardware"
   },
   {
     "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/29.jpg",
-    "productCategory": "hardware",
-    "productName": "WirePack_Aluminum"
+    "productCategory": "hardware"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/hardware/30.jpg",
+    "productCategory": "hardware"
   }
 ]

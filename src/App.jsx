@@ -20,7 +20,6 @@ import FaqPage from "./pages/FaqPage";
 import ScrollToHashElement from "./hooks/ScrollToHashElement";
 import Loader from "./components/Loader/Loader";
 import AutoScrollToTop from "./components/AutoScrollToTop/AutoScrollToTop";
-import { HelmetProvider } from "react-helmet-async";
 import LoginPage from "./pages/LoginPage";
 const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/mugil-elite-mart";
 
@@ -92,13 +91,11 @@ function AppContent() {
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router basename={basename}>
-        <AutoScrollToTop />
-        <AppContent />
-        <Footer />
-      </Router>
-    </HelmetProvider>
+    <Router basename={basename}>
+      <AutoScrollToTop />
+      <AppContent />
+      <Footer />
+    </Router>
   );
 }
 

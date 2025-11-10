@@ -108,5 +108,20 @@
     "productImagePath": "/mugil-elite-mart/assets/images/products/mirrors/22.jpg",
     "productCategory": "mirrors",
     "productName": "DesignerVanity_Mirror"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/mirrors/23.jpg",
+    "productCategory": "mirrors",
+    "productName": "mirrors 23"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/mirrors/24.jpg",
+    "productCategory": "mirrors",
+    "productName": "mirrors 24"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/mirrors/25.jpg",
+    "productCategory": "mirrors",
+    "productName": "mirrors 25"
   }
 ]

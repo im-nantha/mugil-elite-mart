@@ -38,5 +38,15 @@
     "productImagePath": "/mugil-elite-mart/assets/images/products/aluminium/8.jpg",
     "productCategory": "aluminium",
     "productName": "ModularFrame_Profile"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/aluminium/9.jpg",
+    "productCategory": "aluminium",
+    "productName": "aluminium 9"
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/aluminium/10.jpg",
+    "productCategory": "aluminium",
+    "productName": "aluminium 10"
   }
 ]

@@ -5,16 +5,16 @@ import TextBanner from "../components/TextBanner/TextBanner";
 import Gallery from "../components/Gallery/Gallery";
 
 
-import Plywood from "../../src/data/product-collections/Plywood.json";
-import Lock from "../../src/data/product-collections/Locks.json";
-import Handles from "../../src/data/product-collections/Handles.json";
-import Aluminium from "../../src/data/product-collections/Aluminum-Profile.json";
-import Pipes from "../../src/data/product-collections/Pipes.json";
-import Hardware from "../../src/data/product-collections/Hardware.json";
-import CeilingFans from "../../src/data/product-collections/Ceiling-Fans.json";
-import ExhaustFans from "../../src/data/product-collections/Exhaust-Fans.json";
-import Paints from "../../src/data/product-collections/Paints.json";
-import doors from "../../src/data/product-collections/doors.json";
+import Plywood from "../data/product-collections/Plywood.json";
+import Lock from "../data/product-collections/Locks.json";
+import Handles from "../data/product-collections/Handles.json";
+import Aluminium from "../data/product-collections/Aluminum-Profile.json";
+import Pipes from "../data/product-collections/Pipes.json";
+import Hardware from "../data/product-collections/Hardware.json";
+import CeilingFans from "../data/product-collections/Ceiling-Fans.json";
+import ExhaustFans from "../data/product-collections/Exhaust-Fans.json";
+import Paints from "../data/product-collections/Paints.json";
+import doors from "../data/product-collections/doors.json";
 
 const Products = () => {
   return (
