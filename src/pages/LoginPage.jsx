@@ -3,7 +3,7 @@ import { auth, db } from "../firebase/firebase.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { collection, onSnapshot } from "firebase/firestore";
 import "./Login.scss";
-import loginimg from "../../src/assets/images/banners/admin-img.jpg"
+import loginimg from "../../src/assets/images/banners/admin-img.jpg";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -15,18 +15,36 @@ const LoginPage = () => {
   const [loadingUsers, setLoadingUsers] = useState(false);
   const [loadingOrders, setLoadingOrders] = useState(false);
 
-  // Firestore subscriptions
+  // ----------------------------
+  // Firestore Subscriptions
+  // ----------------------------
   const subscribeUsers = () => {
     setLoadingUsers(true);
     const usersRef = collection(db, "users");
     const unsubscribe = onSnapshot(
       usersRef,
       (snapshot) => {
-        const data = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
+        const data = snapshot.docs
+          .map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }))
+          .sort((a, b) => {
+            const hasDateA = a.createdDate && a.createdTime;
+            const hasDateB = b.createdDate && b.createdTime;
+
+            // Items without date/time go to the bottom
+            if (!hasDateA && hasDateB) return 1;
+            if (hasDateA && !hasDateB) return -1;
+            if (!hasDateA && !hasDateB) return 0;
+
+            const dateA = new Date(`${a.createdDate} ${a.createdTime}`);
+            const dateB = new Date(`${b.createdDate} ${b.createdTime}`);
+            return dateB - dateA; // Newest first
+          });
+
         setUsersData(data);
+        sessionStorage.setItem("usersData", JSON.stringify(data)); // store in session
         setLoadingUsers(false);
       },
       (err) => {
@@ -44,11 +62,27 @@ const LoginPage = () => {
     const unsubscribe = onSnapshot(
       ordersRef,
       (snapshot) => {
-        const data = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
+        const data = snapshot.docs
+          .map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }))
+          .sort((a, b) => {
+            const hasDateA = a.createdDate && a.createdTime;
+            const hasDateB = b.createdDate && b.createdTime;
+
+            // Items without date/time go to the bottom
+            if (!hasDateA && hasDateB) return 1;
+            if (hasDateA && !hasDateB) return -1;
+            if (!hasDateA && !hasDateB) return 0;
+
+            const dateA = new Date(`${a.createdDate} ${a.createdTime}`);
+            const dateB = new Date(`${b.createdDate} ${b.createdTime}`);
+            return dateB - dateA; // Newest first
+          });
+
         setBulkOrdersData(data);
+        sessionStorage.setItem("bulkOrdersData", JSON.stringify(data)); // store in session
         setLoadingOrders(false);
       },
       (err) => {
@@ -60,7 +94,9 @@ const LoginPage = () => {
     return unsubscribe;
   };
 
-  // Handle login
+  // ----------------------------
+  // Handle Login
+  // ----------------------------
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
@@ -79,15 +115,21 @@ const LoginPage = () => {
     }
   };
 
-  // Handle logout
+  // ----------------------------
+  // Handle Logout
+  // ----------------------------
   const handleLogout = () => {
     setIsLoggedIn(false);
     setUsersData([]);
     setBulkOrdersData([]);
     sessionStorage.removeItem("isLoggedIn");
+    sessionStorage.removeItem("usersData");
+    sessionStorage.removeItem("bulkOrdersData");
   };
 
-  // Main effect to manage subscriptions
+  // ----------------------------
+  // Main Effect
+  // ----------------------------
   useEffect(() => {
     const loggedIn = sessionStorage.getItem("isLoggedIn") === "true";
     setIsLoggedIn(loggedIn);
@@ -96,17 +138,31 @@ const LoginPage = () => {
     let unsubscribeOrders = () => { };
 
     if (loggedIn) {
-      unsubscribeUsers = subscribeUsers();
-      unsubscribeOrders = subscribeBulkOrders();
+      // Check session storage first
+      const storedUsers = sessionStorage.getItem("usersData");
+      const storedOrders = sessionStorage.getItem("bulkOrdersData");
+
+      if (storedUsers && storedOrders) {
+        // Load from session
+        setUsersData(JSON.parse(storedUsers));
+        setBulkOrdersData(JSON.parse(storedOrders));
+      } else {
+        // Fetch from Firestore and store in session
+        unsubscribeUsers = subscribeUsers();
+        unsubscribeOrders = subscribeBulkOrders();
+      }
     }
 
-    // Cleanup subscriptions on unmount
+    // Cleanup subscriptions
     return () => {
       unsubscribeUsers();
       unsubscribeOrders();
     };
   }, [isLoggedIn]);
 
+  // ----------------------------
+  // UI Rendering
+  // ----------------------------
   return (
     <div className="login-page">
       {!isLoggedIn ? (
@@ -146,7 +202,7 @@ const LoginPage = () => {
         <div className="admin-dashboard">
           <h2>Welcome, Admin!</h2>
 
-          {/* Users Table */}
+          {/* ---------------- USERS TABLE ---------------- */}
           <h3 className="py-3">Contact Info</h3>
           {loadingUsers ? (
             <p>Loading users...</p>
@@ -181,7 +237,7 @@ const LoginPage = () => {
             </div>
           )}
 
-          {/* Bulk Orders Table */}
+          {/* ---------------- BULK ORDERS TABLE ---------------- */}
           <h3 className="py-3">Bulk Orders</h3>
           {loadingOrders ? (
             <p>Loading bulk orders...</p>

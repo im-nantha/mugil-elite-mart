@@ -1,6 +1,7 @@
 import React from "react";
 import "./ImageBanner.scss";
 import image from "../../assets/images/about-us/vasi-logo-circle.png";
+import buddhaimg from "../../assets/images/about-us/round-bhudda-img.jpg";
 
 function ImageBanner() {
   return (
@@ -8,6 +9,7 @@ function ImageBanner() {
       <div className="mugil-about-banner__circle">
         <div className="mugil-about-banner__circle-text">
           <img src={image} className="rotate-360" />
+          <img src={buddhaimg} className="budda-img" />
         </div>
       </div>
 
