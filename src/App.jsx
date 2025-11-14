@@ -21,7 +21,7 @@ import ScrollToHashElement from "./hooks/ScrollToHashElement";
 import Loader from "./components/Loader/Loader";
 import AutoScrollToTop from "./components/AutoScrollToTop/AutoScrollToTop";
 import LoginPage from "./pages/LoginPage";
-const basename = import.meta.env.PROD ? "/" : "/mugil-elite-mart";
+const basename = import.meta.env.PROD ? "/mugil-elite-mart" : "/mugil-elite-mart";
 
 function AppContent() {
   const location = useLocation();
