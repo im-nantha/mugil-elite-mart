@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import calllogo from "../../assets/images/icons/call-icon.png";
 import loginicon from "../../assets/images/icons/login.jpg";
 import "./SubHeader.scss";
@@ -11,6 +12,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [triggerOffset, setTriggerOffset] = useState(0);
+  const location = useLocation();
 
   useEffect(() => {
 
@@ -189,13 +191,13 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
             +919894487698
           </a>
           <div className="mugil-mart-items">
-            <a
+            {location.pathname !== "/login" && (<a
               href="/mugil-elite-mart/login"
               className="cart-icon-wrapper search-icon login-icon"
               rel="noreferrer"
             >
               <img className="border-50" src={loginicon} />
-            </a>
+            </a>)}
           </div>
         </div>
       </div>

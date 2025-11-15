@@ -17,7 +17,7 @@ const HomeDecor = () => {
   return (
     <>
       <TextBanner bannerText={"Transform your living space into a masterpiece with timeless elegance"} />
-      <div className="mugil-container" style={{ "background": "#f4f4f4" }}>
+      <div className="mugil-container pt-0" style={{ "background": "#f4f4f4" }}>
         <Title title={"Glassware"} subtitle={"Stylish & durable for every home."} />
         <FeaturedCollections data={GlasswareData} />
         <Title title={"Lights"} subtitle={"Brighten your world with modern designs."} />
@@ -33,7 +33,7 @@ const HomeDecor = () => {
         <Title title={"Sinks"} subtitle={"Crafted for utility & class."} />
         <FeaturedCollections data={Sinks} isSquare={true} />
         <Title title={"Bath Elegence"} subtitle={"Best in class."} />
-        <FeaturedCollections data={BathElegence} />
+        <FeaturedCollections data={BathElegence} isThreeCol={true} />
       </div>
     </>
   );

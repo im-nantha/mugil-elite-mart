@@ -55,6 +55,8 @@
         border: 1px solid #ccc;
         border-radius: 8px;
         transition: all 0.3s ease;
+        background-color: #ffffff;
+        color: #000000;
 
         &:focus {
           border-color: #76057a;
@@ -66,6 +68,38 @@
       textarea {
         resize: vertical;
         min-height: 80px;
+      }
+    }
+
+    /* Password wrapper + toggle */
+    .password-wrapper {
+      position: relative;
+
+      input {
+        padding-right: 44px;
+        /* space for toggle */
+      }
+
+      .toggle-password {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        color: #76057a;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background 0.15s ease;
+        background: rgba(118, 5, 122, 0.08);
+
+        svg {
+          display: block;
+        }
       }
     }
 
@@ -102,6 +136,30 @@
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     animation: fadeIn 0.8s ease-in-out;
+    position: relative;
+
+    .after-login-img {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      top: 2.4rem;
+      left: 6rem;
+
+      @media (max-width: 767px) {
+        left: 1rem;
+        top: 1.5rem;
+      }
+
+      @media (max-width: 440px) {
+        left: -2.5rem;
+        top: 1.6rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     .btn-logout {
       width: 200px;
