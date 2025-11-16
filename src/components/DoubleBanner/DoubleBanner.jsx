@@ -18,7 +18,7 @@ const DoubleBanner = () => {
       </div>
 
       <div className="kanban-banner w-100 d-flex" title="click here!">
-        <a href="/products#doors" className="left">
+        <a href="/mugil-elite-mart/products#doors" className="left">
           <img src={kanban} alt="banner" className="hero-banner__img" loading="lazy" />
           <div className="kanb-logo">
             <img src={kanblogo} alt="kanb logo" className="w-100 h-100 rounded-0" />

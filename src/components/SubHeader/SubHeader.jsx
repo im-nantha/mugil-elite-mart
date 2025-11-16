@@ -58,33 +58,33 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
         <nav className="mugil-mart-navbar">
           <ul className="mugil-mart-navbar-content">
             <li>
-              <a href="/" className={`mugil-mart-nav-wrap ${isActive("") ? "active" : ""}`}>Home</a>
+              <a href="/mugil-elite-mart/" className={`mugil-mart-nav-wrap ${isActive("") ? "active" : ""}`}>Home</a>
             </li>
             <li>
-              <a href="/home-decor" className={`mugil-mart-nav-wrap ${isActive("/home-decor") ? "active" : ""}`}>
+              <a href="/mugil-elite-mart/home-decor" className={`mugil-mart-nav-wrap ${isActive("/home-decor") ? "active" : ""}`}>
                 Home Decor
               </a>
             </li>
             <li>
-              <a href="/products" className={`mugil-mart-nav-wrap ${isActive("/products") ? "active" : ""}`}>
+              <a href="/mugil-elite-mart/products" className={`mugil-mart-nav-wrap ${isActive("/products") ? "active" : ""}`}>
                 Interior Solutions
               </a>
             </li>
 
             <li>
-              <a href="/about" className={`mugil-mart-nav-wrap ${isActive("/about") ? "active" : ""}`}>
+              <a href="/mugil-elite-mart/about" className={`mugil-mart-nav-wrap ${isActive("/about") ? "active" : ""}`}>
                 About Us
               </a>
             </li>
 
             <li>
-              <a href="/contact" className={`mugil-mart-nav-wrap ${isActive("/contact") ? "active" : ""}`}>
+              <a href="/mugil-elite-mart/contact" className={`mugil-mart-nav-wrap ${isActive("/contact") ? "active" : ""}`}>
                 Contact Us
               </a>
             </li>
 
             <li>
-              <a href="/bulk-orders" className={`mugil-mart-nav-wrap ${isActive("/bulk-orders") ? "active" : ""}`}>
+              <a href="/mugil-elite-mart/bulk-orders" className={`mugil-mart-nav-wrap ${isActive("/bulk-orders") ? "active" : ""}`}>
                 Bulk Orders
               </a>
             </li>
@@ -148,7 +148,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
           </a>
           <div className="mugil-mart-items">
             <a
-              href="/login"
+              href="/mugil-elite-mart/login"
               className="cart-icon-wrapper search-icon login-icon"
               rel="noreferrer"
             >
