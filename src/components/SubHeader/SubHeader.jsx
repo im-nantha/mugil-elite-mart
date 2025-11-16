@@ -1,18 +1,14 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import calllogo from "../../assets/images/icons/call-icon.png";
 import loginicon from "../../assets/images/icons/login.jpg";
-import "./SubHeader.scss";
 import Tooltip from "../Tooltip/Tooltip.jsx";
-import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
+import "./SubHeader.scss";
 
 const SubHeader = ({ menuOpen, onCloseMenu }) => {
 
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [triggerOffset, setTriggerOffset] = useState(0);
-  const location = useLocation();
 
   useEffect(() => {
 
@@ -60,8 +56,8 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
         <nav className="mugil-mart-navbar">
           <ul className="mugil-mart-navbar-content">
             <li>
-              <ReloadNavLink
-                to="/"
+              <a
+                href="/"
                 end
                 className={({ isActive }) =>
                   isActive
@@ -70,11 +66,11 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
                 }
               >
                 Home
-              </ReloadNavLink>
+              </a>
             </li>
             <li>
-              <ReloadNavLink
-                to="/home-decor"
+              <a
+                href="/home-decor"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -82,11 +78,11 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
                 }
               >
                 Home Decor
-              </ReloadNavLink>
+              </a>
             </li>
             <li>
-              <ReloadNavLink
-                to="/products"
+              <a
+                href="/products"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -94,11 +90,11 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
                 }
               >
                 Interior Solutions
-              </ReloadNavLink>
+              </a>
             </li>
             <li>
-              <ReloadNavLink
-                to="/about"
+              <a
+                href="/about"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -106,11 +102,11 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
                 }
               >
                 About Us
-              </ReloadNavLink>
+              </a>
             </li>
             <li>
-              <ReloadNavLink
-                to="/contact"
+              <a
+                href="/contact"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -118,11 +114,11 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
                 }
               >
                 Contact Us
-              </ReloadNavLink>
+              </a>
             </li>
             <li>
-              <ReloadNavLink
-                to="/bulk-orders"
+              <a
+                href="/bulk-orders"
                 className={({ isActive }) =>
                   isActive
                     ? "mugil-mart-nav-wrap active"
@@ -130,7 +126,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
                 }
               >
                 Bulk Orders
-              </ReloadNavLink>
+              </a>
             </li>
           </ul>
         </nav>
@@ -191,13 +187,13 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
             +919894487698
           </a>
           <div className="mugil-mart-items">
-            {location.pathname !== "/login" && (<a
-              href="/mugil-elite-mart/login"
+            <a
+              href="/login"
               className="cart-icon-wrapper search-icon login-icon"
               rel="noreferrer"
             >
               <img className="border-50" src={loginicon} />
-            </a>)}
+            </a>
           </div>
         </div>
       </div>

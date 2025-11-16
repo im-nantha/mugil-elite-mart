@@ -1,9 +1,13 @@
 import React from "react";
 import TextBanner from "../components/TextBanner/TextBanner";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 const DisclaimerLiabilityPolicy = () => {
   return (
-    <div>
+    <>
+      <Header />
       <main>
         <TextBanner bannerText={"Disclaimer & Liability Policy"} />
         <div className="mugil-container">
@@ -145,7 +149,8 @@ const DisclaimerLiabilityPolicy = () => {
 
         </div>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 

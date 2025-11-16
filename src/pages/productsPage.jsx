@@ -3,6 +3,9 @@ import FeaturedCollections from "../components/FeaturedCollections/FeaturedColle
 import Title from "../components/Title/Title";
 import TextBanner from "../components/TextBanner/TextBanner";
 import Gallery from "../components/Gallery/Gallery";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 
 import Plywood from "../data/product-collections/Plywood.json";
@@ -19,6 +22,7 @@ import doors from "../data/product-collections/doors.json";
 const Products = () => {
   return (
     <>
+      <Header />
       <TextBanner bannerText={"Quality materials that power modern living"} />
       <div className="mugil-container" style={{ "background": "#f4f4f4" }}>
         <Title title={"Plywoods"} subtitle={"Secure your world with trust and innovation."} />
@@ -42,6 +46,7 @@ const Products = () => {
         <Title title={"Doors"} subtitle={"Strength and style combined for every design need."} />
         <Gallery images={doors} spacing={true} fourCards={true} />
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,8 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import "./Footer.scss";
 import mainlogo from "../../assets/images/mem-logo.png";
-import ReloadNavLink from "../../utils/ReloadNavLink";
+import "./Footer.scss";
 
 
 const Footer = () => {
@@ -11,9 +9,9 @@ const Footer = () => {
       <div className="footer-head">
         <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
           <div className="d-flex align-items-center gap-2">
-            <ReloadNavLink className="mugil-footer-logo-wrapper" to="/" >
+            <a className="mugil-footer-logo-wrapper" href="/" >
               <img className="mugil-mart-img" src={mainlogo} />
-            </ReloadNavLink>
+            </a>
             <h2>Mugil Elite Mart</h2>
           </div>
         </div>
@@ -65,28 +63,28 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Sitemap</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <ReloadNavLink to="/">Home</ReloadNavLink>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/home-decor">Home Decor</ReloadNavLink>
+                    <a href="/home-decor">Home Decor</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/products">Interior Decorations</ReloadNavLink>
+                    <a href="/products">Interior Decorations</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/about">About Us</ReloadNavLink>
+                    <a href="/about">About Us</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/contact">Contact Us</ReloadNavLink>
+                    <a href="/contact">Contact Us</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/bulk-orders">Bulk Orders</ReloadNavLink>
+                    <a href="/bulk-orders">Bulk Orders</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/faqs">Faq's</ReloadNavLink>
+                    <a href="/faqs">Faq's</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/login">Login</ReloadNavLink>
+                    <a href="/login">Login</a>
                   </li>
                 </ul>
               </div>
@@ -94,25 +92,25 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Resource</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <ReloadNavLink to="/privacy-policy">Privacy Policy</ReloadNavLink>
+                    <a href="/privacy-policy">Privacy Policy</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/terms-and-conditions">Terms & Conditions</ReloadNavLink>
+                    <a href="/terms-and-conditions">Terms & Conditions</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/security-policy">Security Policy</ReloadNavLink>
+                    <a href="/security-policy">Security Policy</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/cancellation-policy">Cancellation & Returns Policy</ReloadNavLink>
+                    <a href="/cancellation-policy">Cancellation & Returns Policy</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/grievance-policy">Grievance Redressal Policy</ReloadNavLink>
+                    <a href="/grievance-policy">Grievance Redressal Policy</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/disclaimer-policy">Disclaimer & Liability Policy</ReloadNavLink>
+                    <a href="/disclaimer-policy">Disclaimer & Liability Policy</a>
                   </li>
                   <li>
-                    <ReloadNavLink to="/cookie-policy">Cookie Policy</ReloadNavLink>
+                    <a href="/cookie-policy">Cookie Policy</a>
                   </li>
                 </ul>
               </div>

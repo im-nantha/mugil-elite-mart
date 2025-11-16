@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { Fragment } from "react";
-import { useSearchParams } from "react-router-dom";
-import Carousel from "../components/Carousel/Carousel";
-import Features from "../components/Features/Features";
-import IntroBanner from "../components/IntroBanner/IntroBanner";
-import ProductTabs from "../components/ProductTabs/ProductTabs";
-import StaticBanner from "../components/StaticBanner/StaticBanner";
-import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
-import Testimonials from "../components/Testimonials/Testimonials";
-import Gallery from "../components/Gallery/Gallery";
-import PartnersCarousel from "../components/PartnersCarousel/PartnersCarousel";
-import FaqTabs from "../components/FaqTabs/FaqTabs";
-import HeroBanner from "../components/HeroBanner/HeroBanner";
+import React, { Fragment } from "react";
 import bannerImage from "../../src/assets/images/banners/godrij-banner.png";
-import DoubleBanner from "../components/DoubleBanner/DoubleBanner";
 import godrejImages from "../../src/data/homepage/godrej.json";
+import Carousel from "../components/Carousel/Carousel";
+import DoubleBanner from "../components/DoubleBanner/DoubleBanner";
+import FaqTabs from "../components/FaqTabs/FaqTabs";
+import Features from "../components/Features/Features";
+import Gallery from "../components/Gallery/Gallery";
+import HeroBanner from "../components/HeroBanner/HeroBanner";
+import IntroBanner from "../components/IntroBanner/IntroBanner";
+import PartnersCarousel from "../components/PartnersCarousel/PartnersCarousel";
+import ProductTabs from "../components/ProductTabs/ProductTabs";
+import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
+import StaticBanner from "../components/StaticBanner/StaticBanner";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 const homeFaqs = [
   { question: "What types of plywood does Mugil Elite Mart offer?", answer: "We provide a wide range of plywood including BWP, Marine, Commercial, Fire Retardant, Laminated, Acrylic, PVC, HDMR, and Block Boards suitable for furniture, interiors, and construction." },

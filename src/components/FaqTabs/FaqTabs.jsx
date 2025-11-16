@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./FaqTabs.scss";
-import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
 
 const FaqTabs = ({ faqs, showMore }) => {
   const [activeIndex, setActiveIndex] = useState(0);       // desktop tabs
@@ -59,9 +58,9 @@ const FaqTabs = ({ faqs, showMore }) => {
 
       {showMore && (
         <div className="faq-tabs__button">
-          <ReloadNavLink to="/faqs">
+          <a href="/faqs">
             <button>Show More</button>
-          </ReloadNavLink>
+          </a>
         </div>
       )}
     </section>

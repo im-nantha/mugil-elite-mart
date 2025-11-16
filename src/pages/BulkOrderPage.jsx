@@ -2,10 +2,14 @@ import React from "react";
 import TextBanner from "../components/TextBanner/TextBanner";
 import ContactForm from "../components/ContactForm/ContactForm";
 import BulkOrderForm from "../components/BulkOrderForm/BulkOrderForm";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 const BuldOrder = () => {
   return (
-    <div>
+    <>
+      <Header />
       <main>
         <TextBanner bannerText={"Bulk Orders"} />
         {/* <div className="mugil-container">
@@ -31,7 +35,8 @@ const BuldOrder = () => {
           <BulkOrderForm />
         </div>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -1,9 +1,13 @@
 import React from "react";
 import TextBanner from "../components/TextBanner/TextBanner";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 const GrievanceRedressalPolicy = () => {
   return (
-    <div>
+    <>
+      <Header />
       <main>
         <TextBanner bannerText={"Grievance Redressal Policy"} />
         <div className="mugil-container">
@@ -144,7 +148,8 @@ const GrievanceRedressalPolicy = () => {
 
         </div>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 
