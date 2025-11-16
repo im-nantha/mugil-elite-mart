@@ -1,9 +1,13 @@
 import React from "react";
 import TextBanner from "../components/TextBanner/TextBanner";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 const CancellationReturnPolicy = () => {
   return (
-    <div>
+    <>
+      <Header />
       <main>
         <TextBanner bannerText={"Cancellation & Returns Policy"} />
         <div className="mugil-container">
@@ -144,7 +148,8 @@ const CancellationReturnPolicy = () => {
 
         </div>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 

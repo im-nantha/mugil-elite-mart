@@ -5,7 +5,6 @@ import mainlogo from "../../assets/images/mem-logo.png";
 import "./Header.scss";
 import Search from "../Search/Search.jsx";
 import BackToTop from "../BackToTop/BackToTop.jsx";
-import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
 import SubHeader from "../SubHeader/SubHeader.jsx"
 // import HeaderMobileView from "../HeaderMobileView/HeaderMobileView.jsx";
 
@@ -23,22 +22,22 @@ const Header = () => {
           <div className="mugil-mart-header">
             <div className="logo">
               <div className="mugil-mart-main-logo">
-                <ReloadNavLink to="/" className="mugil-mart-logo-wrapper">
+                <a href="/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={mainlogo}
                     alt="mugil-mart-logo"
                   />
-                </ReloadNavLink>
+                </a>
               </div>
               <div className="mugil-mart-logo">
-                <ReloadNavLink to="/" className="mugil-mart-logo-wrapper">
+                <a href="/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={logo}
                     alt="mugil-mart-logo"
                   />
-                </ReloadNavLink>
+                </a>
               </div>
             </div>
             <nav className="mugil-mart-navbar">

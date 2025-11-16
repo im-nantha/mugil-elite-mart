@@ -1,9 +1,13 @@
 import React from "react";
 import TextBanner from "../components/TextBanner/TextBanner";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 const SecurityPolicy = () => {
   return (
-    <div>
+    <>
+      <Header />
       <main>
         <TextBanner bannerText={"Security Policy"} />
         <div className="mugil-container">
@@ -136,7 +140,8 @@ const SecurityPolicy = () => {
 
         </div>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 

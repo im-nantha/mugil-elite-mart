@@ -1,6 +1,5 @@
 import React from "react";
 import "./DoubleBanner.scss";
-import ReloadNavLink from "../../utils/ReloadNavLink.jsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import kanban from "../../assets/images/banners/kanban-door-banner.jpg";
@@ -19,12 +18,12 @@ const DoubleBanner = () => {
       </div>
 
       <div className="kanban-banner w-100 d-flex" title="click here!">
-        <ReloadNavLink to="/products#doors" className="left">
+        <a href="/products#doors" className="left">
           <img src={kanban} alt="banner" className="hero-banner__img" loading="lazy" />
           <div className="kanb-logo">
             <img src={kanblogo} alt="kanb logo" className="w-100 h-100 rounded-0" />
           </div>
-        </ReloadNavLink>
+        </a>
 
         <div className="right">
           <Swiper

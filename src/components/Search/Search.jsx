@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import "./Search.scss";
 import shop1 from "../../assets/images/search/1.jpg";
 import shop2 from "../../assets/images/search/2.jpg";
@@ -51,7 +50,6 @@ const Search = () => {
   const [filtered, setFiltered] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [isPinned, setIsPinned] = useState(false);
-  const navigate = useNavigate();
   const boxRef = useRef(null);
 
   const handleChange = (e) => {
@@ -71,7 +69,7 @@ const Search = () => {
 
   const handleSelect = (product) => {
     const id = product.name.toLowerCase().replace(/\s+/g, "-"); // kebab-case
-    navigate(`/${product.page}#${id}`);
+    // navigate(`/${product.page}#${id}`);
     setKeyword("");
     setFiltered(products);
     setIsOpen(false);

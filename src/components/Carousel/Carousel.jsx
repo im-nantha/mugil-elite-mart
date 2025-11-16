@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import banner1 from "../../assets/images/banners/banner-1.jpg";
 import banner2 from "../../assets/images/banners/banner-3.jpg";
 import banner3 from "../../assets/images/banners/banner-4.jpg";
@@ -9,7 +8,7 @@ import banner3 from "../../assets/images/banners/banner-4.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./Carousel.scss"
+import "./Carousel.scss";
 
 function Carousel() {
   return (
@@ -28,31 +27,16 @@ function Carousel() {
           <SwiperSlide>
             <img className="mugil-banner-img" src={banner1} alt="Slide 1" />
             <div className="mugil-carousel-text-wrapper">
-              {/* <h1 >Fresh Blooms, Daily Joy</h1>
-              <p>
-                Fresh flowers, handpicked daily to brighten your every moment..
-              </p> */}
-              {/* <a className="mugil-banner-button" href="/" data-discover="true">Know more</a> */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <img className="mugil-banner-img" src={banner3} alt="Slide 2" />
             <div className="mugil-carousel-text-wrapper">
-              {/* <h1 >Fresh Blooms, Daily Joy</h1>
-              <p>
-                Fresh flowers, handpicked daily to brighten your every moment..
-              </p> */}
-              {/* <a className="mugil-banner-button" href="/" data-discover="true">Know more</a> */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <img className="mugil-banner-img" src={banner2} alt="Slide 3" />
             <div className="mugil-carousel-text-wrapper">
-              {/* <h1 >Fresh Blooms, Daily Joy</h1>
-              <p>
-                Fresh flowers, handpicked daily to brighten your every moment..
-              </p> */}
-              {/* <a className="mugil-banner-button" href="/" data-discover="true">Know more</a> */}
             </div>
           </SwiperSlide>
         </Swiper>

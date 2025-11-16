@@ -1,5 +1,8 @@
 import React from "react";
 import FaqTabs from "../components/FaqTabs/FaqTabs";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "../assets/styles/main.scss";
 
 const allFaqs = [
   { question: "What types of plywood does Mugil Elite Mart offer?", answer: "We provide a wide range of plywood including BWP, Marine, Commercial, Fire Retardant, Laminated, Acrylic, PVC, HDMR, and Block Boards suitable for furniture, interiors, and construction." },
@@ -17,9 +20,13 @@ const allFaqs = [
 
 function FaqPage() {
   return (
-    <section>
-      <FaqTabs faqs={allFaqs} showMore={false} />
-    </section>
+    <>
+      <Header />
+      <section>
+        <FaqTabs faqs={allFaqs} showMore={false} />
+      </section>
+      <Footer />
+    </>
   );
 }
 
