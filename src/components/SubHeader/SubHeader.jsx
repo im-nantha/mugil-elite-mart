@@ -42,6 +42,8 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
 
+  const isActive = (path) => window.location.pathname.replace(/\/$/, "") === path;
+
   return (
     <div className={`sub-header ${showHeader ? "show" : "hide"} ${menuOpen ? "open" : ""}`}>
       <div className="mugil-mart-header">
@@ -56,75 +58,33 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
         <nav className="mugil-mart-navbar">
           <ul className="mugil-mart-navbar-content">
             <li>
-              <a
-                href="/"
-                end
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
-                Home
-              </a>
+              <a href="/" className={`mugil-mart-nav-wrap ${isActive("/") ? "active" : ""}`}>Home</a>
             </li>
             <li>
-              <a
-                href="/home-decor"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
+              <a href="/home-decor" className={`mugil-mart-nav-wrap ${isActive("/home-decor") ? "active" : ""}`}>
                 Home Decor
               </a>
             </li>
             <li>
-              <a
-                href="/products"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
+              <a href="/products" className={`mugil-mart-nav-wrap ${isActive("/products") ? "active" : ""}`}>
                 Interior Solutions
               </a>
             </li>
+
             <li>
-              <a
-                href="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
+              <a href="/about" className={`mugil-mart-nav-wrap ${isActive("/about") ? "active" : ""}`}>
                 About Us
               </a>
             </li>
+
             <li>
-              <a
-                href="/contact"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
+              <a href="/contact" className={`mugil-mart-nav-wrap ${isActive("/contact") ? "active" : ""}`}>
                 Contact Us
               </a>
             </li>
+
             <li>
-              <a
-                href="/bulk-orders"
-                className={({ isActive }) =>
-                  isActive
-                    ? "mugil-mart-nav-wrap active"
-                    : "mugil-mart-nav-wrap"
-                }
-              >
+              <a href="/bulk-orders" className={`mugil-mart-nav-wrap ${isActive("/bulk-orders") ? "active" : ""}`}>
                 Bulk Orders
               </a>
             </li>
