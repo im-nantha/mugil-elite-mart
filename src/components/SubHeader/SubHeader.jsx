@@ -58,7 +58,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
         <nav className="mugil-mart-navbar">
           <ul className="mugil-mart-navbar-content">
             <li>
-              <a href="/" className={`mugil-mart-nav-wrap ${isActive("/") ? "active" : ""}`}>Home</a>
+              <a href="/" className={`mugil-mart-nav-wrap ${isActive("") ? "active" : ""}`}>Home</a>
             </li>
             <li>
               <a href="/home-decor" className={`mugil-mart-nav-wrap ${isActive("/home-decor") ? "active" : ""}`}>
