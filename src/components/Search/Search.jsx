@@ -69,12 +69,14 @@ const Search = () => {
 
   const handleSelect = (product) => {
     const id = product.name.toLowerCase().replace(/\s+/g, "-"); // kebab-case
-    // navigate(`/${product.page}#${id}`);
+    window.location.href = `/${product.page}.html#${id}`;
+
     setKeyword("");
     setFiltered(products);
     setIsOpen(false);
     setIsPinned(false);
   };
+
 
   // Outside click handler
   useEffect(() => {
