@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DefaultFeaturedCollectionData from "../../data/FeaturedCollection.json";
 import "./FeaturedCollections.scss";
 import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 
@@ -28,7 +27,7 @@ const FeaturedCollectionCards = ({ productName, productImagePath, isSquare, onIm
   );
 };
 
-const FeaturedCollections = ({ data = DefaultFeaturedCollectionData, isHomepage = false, isSquare = false, isThreeCol = false }) => {
+const FeaturedCollections = ({ data, isHomepage = false, isSquare = false, isThreeCol = false }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedName, setSelectedName] = useState("");
 
