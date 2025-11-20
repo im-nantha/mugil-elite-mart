@@ -8,7 +8,7 @@ const MissionVision = () => {
       column: 1,
       items: [
         {
-          icon: "https://img.icons8.com/ios-filled/50/ffffff/barcode.png",
+          icon: "https://img.icons8.com/ios-filled/50/ffffff/wallet.png",
           title: "Our Mission",
           description: ["To be the go-to destination for all home improvement and interior solutions, delivering products and services that combine innovation, reliability, and aesthetic appeal."],
         },
