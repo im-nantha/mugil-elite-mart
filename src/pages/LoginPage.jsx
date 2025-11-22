@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { auth, db } from "../firebase/firebase.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { collection, onSnapshot } from "firebase/firestore";
-// import "./Login.scss";
+import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
 import loginimg from "../../src/assets/images/banners/admin-img.jpg";
 import afterLogin from "../../src/assets/images/banners/after-login.png";
 import Header from "../components/Header/Header";
@@ -20,6 +19,10 @@ const LoginPage = () => {
   const [bulkOrdersData, setBulkOrdersData] = useState([]);
   const [loadingUsers, setLoadingUsers] = useState(false);
   const [loadingOrders, setLoadingOrders] = useState(false);
+  const [showDeletePopup, setShowDeletePopup] = useState(false);
+  const [deleteItem, setDeleteItem] = useState(null);
+  const [deleteType, setDeleteType] = useState("");
+
 
   useEffect(() => {
     if (!isLoggedIn) {
@@ -145,7 +148,7 @@ const LoginPage = () => {
     sessionStorage.removeItem("isLoggedIn");
     sessionStorage.removeItem("usersData");
     sessionStorage.removeItem("bulkOrdersData");
-    window.location.reload();
+    window.location.href = window.location.pathname;
   };
 
   // ----------------------------
@@ -180,6 +183,44 @@ const LoginPage = () => {
       unsubscribeOrders();
     };
   }, [isLoggedIn]);
+
+  const openDeletePopup = (item, type) => {
+    setDeleteItem(item);
+    setDeleteType(type);
+    setShowDeletePopup(true);
+  };
+
+  const cancelDelete = () => {
+    setShowDeletePopup(false);
+    setDeleteItem(null);
+    setDeleteType("");
+  };
+
+  const confirmDelete = async () => {
+    if (!deleteItem || !deleteType) return;
+
+    try {
+      await deleteDoc(doc(db, deleteType, deleteItem.id));
+
+      // Clear session storage for correct fresh reload
+      if (deleteType === "users") {
+        sessionStorage.removeItem("usersData");
+        setUsersData((prev) => prev.filter((u) => u.id !== deleteItem.id));
+      }
+      else if (deleteType === "bulkorders") {
+        sessionStorage.removeItem("bulkOrdersData");
+        setBulkOrdersData((prev) => prev.filter((o) => o.id !== deleteItem.id));
+      }
+
+    } catch (err) {
+      console.error("Delete failed", err);
+    }
+
+    cancelDelete();
+  };
+
+
+
 
   // ----------------------------
   // UI Rendering
@@ -272,6 +313,7 @@ const LoginPage = () => {
                       <th>Message</th>
                       <th>Created Date</th>
                       <th>Created Time</th>
+                      <th>Delete</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -283,6 +325,14 @@ const LoginPage = () => {
                         <td>{user.message || "-"}</td>
                         <td>{user.createdDate || "-"}</td>
                         <td>{user.createdTime || "-"}</td>
+                        <td className="col-delete">
+                          <button
+                            className="delete-icon"
+                            onClick={() => openDeletePopup(user, "users")}
+                          >
+                            🗑️
+                          </button>
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -307,6 +357,7 @@ const LoginPage = () => {
                       <th>Special Request</th>
                       <th>Created Date</th>
                       <th>Created Time</th>
+                      <th>Delete</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -318,6 +369,14 @@ const LoginPage = () => {
                         <td>{order.specialRequest || "-"}</td>
                         <td>{order.createdDate || "-"}</td>
                         <td>{order.createdTime || "-"}</td>
+                        <td className="col-delete">
+                          <button
+                            className="delete-icon"
+                            onClick={() => openDeletePopup(order, "bulkorders")}
+                          >
+                            🗑️
+                          </button>
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -331,6 +390,22 @@ const LoginPage = () => {
           </div>
         )}
       </div>
+      {showDeletePopup && (
+        <div className="delete-popup-overlay">
+          <div className="delete-popup">
+            <h2>Would you like to delete?</h2>
+
+            <div className="popup-actions">
+              <button className="btn-cancel" onClick={cancelDelete}>
+                Cancel
+              </button>
+              <button className="btn-delete" onClick={confirmDelete}>
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <Footer />
     </>
   );

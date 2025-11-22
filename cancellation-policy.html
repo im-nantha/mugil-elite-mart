@@ -51,6 +51,7 @@
    ]
  }
 </script>
+ <link rel="stylesheet" href="./src/assets/styles/loader.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -64,7 +65,11 @@
 </head>
 
 <body>
+  <div id="page-loader" class="page-loader">
+    <img src="/src/assets/images/loader.gif" alt="Loading..." class="loader-img" />
+  </div>
   <div id="root"></div>
+  <script src="/src/hooks/loader.js"></script>
   <script type="module" src="/src/entries/cancellation-policy/main.jsx"></script>
 </body>
 

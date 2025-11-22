@@ -205,6 +205,15 @@
       border-collapse: collapse;
       margin-bottom: 1.5rem;
 
+      .col-delete {
+        width: 30px;
+      white-space: nowrap;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      }
+
+
       th,
       td {
         border: 1px solid #ddd;
@@ -250,6 +259,63 @@
     }
   }
 }
+
+
+.delete-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.delete-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.delete-popup {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.popup-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-cancel {
+  padding: 10px 20px;
+  background: #777;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 10px 20px;
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
 
 @keyframes fadeIn {
   from {

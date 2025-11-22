@@ -9,6 +9,7 @@
     content="Know how complaints, product returns and replacements are handled at Vasi Glass & Plywood.">
   <link rel="canonical" href="https://mugilelitemart.com/grievance-return-policy">
   <link rel="icon" type="image/png" href="./src/assets/images/mem-logo.png" />
+  <link rel="stylesheet" href="./src/assets/styles/loader.css" />
   <script type="application/ld+json">
  {
    "@context": "https://schema.org",
@@ -64,7 +65,11 @@
 </head>
 
 <body>
+  <div id="page-loader" class="page-loader">
+    <img src="/src/assets/images/loader.gif" alt="Loading..." class="loader-img" />
+  </div>
   <div id="root"></div>
+  <script src="/src/hooks/loader.js"></script>
   <script type="module" src="/src/entries/grievance-policy/main.jsx"></script>
 </body>
 

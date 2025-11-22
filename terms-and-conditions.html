@@ -9,6 +9,7 @@
     content="Review the terms and conditions governing the use of Vasi Glass & Plywood products and website.">
   <link rel="canonical" href="https://mugilelitemart.com/terms-and-conditions">
   <link rel="icon" type="image/png" href="./src/assets/images/mem-logo.png" />
+  <link rel="stylesheet" href="./src/assets/styles/loader.css" />
   <script type="application/ld+json">
  {
    "@context": "https://schema.org",
@@ -64,7 +65,11 @@
 </head>
 
 <body>
+  <div id="page-loader" class="page-loader">
+    <img src="/src/assets/images/loader.gif" alt="Loading..." class="loader-img" />
+  </div>
   <div id="root"></div>
+  <script src="/src/hooks/loader.js"></script>
   <script type="module" src="/src/entries/terms-and-conditions/main.jsx"></script>
 </body>
 
