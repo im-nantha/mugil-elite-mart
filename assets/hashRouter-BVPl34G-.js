@@ -1,0 +1,1 @@
+function e(){const t=window.location.hash;if(!t)return;const n=t.substring(1),o=document.getElementById(n);o?o.scrollIntoView({behavior:"smooth",block:"start"}):setTimeout(e,100)}window.addEventListener("load",()=>{setTimeout(e,100)});
