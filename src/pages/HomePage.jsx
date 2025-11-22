@@ -34,7 +34,7 @@ const Home = () => {
         <IntroBanner />
         <DoubleBanner />
         <ProductTabs />
-        <Title title={"Godrej Locks Gallery"} subtitle={"Explore our exclusive collection of Godrej locks, combining security with style."}
+        <Title title={"Godrej Locks"} subtitle={"Explore our exclusive collection of Godrej locks, combining security with style."}
           center={true} />
         <Gallery images={godrejImages} spacing={true} />
         <HeroBanner src={bannerImage} link={"https://www.pluspointlocks.com/"} />

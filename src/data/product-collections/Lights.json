@@ -1,5 +1,25 @@
 [
   {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/27.jpg",
+    "productCategory": "lights",
+    "productName": ""
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/28.jpg",
+    "productCategory": "lights",
+    "productName": ""
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/29.jpg",
+    "productCategory": "lights",
+    "productName": ""
+  },
+  {
+    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/30.jpg",
+    "productCategory": "lights",
+    "productName": ""
+  },
+  {
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/1.jpg",
     "productCategory": "lights",
     "productName": "Bulb_Standard"
@@ -128,25 +148,5 @@
     "productImagePath": "/mugil-elite-mart/assets/images/products/lights/26.jpg",
     "productCategory": "lights",
     "productName": "AccentSpot"
-  },
-  {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/27.jpg",
-    "productCategory": "lights",
-    "productName": "lights 27"
-  },
-  {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/28.jpg",
-    "productCategory": "lights",
-    "productName": "lights 28"
-  },
-  {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/29.jpg",
-    "productCategory": "lights",
-    "productName": "lights 29"
-  },
-  {
-    "productImagePath": "/mugil-elite-mart/assets/images/products/lights/30.jpg",
-    "productCategory": "lights",
-    "productName": "lights 30"
   }
 ]

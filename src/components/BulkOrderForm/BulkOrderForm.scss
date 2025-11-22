@@ -4,6 +4,10 @@
   justify-content: center;
   padding: 30px;
 
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+
   .form-container {
     width: 80%;
     background: #a18cd1;
