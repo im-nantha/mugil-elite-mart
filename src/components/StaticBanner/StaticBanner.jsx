@@ -1,6 +1,6 @@
 import React from "react";
 import "./StaticBanner.scss";
-import staticbanner from "../../assets/images/shop-banner.jpg";
+import staticbanner from "../../assets/images/mugil-shop.jpeg";
 import useRevealOnScroll from "../../hooks/useRevealOnScroll"
 
 
