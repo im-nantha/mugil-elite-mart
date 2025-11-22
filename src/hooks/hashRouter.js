@@ -1,20 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // If URL contains a hash, scroll to it
-    if (window.location.hash) {
-        const id = window.location.hash.substring(1); // remove #
-        scrollToSection(id);
+function waitForSectionAndScroll() {
+  const hash = window.location.hash;
+  if (!hash) return;
 
-        // Run again after images/styles load to ensure correct position
-        window.addEventListener("load", function () {
-            scrollToSection(id);
-        });
-    }
+  const id = hash.substring(1);
+  const el = document.getElementById(id);
 
-    // Function to scroll smoothly
-    function scrollToSection(id) {
-        const section = document.getElementById(id);
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-    }
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else {
+    // Keep checking every 100ms until React renders the element
+    setTimeout(waitForSectionAndScroll, 100);
+  }
+}
+
+// Run after everything, including React rendering
+window.addEventListener("load", () => {
+  setTimeout(waitForSectionAndScroll, 100);
 });
