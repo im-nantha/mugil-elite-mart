@@ -1,0 +1,1 @@
+import{j as e}from"./Header-CboFxoSv.js";const d=({title:p,subtitle:s})=>e.jsxs("div",{id:p.toLowerCase().replace(/\s+/g,"-"),children:[e.jsx("h2",{className:"pe-2 pt-3 pb-1 pe-md-4 pt-md-4 pb-md-2",children:p}),s&&e.jsx("h5",{className:"pe-2 pt-2 pb-1 pe-md-4 pb-md-2",children:s})]});export{d as T};
