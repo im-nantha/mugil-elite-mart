@@ -41,7 +41,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://api.whatsapp.com/send?phone=9894487698&text=Hi%20Murugan"
+                href="https://api.whatsapp.com/send?phone=9894487698&text=Hi%20Murugan!%20I%E2%80%99m%20exploring%20your%20premium%20range%20and%20want%20details%20on%20the%20best%20products."
                 className="footer-icons-wrap"
                 target="_blank"
                 rel="noreferrer"
