@@ -4,31 +4,31 @@ import './StackingCards.scss';
 const products = [
   {
     productName: "BWP Grade Plywood",
-    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/1.jpg"
+    productPath: "/mugil-elite-mart/assets/images/stacking-cards/1.jpg"
   },
   {
     productName: "Marine Plywood",
-    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/2.jpg"
+    productPath: "/mugil-elite-mart/assets/images/stacking-cards/2.jpg"
   },
   {
     productName: "Commercial Plywood",
-    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/3.jpg"
+    productPath: "/mugil-elite-mart/assets/images/stacking-cards/3.jpg"
   },
   {
     productName: "Flexible Plywood",
-    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/4.jpg"
+    productPath: "/mugil-elite-mart/assets/images/stacking-cards/4.jpg"
   },
   {
     productName: "Laminated Plywood",
-    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/5.jpg"
+    productPath: "/mugil-elite-mart/assets/images/stacking-cards/5.jpg"
   },
   {
     productName: "Fire Retardant Plywood",
-    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/6.jpg"
+    productPath: "/mugil-elite-mart/assets/images/stacking-cards/6.jpg"
   },
   {
     productName: "Veneered Plywood",
-    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/7.jpg"
+    productPath: "/mugil-elite-mart/assets/images/stacking-cards/7.jpg"
   },
 ];
 
