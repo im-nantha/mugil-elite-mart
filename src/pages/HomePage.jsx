@@ -15,6 +15,7 @@ import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
 import StaticBanner from "../components/StaticBanner/StaticBanner";
 import Testimonials from "../components/Testimonials/Testimonials";
 import "../assets/styles/main.scss";
+import StackingCards from "../components/StackingCards/StackingCards";
 
 const homeFaqs = [
   { question: "What types of plywood does Mugil Elite Mart offer?", answer: "We provide a wide range of plywood including BWP, Marine, Commercial, Fire Retardant, Laminated, Acrylic, PVC, HDMR, and Block Boards suitable for furniture, interiors, and construction." },
@@ -32,14 +33,15 @@ const Home = () => {
         <IntroBanner />
         <DoubleBanner />
         <ProductTabs />
-        <HeroBanner src={bannerImage} link={"https://www.pluspointlocks.com/"} />
         <Gallery images={godrejImages} spacing={true} />
-        <StaticBanner />
+        <HeroBanner src={bannerImage} link={"https://www.pluspointlocks.com/"} />
         <HeroBanner src={securityBannerImage} />
+        <StaticBanner />
         <ShopByCategories />
         <PartnersCarousel />
         <Testimonials />
         <Gallery storeTitle={"Our Store"} />
+        <StackingCards />
         <FaqTabs faqs={homeFaqs} showMore={true} />
       </main>
     </Fragment>

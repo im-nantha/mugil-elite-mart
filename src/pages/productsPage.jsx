@@ -31,6 +31,14 @@ const Products = () => {
       <div className="mugil-container" style={{ "background": "#f4f4f4" }}>
         <Title title={"Door Handles"} subtitle={"Secure your world with trust and innovation."} />
         <FeaturedCollections data={Lock} isSquare={true} />
+        <Title title={"QUEEN LOCK SET"} subtitle={"QUEEN LOCK SET."} />
+        <FeaturedCollections data={queenlockset} isSquare={true} isAutoLayout={true} />
+        <Title title={"PULL HANDLES"} subtitle={"PULL HANDLES"} />
+        <FeaturedCollections data={pullhandles} isSquare={true} />
+        <Title title={"Door pull lock set"} subtitle={"Door pull lock set"} />
+        <FeaturedCollections data={doorpulllock} isSquare={true} />
+        <Title title={"Door Hinges"} subtitle={"Door Hinges"} />
+        <FeaturedCollections data={doorhinges} isSquare={true} isAutoLayout={true} />
         <Title title={"Handles"} subtitle={"Secure your world with trust and innovation."} />
         <FeaturedCollections data={Handles} isSquare={true} />
         <Title title={"Aluminum Profile"} subtitle={"Sleek, durable, and built for modern living."} />
@@ -47,14 +55,6 @@ const Products = () => {
         <FeaturedCollections data={Paints} isSquare={true} />
         <Title title={"Doors"} subtitle={"Strength and style combined for every design need."} />
         <Gallery images={doors} spacing={true} fourCards={true} />
-        <Title title={"QUEEN LOCK SET"} subtitle={"QUEEN LOCK SET."} />
-        <FeaturedCollections data={queenlockset} isSquare={true} />
-        <Title title={"PULL HANDLES"} subtitle={"PULL HANDLES"} />
-        <FeaturedCollections data={pullhandles} isSquare={true} />
-        <Title title={"Door pull lock set"} subtitle={"Door pull lock set"} />
-        <FeaturedCollections data={doorpulllock} isSquare={true} />
-        <Title title={"Door Hinges"} subtitle={"Door Hinges"} />
-        <FeaturedCollections data={doorhinges} isSquare={true} />
       </div>
       <Footer />
     </>

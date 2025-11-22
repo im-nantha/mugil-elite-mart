@@ -27,7 +27,7 @@ const FeaturedCollectionCards = ({ productName, productImagePath, isSquare, onIm
   );
 };
 
-const FeaturedCollections = ({ data, isHomepage = false, isSquare = false, isThreeCol = false }) => {
+const FeaturedCollections = ({ data, isHomepage = false, isSquare = false, isThreeCol = false, isAutoLayout = false }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedName, setSelectedName] = useState("");
 
@@ -43,7 +43,7 @@ const FeaturedCollections = ({ data, isHomepage = false, isSquare = false, isThr
 
   return (
     <section className="mugil-fc-container pt-4">
-      <div className={`mugil-fc-wrapper homepage ${isThreeCol ? 'three-col' : ''}`}>
+      <div className={`mugil-fc-wrapper homepage ${isThreeCol ? 'three-col' : ''} ${isAutoLayout ? 'auto-layout' : ''}`}>
         {(isHomepage ? data.slice(0, 5) : data).map((item, index) => (
           <FeaturedCollectionCards
             isSquare={isSquare}

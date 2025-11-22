@@ -14,7 +14,7 @@ const DoubleBanner = () => {
   return (
     <div className="hero-banner">
       <div className="sbc-title">
-        <h2 className="text-center">In collab with Kanban B</h2>
+        <h2 className="text-center">In collab with Kan B</h2>
       </div>
 
       <div className="kanban-banner w-100 d-flex" title="click here!">

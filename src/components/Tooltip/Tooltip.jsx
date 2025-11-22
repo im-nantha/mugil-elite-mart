@@ -35,12 +35,12 @@ const Tooltip = () => {
             <p className="text-center">Lights</p>
           </div>
         </a>
-        <a href="/mugil-elite-mart/products#plywood" className="tooltip-items">
+        <a href="/mugil-elite-mart/products#door-handles" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop4} alt="images" />
           </div>
           <div className="tooltip-text-wrapper">
-            <p className="text-center">Plywood</p>
+            <p className="text-center">Door Handles</p>
           </div>
         </a>
         <a href="/mugil-elite-mart/products#hardware" className="tooltip-items">
