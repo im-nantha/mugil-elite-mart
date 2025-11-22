@@ -1,37 +1,22 @@
 [
   {
-    "productName": "Asian paints 1",
     "productImagePath": "/mugil-elite-mart/assets/images/paint/asian/asian-paint-1.png",
     "productCategory": "paint"
   },
   {
-    "productName": "Asian paints 2",
     "productImagePath": "/mugil-elite-mart/assets/images/paint/asian/asian-paint-2.png",
     "productCategory": "paint"
   },
   {
-    "productName": "Asian paints 3",
     "productImagePath": "/mugil-elite-mart/assets/images/paint/asian/asian-paint-3.png",
     "productCategory": "paint"
   },
   {
-    "productName": "Asian paints 4",
     "productImagePath": "/mugil-elite-mart/assets/images/paint/asian/asian-paint-4.png",
     "productCategory": "paint"
   },
   {
-    "productName": "Asian paints 5",
     "productImagePath": "/mugil-elite-mart/assets/images/paint/asian/asian-paint-5.png",
-    "productCategory": "paint"
-  },
-  {
-    "productName": "Asian paints 6",
-    "productImagePath": "/mugil-elite-mart/assets/images/paint/asian/asian-paint-6.png",
-    "productCategory": "paint"
-  },
-  {
-    "productName": "Asian paints 7",
-    "productImagePath": "/mugil-elite-mart/assets/images/paint/asian/asian-paint-7.png",
     "productCategory": "paint"
   }
 ]
