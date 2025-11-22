@@ -7,8 +7,6 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import "../assets/styles/main.scss";
 
-
-import Plywood from "../data/product-collections/Plywood.json";
 import Lock from "../data/product-collections/Locks.json";
 import Handles from "../data/product-collections/Handles.json";
 import Aluminium from "../data/product-collections/Aluminum-Profile.json";

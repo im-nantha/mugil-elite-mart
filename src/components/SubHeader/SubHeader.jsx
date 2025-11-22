@@ -44,7 +44,19 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
 
-  const isActive = (path) => window.location.pathname.replace(/\/$/, "") === path;
+  const isActive = (path) => {
+    const currentPath = window.location.pathname.replace(/\/$/, ""); // remove trailing slash
+    const normalizedPath = path.replace(/\/$/, ""); // remove trailing slash from input
+
+    // Special case: homepage should only be active on exact homepage
+    if (normalizedPath === "/mugil-elite-mart") {
+      return currentPath === normalizedPath;
+    }
+
+    // For other pages, highlight if currentPath starts with that path
+    return currentPath.startsWith(normalizedPath);
+  };
+
 
   return (
     <div className={`sub-header ${showHeader ? "show" : "hide"} ${menuOpen ? "open" : ""}`}>
