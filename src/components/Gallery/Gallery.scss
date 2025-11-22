@@ -115,7 +115,7 @@
 	transition: 0.2s;
 
 	&:hover {
-		color: #ff4d4d;
+		color: var(--blue-gradient);
 		transform: scale(1.1);
 	}
 }
