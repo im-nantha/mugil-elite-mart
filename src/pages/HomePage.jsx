@@ -33,6 +33,7 @@ const Home = () => {
         <Features />
         <IntroBanner />
         <DoubleBanner />
+        <StackingCards />
         <ProductTabs />
         <Title title={"Godrej Locks"} subtitle={"Explore our exclusive collection of Godrej locks, combining security with style."}
           center={true} />
@@ -46,7 +47,6 @@ const Home = () => {
         <Gallery storeTitle={"Our Store"} />
         <Title title={"Plywoods"} subtitle={"Discover our premium range of plywoods, engineered for durability and aesthetic appeal."}
           center={true} />
-        <StackingCards />
         <FaqTabs faqs={homeFaqs} showMore={true} />
       </main>
     </Fragment>

@@ -141,7 +141,7 @@ const ContactForm = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                54, Near Tolgate, Chennai Salem Highway, Kallakurichi, Tamil Nadu 606202
+                54, Near Tollgate, Chennai Salem Highway, Kallakurichi, Tamil Nadu 606202
               </a>
             </li>
 

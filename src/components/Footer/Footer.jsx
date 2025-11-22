@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="footer-body-link-container">
             <h5 className="card-title pb-4">Business Contact</h5>
             <ul className="footer-menu-list">
-              <li>54, Near Tolgate, near, Chennai Salem Highway, oop.
+              <li>54, Near Tollgate, near, Chennai Salem Highway, oop.
                 admk office, Kallakurichi, Tamil Nadu 606202
               </li>
             </ul>
