@@ -18,6 +18,10 @@ import CeilingFans from "../data/product-collections/Ceiling-Fans.json";
 import ExhaustFans from "../data/product-collections/Exhaust-Fans.json";
 import Paints from "../data/product-collections/Paints.json";
 import doors from "../data/product-collections/doors.json";
+import queenlockset from "../data/product-collections/queenlockset.json";
+import pullhandles from "../data/product-collections/pullhandles.json";
+import doorpulllock from "../data/product-collections/doorpulllock.json";
+import doorhinges from "../data/product-collections/doorhinges.json";
 
 const Products = () => {
   return (
@@ -45,6 +49,14 @@ const Products = () => {
         <FeaturedCollections data={Paints} isSquare={true} />
         <Title title={"Doors"} subtitle={"Strength and style combined for every design need."} />
         <Gallery images={doors} spacing={true} fourCards={true} />
+        <Title title={"QUEEN LOCK SET"} subtitle={"QUEEN LOCK SET."} />
+        <FeaturedCollections data={queenlockset} isSquare={true} />
+        <Title title={"PULL HANDLES"} subtitle={"PULL HANDLES"} />
+        <FeaturedCollections data={pullhandles} isSquare={true} />
+        <Title title={"Door pull lock set"} subtitle={"Door pull lock set"} />
+        <FeaturedCollections data={doorpulllock} isSquare={true} />
+        <Title title={"Door Hinges"} subtitle={"Door Hinges"} />
+        <FeaturedCollections data={doorhinges} isSquare={true} />
       </div>
       <Footer />
     </>

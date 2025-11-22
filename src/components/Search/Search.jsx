@@ -69,7 +69,7 @@ const Search = () => {
 
   const handleSelect = (product) => {
     const id = product.name.toLowerCase().replace(/\s+/g, "-"); // kebab-case
-    window.location.href = `/${product.page}.html#${id}`;
+    window.location.href = `/mugil-elite-mart/${product.page}.html#${id}`;
 
     setKeyword("");
     setFiltered(products);

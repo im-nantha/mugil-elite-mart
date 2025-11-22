@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import bannerImage from "../../src/assets/images/banners/godrij-banner.png";
+import securityBannerImage from "../../src/assets/images/banners/security-banner.jpg";
 import godrejImages from "../../src/data/homepage/godrej.json";
 import Carousel from "../components/Carousel/Carousel";
 import DoubleBanner from "../components/DoubleBanner/DoubleBanner";
@@ -13,8 +14,6 @@ import ProductTabs from "../components/ProductTabs/ProductTabs";
 import ShopByCategories from "../components/ShopByCategories/ShopByCategories";
 import StaticBanner from "../components/StaticBanner/StaticBanner";
 import Testimonials from "../components/Testimonials/Testimonials";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
 import "../assets/styles/main.scss";
 
 const homeFaqs = [
@@ -33,9 +32,10 @@ const Home = () => {
         <IntroBanner />
         <DoubleBanner />
         <ProductTabs />
-        <HeroBanner src={bannerImage} />
+        <HeroBanner src={bannerImage} link={"https://www.pluspointlocks.com/"} />
         <Gallery images={godrejImages} spacing={true} />
         <StaticBanner />
+        <HeroBanner src={securityBannerImage} />
         <ShopByCategories />
         <PartnersCarousel />
         <Testimonials />
