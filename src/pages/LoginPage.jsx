@@ -313,7 +313,7 @@ const LoginPage = () => {
                       <th>Message</th>
                       <th>Created Date</th>
                       <th>Created Time</th>
-                      <th>Delete</th>
+                      <th className="text-center">Delete</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -357,7 +357,7 @@ const LoginPage = () => {
                       <th>Special Request</th>
                       <th>Created Date</th>
                       <th>Created Time</th>
-                      <th>Delete</th>
+                      <th className="text-center">Delete</th>
                     </tr>
                   </thead>
                   <tbody>

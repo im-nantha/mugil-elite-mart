@@ -11,5 +11,5 @@ window.addEventListener("load", () => {
       document.body.classList.remove("no-scroll");
       loader.remove();
     }, 600);
-  }, 2000);
+  }, 1000);
 });

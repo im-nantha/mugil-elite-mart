@@ -3,6 +3,8 @@ import calllogo from "../../assets/images/icons/call-icon.png";
 import loginicon from "../../assets/images/icons/login.jpg";
 import Tooltip from "../Tooltip/Tooltip.jsx";
 import "./SubHeader.scss";
+import logo from "../../assets/images/mugil-logo.jpg";
+import mainlogo from "../../assets/images/mem-logo.png";
 
 const SubHeader = ({ menuOpen, onCloseMenu }) => {
 
@@ -56,6 +58,26 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
         </div>
         <span className="x-icon" onClick={onCloseMenu}>&times;</span>
         <nav className="mugil-mart-navbar">
+          <div className="logo d-lg-none d-flex">
+            <div className="mugil-mart-main-logo">
+              <a href="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+                <img
+                  className="mugil-mart-img"
+                  src={mainlogo}
+                  alt="mugil-mart-logo"
+                />
+              </a>
+            </div>
+            <div className="mugil-mart-logo">
+              <a href="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+                <img
+                  className="mugil-mart-img"
+                  src={logo}
+                  alt="mugil-mart-logo"
+                />
+              </a>
+            </div>
+          </div>
           <ul className="mugil-mart-navbar-content">
             <li>
               <a href="/mugil-elite-mart/" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart") ? "active" : ""}`}>Home</a>
@@ -90,7 +112,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
             </li>
           </ul>
         </nav>
-        <div className="mugil-mart-list-wrapper d-md-none d-flex">
+        <div className="mugil-mart-list-wrapper d-lg-none d-flex">
           <div className="mugil-mart-items">
             <a
               href="https://www.youtube.com/@vasi_glass_kallakurichi_y2q"
