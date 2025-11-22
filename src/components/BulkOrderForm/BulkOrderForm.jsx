@@ -13,50 +13,53 @@ const BulkOrderForm = () => {
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState(""); // "success" | "error" | ""
 
-  // --- Firestore API call ---
+  // Popup states
+  const [popup, setPopup] = useState({
+    show: false,
+    type: "", // success | error
+    message: "",
+  });
+
+  const closePopup = () => {
+    setPopup({ show: false, type: "", message: "" });
+  };
+
+  // --- Firestore API ---
   const submitForm = async (data) => {
-    try {
-      const ordersRef = collection(db, "bulkorders");
+    const ordersRef = collection(db, "bulkorders");
 
-      // Current timestamp
-      const now = new Date();
+    const now = new Date();
+    const createdDate = now.toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+      timeZone: "Asia/Kolkata",
+    });
 
-      // Format date and time in IST
-      const createdDate = now.toLocaleDateString("en-GB", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-        timeZone: "Asia/Kolkata",
-      });
-
-      const createdTime = now.toLocaleTimeString("en-GB", {
+    const createdTime = now
+      .toLocaleTimeString("en-GB", {
         hour: "numeric",
         minute: "2-digit",
         hour12: true,
         timeZone: "Asia/Kolkata",
-      }).toLowerCase();
+      })
+      .toLowerCase();
 
-      const docRef = await addDoc(ordersRef, {
-        ...data,
-        createdDate,
-        createdTime,
-      });
+    const docRef = await addDoc(ordersRef, {
+      ...data,
+      createdDate,
+      createdTime,
+    });
 
-      return { id: docRef.id, ...data, createdDate, createdTime };
-    } catch (error) {
-      console.error("Error submitting bulk order:", error);
-      throw error;
-    }
+    return { id: docRef.id, ...data, createdDate, createdTime };
   };
-
 
   // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    setErrors({ ...errors, [name]: "" }); // clear error while typing
+    setErrors({ ...errors, [name]: "" });
   };
 
   // Validation
@@ -76,9 +79,9 @@ const BulkOrderForm = () => {
     if (!formData.contactInfo.trim()) {
       newErrors.contactInfo = "Contact information is required.";
     } else {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      const phoneRegex = /^[0-9]{10}$/;
-      if (!emailRegex.test(formData.contactInfo) && !phoneRegex.test(formData.contactInfo)) {
+      const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phone = /^[0-9]{10}$/;
+      if (!email.test(formData.contactInfo) && !phone.test(formData.contactInfo)) {
         newErrors.contactInfo = "Enter a valid email or phone number.";
       }
     }
@@ -86,7 +89,7 @@ const BulkOrderForm = () => {
     return newErrors;
   };
 
-  // Handle submit
+  // Submit handler
   const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
@@ -96,13 +99,21 @@ const BulkOrderForm = () => {
     }
 
     setLoading(true);
-    setStatus("");
 
     try {
       await submitForm(formData);
-      setStatus("success");
-    } catch (err) {
-      setStatus("error");
+
+      setPopup({
+        show: true,
+        type: "success",
+        message: "Your bulk order has been submitted successfully!",
+      });
+    } catch (error) {
+      setPopup({
+        show: true,
+        type: "error",
+        message: "Something went wrong. Please try again later.",
+      });
     } finally {
       setLoading(false);
       setFormData({
@@ -114,107 +125,89 @@ const BulkOrderForm = () => {
     }
   };
 
-  // --- UI Rendering ---
-  if (loading) {
-    return (
-      <div className="bulk-order-form loading-screen">
-        <p>Submitting your bulk order...</p>
-      </div>
-    );
-  }
-
-  if (status === "success") {
-    return (
-      <div className="bulk-order-form success-screen">
-        <h3>✅ Thank you!</h3>
-        <p>Your bulk order has been submitted successfully.</p>
-      </div>
-    );
-  }
-
-  if (status === "error") {
-    return (
-      <div className="bulk-order-form error-screen">
-        <h3>❌ Oops!</h3>
-        <p>Something went wrong. Please try again later.</p>
-      </div>
-    );
-  }
-
   return (
-    <div className="bulk-order-form">
-      <div className="form-container">
-        <div className="title">Bulk Order Form</div>
-        <p className="sub-title">
-          Please fill in the details below to place your bulk order.
-        </p>
-
-        <form className="form-default" onSubmit={handleSubmit} noValidate>
-          {/* Quantity */}
-          <div className="form-group">
-            <label htmlFor="quantity">Product Quantity*</label>
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              value={formData.quantity}
-              onChange={handleChange}
-              className={errors.quantity ? "error" : ""}
-            />
-            {errors.quantity && (
-              <span className="error-msg">{errors.quantity}</span>
-            )}
+    <>
+      {/* ========== Popup Overlay ========== */}
+      {popup.show && (
+        <div className={`popup-overlay ${popup.type}`}>
+          <div className="popup-box">
+            <h3>{popup.type === "success" ? "✅ Success" : "❌ Error"}</h3>
+            <p>{popup.message}</p>
+            <button onClick={closePopup}>Okay</button>
           </div>
+        </div>
+      )}
 
-          {/* Address */}
-          <div className="form-group">
-            <label htmlFor="address">Delivery Address*</label>
-            <textarea
-              id="address"
-              name="address"
-              value={formData.address}
-              onChange={handleChange}
-              className={errors.address ? "error" : ""}
-            />
-            {errors.address && (
-              <span className="error-msg">{errors.address}</span>
-            )}
-          </div>
+      {/* ========== Form UI ========== */}
+      <div className="bulk-order-form">
+        <div className="form-container">
+          <div className="title">Bulk Order Form</div>
+          <p className="sub-title">
+            Please fill in the details below to place your bulk order.
+          </p>
 
-          {/* Contact Info */}
-          <div className="form-group">
-            <label htmlFor="contactInfo">Contact Information (Email or Phone)*</label>
-            <input
-              type="text"
-              id="contactInfo"
-              name="contactInfo"
-              value={formData.contactInfo}
-              onChange={handleChange}
-              className={errors.contactInfo ? "error" : ""}
-            />
-            {errors.contactInfo && (
-              <span className="error-msg">{errors.contactInfo}</span>
-            )}
-          </div>
+          <form className="form-default" onSubmit={handleSubmit} noValidate>
+            <div className="form-group">
+              <label htmlFor="quantity">Product Quantity*</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                value={formData.quantity}
+                onChange={handleChange}
+                className={errors.quantity ? "error" : ""}
+              />
+              {errors.quantity && (
+                <span className="error-msg">{errors.quantity}</span>
+              )}
+            </div>
 
-          {/* Special Request */}
-          <div className="form-group">
-            <label htmlFor="specialRequest">Special Requests (Optional)</label>
-            <textarea
-              id="specialRequest"
-              name="specialRequest"
-              value={formData.specialRequest}
-              onChange={handleChange}
-            />
-          </div>
+            <div className="form-group">
+              <label htmlFor="address">Delivery Address*</label>
+              <textarea
+                id="address"
+                name="address"
+                value={formData.address}
+                onChange={handleChange}
+                className={errors.address ? "error" : ""}
+              />
+              {errors.address && (
+                <span className="error-msg">{errors.address}</span>
+              )}
+            </div>
 
-          {/* Submit Button */}
-          <button type="submit" className="submit-btn">
-            Submit Order
-          </button>
-        </form>
+            <div className="form-group">
+              <label htmlFor="contactInfo">Contact Information*</label>
+              <input
+                type="text"
+                id="contactInfo"
+                name="contactInfo"
+                value={formData.contactInfo}
+                onChange={handleChange}
+                className={errors.contactInfo ? "error" : ""}
+              />
+              {errors.contactInfo && (
+                <span className="error-msg">{errors.contactInfo}</span>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="specialRequest">Special Requests (Optional)</label>
+              <textarea
+                id="specialRequest"
+                name="specialRequest"
+                value={formData.specialRequest}
+                onChange={handleChange}
+              />
+            </div>
+
+            <button type="submit" className="submit-btn" disabled={loading}>
+              {loading ? "Submitting..." : "Submit Order"}
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
