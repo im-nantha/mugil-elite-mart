@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){if(window.location.hash){const o=window.location.hash.substring(1);n(o),window.addEventListener("load",function(){n(o)})}function n(o){const t=document.getElementById(o);t&&t.scrollIntoView({behavior:"smooth",block:"start"})}});
