@@ -1,5 +1,8 @@
 .stacking-cards__container {
   position: relative;
+  @media (max-width: 768px) {
+    overflow: unset;
+  }
 }
 
 .stacking-cards {
@@ -14,18 +17,22 @@
 /* Each card */
 .stacking-cards__card {
   margin: 0 auto;
-  width: 80%;
+  width: 80vw;
+  position: sticky;
+    top: 76px;
   --index0: calc(var(--index) - 1);
-  --reverse-index: calc(var(--num-cards) - var(--index0));
+  // --reverse-index: calc(var(--num-cards) - var(--index0));
   --reverse-index0: calc(var(--reverse-index) - 1);
-
-  position: relative;
+  isolation: isolate;
   z-index: var(--reverse-index); // Higher cards appear on top
   margin-bottom: 20px; // slight gap before animation takes over
 
+  @media (max-width: 768px) {
+    top: 16px;
+    width: 100%;
+  }
+
   .stacking-cards__content {
-    position: sticky;
-    top: 70px;   // ⭐ Stick at 70px from top
     transform-origin: center top;
 
     --start-range: calc((var(--index0) / var(--num-cards)) * 100%);
@@ -47,10 +54,19 @@
 
 /* Card Body */
 .stacking-cards__body {
-  padding: 1rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  position: absolute;
+  bottom: 50%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  text-align: center; 
+  h2 {
+    color: #ffffff;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 100%;
+    } 
+  }
 }
 
 /* Animation — scales cards downward as they exit */

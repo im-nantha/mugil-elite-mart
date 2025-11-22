@@ -1,21 +1,45 @@
 import React from 'react';
 import './StackingCards.scss';
 
-
-const images = [
-  '/mugil-elite-mart/src/assets/images/stacking-cards/1.png',
-  '/mugil-elite-mart/src/assets/images/stacking-cards/2.png',
-  '/mugil-elite-mart/src/assets/images/stacking-cards/3.png',
-  '/mugil-elite-mart/src/assets/images/stacking-cards/4.png',
+const products = [
+  {
+    productName: "BWP Grade Plywood",
+    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/1.jpg"
+  },
+  {
+    productName: "Marine Plywood",
+    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/2.jpg"
+  },
+  {
+    productName: "Commercial Plywood",
+    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/3.jpg"
+  },
+  {
+    productName: "Flexible Plywood",
+    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/4.jpg"
+  },
+  {
+    productName: "Laminated Plywood",
+    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/5.jpg"
+  },
+  {
+    productName: "Fire Retardant Plywood",
+    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/6.jpg"
+  },
+  {
+    productName: "Veneered Plywood",
+    productPath: "/mugil-elite-mart/src/assets/images/stacking-cards/7.jpg"
+  },
 ];
 
 export default function StackingCards() {
-  const numCards = images.length;
+  const numCards = products.length;
 
   return (
     <div className="mugil-container stacking-cards__container">
       <div className="stacking-cards" style={{ "--num-cards": numCards }}>
-        {images.map((img, idx) => {
+
+        {products.map((item, idx) => {
           const index1 = idx + 1;
 
           return (
@@ -25,23 +49,22 @@ export default function StackingCards() {
               style={{ "--index": index1 }}
             >
               <div className="stacking-cards__content">
+
                 <img
                   className="stacking-cards__image"
-                  src={img}
-                  alt={`Card ${index1}`}
+                  src={item.productPath}
+                  alt={item.productName}
                 />
 
                 <div className="stacking-cards__body">
-                  <h2>Card {index1}</h2>
-                  <p>
-                    This is some sample content for card {index1}. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <h2>{item.productName}</h2>
                 </div>
+
               </div>
             </div>
           );
         })}
+
       </div>
     </div>
   );
