@@ -11,7 +11,7 @@ const Tooltip = () => {
   return (
     <div className="mugil-tooltip">
       <div className="mugil-tooltip-wrapper">
-        <a href="/home-decor#glassware" className="tooltip-items">
+        <a href="/mugil-elite-mart/home-decor#glassware" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop1} alt="images" />
           </div>
@@ -19,7 +19,7 @@ const Tooltip = () => {
             <p className="text-center">Glassware</p>
           </div>
         </a>
-        <a href="/home-decor#mirrors" className="tooltip-items">
+        <a href="/mugil-elite-mart/home-decor#mirrors" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop2} alt="images" />
           </div>
@@ -27,7 +27,7 @@ const Tooltip = () => {
             <p className="text-center">Mirrors</p>
           </div>
         </a>
-        <a href="/home-decor#lights" className="tooltip-items">
+        <a href="/mugil-elite-mart/home-decor#lights" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop3} alt="images" />
           </div>
@@ -35,7 +35,7 @@ const Tooltip = () => {
             <p className="text-center">Lights</p>
           </div>
         </a>
-        <a href="/products#door-handles" className="tooltip-items">
+        <a href="/mugil-elite-mart/products#door-handles" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop4} alt="images" />
           </div>
@@ -43,7 +43,7 @@ const Tooltip = () => {
             <p className="text-center">Door Handles</p>
           </div>
         </a>
-        <a href="/products#hardware" className="tooltip-items">
+        <a href="/mugil-elite-mart/products#hardware" className="tooltip-items">
           <div className="tooltip-img-wrapper">
             <img src={shop5} alt="images" />
           </div>
