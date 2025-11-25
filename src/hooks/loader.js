@@ -1,5 +1,5 @@
 document.body.classList.add("no-scroll");
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const loader = document.getElementById("page-loader");
 
   // Show loader for exactly 2 seconds
