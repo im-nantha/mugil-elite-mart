@@ -72,7 +72,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
         <nav className="mugil-mart-navbar">
           <div className="logo d-lg-none d-flex">
             <div className="mugil-mart-main-logo">
-              <a href="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+              <a href="/" className="mugil-mart-logo-wrapper">
                 <img
                   className="mugil-mart-img"
                   src={mainlogo}
@@ -81,7 +81,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
               </a>
             </div>
             <div className="mugil-mart-logo">
-              <a href="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+              <a href="/" className="mugil-mart-logo-wrapper">
                 <img
                   className="mugil-mart-img"
                   src={logo}
@@ -92,33 +92,33 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
           </div>
           <ul className="mugil-mart-navbar-content">
             <li>
-              <a href="/mugil-elite-mart/" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart") ? "active" : ""}`}>Home</a>
+              <a href="/" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart") ? "active" : ""}`}>Home</a>
             </li>
             <li>
-              <a href="/mugil-elite-mart/home-decor" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart/home-decor") ? "active" : ""}`}>
+              <a href="/home-decor" className={`mugil-mart-nav-wrap ${isActive("/home-decor") ? "active" : ""}`}>
                 Home Decor
               </a>
             </li>
             <li>
-              <a href="/mugil-elite-mart/products" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart/products") ? "active" : ""}`}>
+              <a href="/products" className={`mugil-mart-nav-wrap ${isActive("/products") ? "active" : ""}`}>
                 Interior Solutions
               </a>
             </li>
 
             <li>
-              <a href="/mugil-elite-mart/about" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart/about") ? "active" : ""}`}>
+              <a href="/about" className={`mugil-mart-nav-wrap ${isActive("/about") ? "active" : ""}`}>
                 About Us
               </a>
             </li>
 
             <li>
-              <a href="/mugil-elite-mart/contact" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart/contact") ? "active" : ""}`}>
+              <a href="/contact" className={`mugil-mart-nav-wrap ${isActive("/contact") ? "active" : ""}`}>
                 Contact Us
               </a>
             </li>
 
             <li>
-              <a href="/mugil-elite-mart/bulk-orders" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart/bulk-orders") ? "active" : ""}`}>
+              <a href="/bulk-orders" className={`mugil-mart-nav-wrap ${isActive("/bulk-orders") ? "active" : ""}`}>
                 Bulk Orders
               </a>
             </li>
@@ -182,7 +182,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
           </a>
           <div className="mugil-mart-items">
             <a
-              href="/mugil-elite-mart/login"
+              href="/login"
               className="cart-icon-wrapper search-icon login-icon"
               rel="noreferrer"
             >

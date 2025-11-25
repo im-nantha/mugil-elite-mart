@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-head">
         <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
           <div className="d-flex align-items-center gap-2">
-            <a className="mugil-footer-logo-wrapper" href="/mugil-elite-mart/" >
+            <a className="mugil-footer-logo-wrapper" href="/" >
               <img className="mugil-mart-img" src={mainlogo} />
             </a>
             <h2>Mugil Elite Mart</h2>
@@ -63,28 +63,28 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Sitemap</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <a href="/mugil-elite-mart/">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/home-decor">Home Decor</a>
+                    <a href="/home-decor">Home Decor</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/products">Interior Decorations</a>
+                    <a href="/products">Interior Decorations</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/about">About Us</a>
+                    <a href="/about">About Us</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/contact">Contact Us</a>
+                    <a href="/contact">Contact Us</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/bulk-orders">Bulk Orders</a>
+                    <a href="/bulk-orders">Bulk Orders</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/faqs">Faq's</a>
+                    <a href="/faqs">Faq's</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/login">Login</a>
+                    <a href="/login">Login</a>
                   </li>
                 </ul>
               </div>
@@ -92,25 +92,25 @@ const Footer = () => {
                 <h5 className="card-title pb-4">Resource</h5>
                 <ul className="footer-menu-list">
                   <li>
-                    <a href="/mugil-elite-mart/privacy-policy">Privacy Policy</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/terms-and-conditions">Terms & Conditions</a>
+                    <a href="/terms-and-conditions">Terms & Conditions</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/security-policy">Security Policy</a>
+                    <a href="/security-policy">Security Policy</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/cancellation-policy">Cancellation & Returns Policy</a>
+                    <a href="/cancellation-policy">Cancellation & Returns Policy</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/grievance-policy">Grievance Redressal Policy</a>
+                    <a href="/grievance-policy">Grievance Redressal Policy</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/disclaimer-policy">Disclaimer & Liability Policy</a>
+                    <a href="/disclaimer-policy">Disclaimer & Liability Policy</a>
                   </li>
                   <li>
-                    <a href="/mugil-elite-mart/cookie-policy">Cookie Policy</a>
+                    <a href="/cookie-policy">Cookie Policy</a>
                   </li>
                 </ul>
               </div>
