@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { auth, db } from "../firebase/firebase.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
-import loginimg from "../../src/assets/images/banners/admin-img.jpg";
-import afterLogin from "../../src/assets/images/banners/after-login.png";
+import loginimg from "../../src/assets/images/banners/admin-checkin.jpeg";
+import afterLogin from "../../src/assets/images/banners/admin.jpeg";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import "../assets/styles/main.scss";
@@ -63,7 +63,6 @@ const LoginPage = () => {
           });
 
         setUsersData(data);
-        sessionStorage.setItem("usersData", JSON.stringify(data)); // store in session
         setLoadingUsers(false);
       },
       (err) => {
@@ -101,7 +100,6 @@ const LoginPage = () => {
           });
 
         setBulkOrdersData(data);
-        sessionStorage.setItem("bulkOrdersData", JSON.stringify(data)); // store in session
         setLoadingOrders(false);
       },
       (err) => {
@@ -143,11 +141,9 @@ const LoginPage = () => {
     setShowPassword(false);
     setError("");
     setIsLoggedIn(false);
+    sessionStorage.setItem("isLoggedIn", "false");
     setUsersData([]);
     setBulkOrdersData([]);
-    sessionStorage.removeItem("isLoggedIn");
-    sessionStorage.removeItem("usersData");
-    sessionStorage.removeItem("bulkOrdersData");
     window.location.href = window.location.pathname;
   };
 
@@ -155,32 +151,32 @@ const LoginPage = () => {
   // Main Effect
   // ----------------------------
   useEffect(() => {
-    const loggedIn = sessionStorage.getItem("isLoggedIn") === "true";
-    setIsLoggedIn(loggedIn);
+    // Initialize login state from session (true/false)
+    const storedLogin = sessionStorage.getItem("isLoggedIn") === "true";
+    setIsLoggedIn(storedLogin);
+  }, []);
 
+  useEffect(() => {
     let unsubscribeUsers = () => { };
     let unsubscribeOrders = () => { };
 
-    if (loggedIn) {
-      // Check session storage first
-      const storedUsers = sessionStorage.getItem("usersData");
-      const storedOrders = sessionStorage.getItem("bulkOrdersData");
-
-      if (storedUsers && storedOrders) {
-        // Load from session
-        setUsersData(JSON.parse(storedUsers));
-        setBulkOrdersData(JSON.parse(storedOrders));
-      } else {
-        // Fetch from Firestore and store in session
-        unsubscribeUsers = subscribeUsers();
-        unsubscribeOrders = subscribeBulkOrders();
-      }
+    if (isLoggedIn) {
+      // Always fetch fresh data when session indicates user is logged in
+      unsubscribeUsers = subscribeUsers();
+      unsubscribeOrders = subscribeBulkOrders();
+    } else {
+      // If logged out, clear UI state and ensure no subscriptions
+      setUsersData([]);
+      setBulkOrdersData([]);
+      try { unsubscribeUsers(); } catch (e) { }
+      try { unsubscribeOrders(); } catch (e) { }
+      unsubscribeUsers = () => { };
+      unsubscribeOrders = () => { };
     }
 
-    // Cleanup subscriptions
     return () => {
-      unsubscribeUsers();
-      unsubscribeOrders();
+      try { unsubscribeUsers(); } catch (e) { }
+      try { unsubscribeOrders(); } catch (e) { }
     };
   }, [isLoggedIn]);
 
@@ -204,11 +200,9 @@ const LoginPage = () => {
 
       // Clear session storage for correct fresh reload
       if (deleteType === "users") {
-        sessionStorage.removeItem("usersData");
         setUsersData((prev) => prev.filter((u) => u.id !== deleteItem.id));
       }
       else if (deleteType === "bulkorders") {
-        sessionStorage.removeItem("bulkOrdersData");
         setBulkOrdersData((prev) => prev.filter((o) => o.id !== deleteItem.id));
       }
 
@@ -219,12 +213,6 @@ const LoginPage = () => {
     cancelDelete();
   };
 
-
-
-
-  // ----------------------------
-  // UI Rendering
-  // ----------------------------
   return (
     <>
       <Header />
