@@ -24,7 +24,7 @@ const products = [
   { name: "Showers", page: "home-decor", image: shop5 },
   { name: "Chimneys", page: "home-decor", image: shop6 },
   { name: "Sinks", page: "home-decor", image: shop7 },
-  { name: "Bath Elegance", page: "home-decor", image: "/mugil-elite-mart/assets/images/products/bath-elegence/1.png" },
+  { name: "Bath Elegance", page: "home-decor", image: "/assets/images/products/bath-elegence/1.png" },
 
   // Products
   { name: "Door Handles", page: "products", image: "/mugil-elite-mart/assets/images/products/locks/1.jpg" },
@@ -38,8 +38,8 @@ const products = [
   { name: "Pipes", page: "products", image: shop12 },
   { name: "Ceiling Fans", page: "products", image: shop13 },
   { name: "Exhaust Fans", page: "products", image: shop14 },
-  { name: "Paints", page: "products", image: "/mugil-elite-mart/assets/images/products/paints/asian-paint-3.png" },
-  { name: "Doors", page: "products", image: "/mugil-elite-mart/assets/images/doors/1.png" },
+  { name: "Paints", page: "products", image: "/assets/images/products/paints/asian-paint-3.png" },
+  { name: "Doors", page: "products", image: "/assets/images/doors/1.png" },
 ];
 
 const Search = () => {

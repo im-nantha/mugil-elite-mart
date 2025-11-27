@@ -47,7 +47,7 @@ const Header = () => {
           <div className="mugil-mart-header">
             <div className="logo">
               <div className="mugil-mart-main-logo">
-                <a href="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+                <a href="/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={mainlogo}
@@ -56,7 +56,7 @@ const Header = () => {
                 </a>
               </div>
               <div className="mugil-mart-logo">
-                <a href="/mugil-elite-mart/" className="mugil-mart-logo-wrapper">
+                <a href="/" className="mugil-mart-logo-wrapper">
                   <img
                     className="mugil-mart-img"
                     src={logo}

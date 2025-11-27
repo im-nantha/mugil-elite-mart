@@ -58,7 +58,7 @@ const FaqTabs = ({ faqs, showMore }) => {
 
       {showMore && (
         <div className="faq-tabs__button">
-          <a href="/mugil-elite-mart/faqs">
+          <a href="/faqs">
             <button>Show More</button>
           </a>
         </div>
