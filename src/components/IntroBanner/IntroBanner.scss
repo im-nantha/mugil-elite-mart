@@ -7,11 +7,11 @@
 		gap: 1rem;
 		height: 300px;
 
-		@media (max-width: 992px) {
+		@media (max-width: 767px) {
 			flex-direction: column;
 		}
 
-		@media (max-width: 767px) {
+		@media (max-width: 992px) {
 			height: auto;
 		}
 
@@ -39,7 +39,7 @@
 					color: #ffffff;
 					padding-bottom: 24px;
 
-					@media (max-width: 767px) {
+					@media (max-width: 992px) {
 						padding-bottom: 8px;
 					}
 				}
@@ -52,7 +52,7 @@
 				height: 100%;
 				overflow: hidden;
 
-				@media (max-width: 767px) {
+				@media (max-width: 992px) {
 					position: unset;
 					height: unset;
 				}
@@ -63,7 +63,7 @@
 					border-radius: 16px;
 					transition: transform 0.5s ease;
 
-					@media (max-width: 767px) {
+					@media (max-width: 992px) {
 						height: 260px;
 					}
 				}

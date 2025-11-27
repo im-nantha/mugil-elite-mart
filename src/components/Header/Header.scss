@@ -4,6 +4,21 @@
   width: 100%;
   background: var(--primary-white);
 
+  @media (max-width: 992px) {
+    &.header-mobile-included {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background: #fff;
+        transition: transform 0.35s ease;
+      }
+      &.hide-header {
+        transform: translateY(-100%);
+      }
+  }
+
   .header-wrapper {
     background: var(--blue-gradient);
   }
@@ -21,11 +36,10 @@
     justify-content: space-between;
 
     @media (max-width: 992px) {
-      padding: 0;
+      padding: 0 16px;
     }
-
-    @media (max-width: 992px) {
-      flex-direction: column;
+    @media (max-width: 767px) {
+      padding: 0 8px;
     }
 
     .logo {
@@ -37,6 +51,11 @@
       width: 80px;
       height: 80px;
       padding: 10px 10px 10px 0;
+
+      @media (max-width: 767px) {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     .mugil-mart-logo {
@@ -46,6 +65,9 @@
 
       @media (max-width: 992px) {
         width: 180px;
+      }
+      @media (max-width: 767px) {
+        display: none;
       }
     }
 
@@ -85,8 +107,10 @@
       .mugil-mart-img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
         object-fit: unset;
+        @media (max-width: 767px) {
+          object-fit: cover;
+        }
       }
     }
 

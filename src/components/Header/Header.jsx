@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../assets/images/mugil-logo.jpg";
 import instagram from "../../assets/images/icons/instagram.png";
 import mainlogo from "../../assets/images/mem-logo.png";
@@ -12,11 +12,35 @@ import SubHeader from "../SubHeader/SubHeader.jsx"
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const openMenu = () => setMenuOpen(true);
+  const [hideHeader, setHideHeader] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > lastScrollY && currentScroll > 150) {
+        // scrolling down → hide
+        setHideHeader(true);
+      } else {
+        // scrolling up → show
+        setHideHeader(false);
+      }
+
+      lastScrollY = currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
     <>
       <BackToTop />
       <div className={`mugil-header whole-header`}>
-        <header className="mugil-header">
+        <header className={`mugil-header header-mobile-included ${hideHeader ? "hide-header" : ""}`}>
           <div className="header-wrapper py-2">
             <p className="text-center text-white">Welcome to Mugil elite mart</p>
           </div>

@@ -23,6 +23,7 @@
     height: 100%;
     overflow-y: auto;
     transition: right 1s ease;
+    z-index: 10000;
 
     &.open {
       right: 0; // slides in from right
@@ -135,9 +136,9 @@
       @media (max-width: 992px) {
         display: block;
         position: absolute;
-        top: 1rem;
+        top: 3rem;
         right: 1rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 100%;
       }
     }
@@ -158,6 +159,8 @@
 
         @media (max-width: 992px) {
           display: block;
+          width: 35px;
+          height: 35px;
         }
       }
 
