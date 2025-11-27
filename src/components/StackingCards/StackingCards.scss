@@ -6,7 +6,7 @@
 }
 
 .stacking-cards {
-  --num-cards: 4;
+  --num-cards: 7;
 
   view-timeline-name: --stack-cards-scroll;
   view-timeline-axis: block;
@@ -21,11 +21,17 @@
   position: sticky;
   top: 76px;
   --index0: calc(var(--index) - 1);
-  // --reverse-index: calc(var(--num-cards) - var(--index0));
+  --reverse-index: calc(var(--num-cards) - var(--index0));
   --reverse-index0: calc(var(--reverse-index) - 1);
   isolation: isolate;
-  z-index: var(--reverse-index); // Higher cards appear on top
-  margin-bottom: 20px; // slight gap before animation takes over
+  z-index: var(--index);
+
+  /* Base spacing */
+  margin-bottom: 20px;
+
+  /* Padding animation values */
+  --pad-start: 40px;  /* initial padding */
+  --pad-end: 10px;    /* final padding */
 
   @media (max-width: 768px) {
     top: 16px;
@@ -35,16 +41,22 @@
   .stacking-cards__content {
     transform-origin: center top;
 
+    /* Scroll animation range */
     --start-range: calc((var(--index0) / var(--num-cards)) * 100%);
     --end-range: calc((var(--index) / var(--num-cards)) * 100%);
 
-    animation: scale-down linear forwards;
+    /* Scroll-bound animation */
+    animation: stack-anim linear forwards;
     animation-timeline: --stack-cards-scroll;
-    animation-range: exit-crossing var(--start-range) exit-crossing var(--end-range);
+    animation-range: exit-crossing var(--start-range)
+                     exit-crossing var(--end-range);
+
+    /* Padding transitions */
+    padding-top: var(--pad-start);
+    padding-bottom: var(--pad-start);
   }
 }
 
-/* Image */
 .stacking-cards__image {
   width: 100%;
   height: auto;
@@ -52,7 +64,6 @@
   border-radius: 12px;
 }
 
-/* Card Body */
 .stacking-cards__body {
   position: absolute;
   bottom: 40%;
@@ -85,9 +96,16 @@
   }
 }
 
-/* Animation — scales cards downward as they exit */
-@keyframes scale-down {
+/* --------------------------- */
+/* Animation (Scale + Padding) */
+/* --------------------------- */
+@keyframes stack-anim {
   to {
-    transform: scale(calc(1.08 - (0.08 * var(--reverse-index))));
+    /* Smooth scaling based on reverse index */
+    transform: scale(calc(1.05 - (0.05 * var(--reverse-index0))));
+
+    /* Smooth padding reduction */
+    padding-top: var(--pad-end);
+    padding-bottom: var(--pad-end);
   }
 }
