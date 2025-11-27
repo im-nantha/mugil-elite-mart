@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./FeaturedCollections.scss";
 import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 
@@ -30,6 +30,17 @@ const FeaturedCollectionCards = ({ productName, productImagePath, isSquare, onIm
 const FeaturedCollections = ({ data, isHomepage = false, isSquare = false, isThreeCol = false, isAutoLayout = false }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedName, setSelectedName] = useState("");
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 767);
+  const cardsToShow = isMobile ? 6 : 5;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 767);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleImageClick = (image, name) => {
     setSelectedImage(image);
@@ -44,7 +55,7 @@ const FeaturedCollections = ({ data, isHomepage = false, isSquare = false, isThr
   return (
     <section className="mugil-fc-container pt-4">
       <div className={`mugil-fc-wrapper homepage ${isThreeCol ? 'three-col' : ''} ${isAutoLayout ? 'auto-layout' : ''}`}>
-        {(isHomepage ? data.slice(0, 5) : data).map((item, index) => (
+        {(isHomepage ? data.slice(0, cardsToShow) : data).map((item, index) => (
           <FeaturedCollectionCards
             isSquare={isSquare}
             key={index}

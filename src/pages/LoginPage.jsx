@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { auth, db } from "../firebase/firebase.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
-import loginimg from "../../src/assets/images/banners/admin-checkin.jpeg";
+import loginimg from "../../src/assets/images/banners/admin-checkin.png";
 import afterLogin from "../../src/assets/images/banners/admin.jpeg";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";

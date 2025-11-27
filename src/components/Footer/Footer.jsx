@@ -138,8 +138,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className="footer-bottom d-flex flex-column flex-lg-row justify-content-between align-items-center">
         <p>Copyright © 2025 by Mugil Elite mart. All Rights Reserved.</p>
+        <p className="pe-3 pe-lg-5 pt-2 pt-lg-0">Designed & Developed by <a className="text-decoration-none"
+          style={{ color: "var(--blue-gradient)" }}
+          href="https://devxthinkdesign.com/">Devx think design</a> © 2025</p>
       </div>
     </footer >
   );

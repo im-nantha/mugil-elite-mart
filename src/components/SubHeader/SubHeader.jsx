@@ -212,6 +212,9 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
             </a>
           </div>
         </div>
+        <div className="address d-lg-none d-block">
+          <p>54, Near Tollgate, near, Chennai Salem Highway, oop. admk office, Kallakurichi, Tamil Nadu 606202</p>
+        </div>
       </div>
     </div>
   );
