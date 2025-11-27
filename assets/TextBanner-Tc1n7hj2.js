@@ -1,0 +1,1 @@
+import{j as e}from"./Header-CAjHJ8Me.js";function s({bannerText:n}){return e.jsx("section",{className:"text-banner-wrapper",children:e.jsx("div",{className:"text-banner",children:e.jsx("div",{className:"container",children:e.jsx("div",{className:"text-center text-banner-width",children:e.jsx("h1",{className:"title",children:n})})})})})}export{s as T};
