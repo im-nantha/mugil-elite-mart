@@ -31,7 +31,7 @@ const products = [
   { name: "Queen Lock Set", page: "products", image: "/mugil-elite-mart/assets/images/products/queenlock-set/1.jpg" },
   { name: "Pull Handles", page: "products", image: "/mugil-elite-mart/assets/images/products/pull-handles/1.jpg" },
   { name: "Door Pull Lock Set", page: "products", image: "/mugil-elite-mart/assets/images/products/door-pull-lock/1.jpg" },
-  { name: "Door Hinges", page: "products", image: "/mugil-elite-mart/assets/images/products/door-hinges/1.jpg" },
+  { name: "Door Closer", page: "products", image: "/mugil-elite-mart/assets/images/products/door-hinges/1.jpg" },
   { name: "Handles", page: "products", image: "/mugil-elite-mart/assets/images/products/handles/handle-1.webp" },
   { name: "Aluminum Profile", page: "products", image: shop10 },
   { name: "Hardware", page: "products", image: shop11 },

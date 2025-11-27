@@ -35,7 +35,7 @@ const Products = () => {
         <FeaturedCollections data={pullhandles} isSquare={true} />
         <Title title="Door Pull Lock Set" subtitle="A Seamless Fusion of Pull and Protection—Designed for Modern Doors." />
         <FeaturedCollections data={doorpulllock} isSquare={true} />
-        <Title title="Door Hinges" subtitle="Silent, Smooth, and Strong—Hinges Engineered for Lifetime Performance." />
+        <Title title="Door Closer" subtitle="Silent, Smooth, and Strong—Hinges Engineered for Lifetime Performance." />
         <FeaturedCollections data={doorhinges} isSquare={true} isAutoLayout={true} />
         <Title title="Handles" subtitle="Secure Your World with Trust and Innovation." />
         <FeaturedCollections data={Handles} isSquare={true} />
