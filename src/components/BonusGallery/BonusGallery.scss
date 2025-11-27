@@ -1,0 +1,73 @@
+.four-card-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  @media (max-width: 767px) {
+
+    grid-template-rows: repeat(3, 1fr);
+      }
+
+  .gallery-card {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    &:nth-child(1) {
+      grid-column: span 4;
+      order: 1;
+      @media (max-width: 767px) {
+        grid-column: span 6;
+        order: 2;
+        height: 100%;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: span 8;
+      order: 2;
+      @media (max-width: 767px) {
+        grid-column: span 12;
+        order: 4;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-column: span 8;
+      order: 3;
+      @media (max-width: 767px) {
+        grid-column: span 12;
+        order: 1;
+      }
+    }
+
+    &:nth-child(4) {
+      grid-column: span 4;
+      order: 4;
+      @media (max-width: 767px) {
+        grid-column: span 6;
+        order: 3;
+      }
+    }
+  }
+
+  .card-logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import AboutSection from "../components/AboutSection/AboutSection";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import "../assets/styles/main.scss";
+import ImageGrid from "../components/ImageGrid/ImageGrid";
 
 function About() {
   return (
@@ -17,6 +18,7 @@ function About() {
           <AboutSection />
           <WorkProcess />
           <MissionVision />
+          <ImageGrid />
         </main >
       </div >
       <Footer />

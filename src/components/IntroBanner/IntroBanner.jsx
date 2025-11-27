@@ -6,7 +6,11 @@ import img2 from "../../assets/images/intro-banner/plywood.jpg";
 import img3 from "../../assets/images/intro-banner/bath.jpg";
 
 const bannerItems = [
-  { img: img1, title: "Glass & Mirror Creations", redirect: "" },
+  {
+    img: img1,
+    title: "Glass & Mirror Creations",
+    redirect: "https://www.youtube.com/@vasi_glass_kallakurichi_y2q/videos"
+  },
   {
     img: img2,
     title: "Premium Plywood & Laminates",

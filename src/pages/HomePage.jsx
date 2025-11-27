@@ -17,6 +17,7 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import "../assets/styles/main.scss";
 import StackingCards from "../components/StackingCards/StackingCards";
 import Title from "../components/Title/Title";
+import BonusGallery from "../components/BonusGallery/BonusGallery";
 
 const homeFaqs = [
   { question: "What types of plywood does Mugil Elite Mart offer?", answer: "We provide a wide range of plywood including BWP, Marine, Commercial, Fire Retardant, Laminated, Acrylic, PVC, HDMR, and Block Boards suitable for furniture, interiors, and construction." },
@@ -36,11 +37,11 @@ const Home = () => {
         <Title title={"Plywoods"} subtitle={"Discover our premium range of plywoods, engineered for durability and aesthetic appeal."}
           center={true} />
         <StackingCards />
+        <BonusGallery />
         <ProductTabs />
         <Title title={"Godrej Locks"} subtitle={"Explore our exclusive collection of Godrej locks, combining security with style."}
           center={true} />
         <Gallery images={godrejImages} spacing={true} />
-        <HeroBanner src={bannerImage} link={"https://www.pluspointlocks.com/"} />
         <HeroBanner src={securityBannerImage} />
         <StaticBanner />
         <ShopByCategories />
