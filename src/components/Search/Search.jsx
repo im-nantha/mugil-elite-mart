@@ -27,12 +27,12 @@ const products = [
   { name: "Bath Elegance", page: "home-decor", image: "/assets/images/products/bath-elegence/1.png" },
 
   // Products
-  { name: "Door Handles", page: "products", image: "/mugil-elite-mart/assets/images/products/locks/1.jpg" },
-  { name: "Queen Lock Set", page: "products", image: "/mugil-elite-mart/assets/images/products/queenlock-set/1.jpg" },
-  { name: "Pull Handles", page: "products", image: "/mugil-elite-mart/assets/images/products/pull-handles/1.jpg" },
-  { name: "Door Pull Lock Set", page: "products", image: "/mugil-elite-mart/assets/images/products/door-pull-lock/1.jpg" },
-  { name: "Door Closer", page: "products", image: "/mugil-elite-mart/assets/images/products/door-hinges/1.jpg" },
-  { name: "Handles", page: "products", image: "/mugil-elite-mart/assets/images/products/handles/handle-1.webp" },
+  { name: "Door Handles", page: "products", image: "/assets/images/products/locks/1.jpg" },
+  { name: "Queen Lock Set", page: "products", image: "/assets/images/products/queenlock-set/1.jpg" },
+  { name: "Pull Handles", page: "products", image: "/assets/images/products/pull-handles/1.jpg" },
+  { name: "Door Pull Lock Set", page: "products", image: "/assets/images/products/door-pull-lock/1.jpg" },
+  { name: "Door Closer", page: "products", image: "/assets/images/products/door-hinges/1.jpg" },
+  { name: "Handles", page: "products", image: "/assets/images/products/handles/handle-1.webp" },
   { name: "Aluminum Profile", page: "products", image: shop10 },
   { name: "Hardware", page: "products", image: shop11 },
   { name: "Pipes", page: "products", image: shop12 },
@@ -66,7 +66,7 @@ const Search = () => {
 
   const handleSelect = (product) => {
     const id = product.name.toLowerCase().replace(/\s+/g, "-"); // kebab-case
-    window.location.href = `/mugil-elite-mart/${product.page}#${id}`;
+    window.location.href = `/${product.page}#${id}`;
 
     setKeyword("");
     setFiltered(products);

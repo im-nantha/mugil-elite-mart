@@ -7,25 +7,25 @@ export default function BonusGallery() {
   const cards = [
     {
       id: 1,
-      image: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-1.png",
-      logo: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-1-logo.png",
+      image: "/assets/images/bonus-gallery/bonus-1.png",
+      logo: "/assets/images/bonus-gallery/bonus-1-logo.png",
       link: "https://www.bonus.in/home"
     },
     {
       id: 2,
-      image: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-2.jpg",
-      logo: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-2-logo.png",
+      image: "/assets/images/bonus-gallery/bonus-2.jpg",
+      logo: "/assets/images/bonus-gallery/bonus-2-logo.png",
       link: "https://www.europalocks.com/"
     },
     {
       id: 3,
-      image: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-3.png",
-      logo: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-3-logo.png",
+      image: "/assets/images/bonus-gallery/bonus-3.png",
+      logo: "/assets/images/bonus-gallery/bonus-3-logo.png",
       link: "https://www.pluspointlocks.com/"
     },
     {
       id: 4,
-      image: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-4.png",
+      image: "/assets/images/bonus-gallery/bonus-4.png",
       logo: "",
       link: ""
     },
