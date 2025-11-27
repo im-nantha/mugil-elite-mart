@@ -8,8 +8,8 @@
     gap: 32px;
 
     @media (max-width: 767px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 16px;
     }
 
@@ -19,6 +19,7 @@
 
       @media (max-width: 767px) {
         padding: 0;
+        flex: 0 0 calc(50% - 16px);
       }
 
       .sbc-card-img-wrapper {

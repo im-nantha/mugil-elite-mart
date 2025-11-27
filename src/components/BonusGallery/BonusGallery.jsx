@@ -26,8 +26,8 @@ export default function BonusGallery() {
     {
       id: 4,
       image: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-4.png",
-      logo: "/mugil-elite-mart/assets/images/bonus-gallery/bonus-4-logo.png",
-      link: "https://godrejlocks.com/"
+      logo: "",
+      link: ""
     },
   ];
 
@@ -50,9 +50,9 @@ export default function BonusGallery() {
               })}
             >
               <img src={card.image} alt="images" />
-              <div className="card-logo">
+              {card.logo && <div className="card-logo">
                 <img src={card.logo} alt="logo" />
-              </div>
+              </div>}
             </Wrapper>
           );
         })}

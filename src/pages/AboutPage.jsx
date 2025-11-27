@@ -7,6 +7,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import "../assets/styles/main.scss";
 import ImageGrid from "../components/ImageGrid/ImageGrid";
+import Title from "../components/Title/Title";
 
 function About() {
   return (
@@ -18,6 +19,7 @@ function About() {
           <AboutSection />
           <WorkProcess />
           <MissionVision />
+          <Title title={"Our Awards"} center={true} />
           <ImageGrid />
         </main >
       </div >
