@@ -35,8 +35,7 @@ const AboutSection = () => {
               smile they’ve created.
             </p>
             <p className="font-weight-bold mb-0">
-              Vasi Glass & Plywood — where experience meets excellence in every
-              layer.
+              Vasi Glass & Plywoods -  Mugil Elite Mart, where experience meets excellence in every layer.
             </p>
           </div>
         </div>

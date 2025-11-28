@@ -35,6 +35,9 @@
       @media (max-width: 767px) {
         grid-column: span 12;
         order: 4;
+        .card-logo {
+          width: 56px;
+        }
       }
     }
 
