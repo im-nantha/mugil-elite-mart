@@ -10,7 +10,7 @@ const BuldOrder = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-section">
         <TextBanner bannerText={"Bulk Orders"} />
         {/* <div className="mugil-container">
           <div className="container">

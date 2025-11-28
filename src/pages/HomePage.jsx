@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <Fragment>
-      <main>
+      <main className="main-section">
         <Carousel />
         <Features />
         <IntroBanner />

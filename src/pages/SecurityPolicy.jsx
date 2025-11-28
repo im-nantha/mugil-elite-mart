@@ -8,7 +8,7 @@ const SecurityPolicy = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-section">
         <TextBanner bannerText={"Security Policy"} />
         <div className="mugil-container">
 

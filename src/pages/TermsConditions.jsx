@@ -8,7 +8,7 @@ const TermsConditions = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-section">
         <TextBanner bannerText={"Terms & Conditions"} />
         <div className="mugil-container">
 

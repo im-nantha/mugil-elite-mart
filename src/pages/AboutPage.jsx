@@ -14,7 +14,7 @@ function About() {
     <>
       <Header />
       <div>
-        <main>
+        <main className="main-section">
           <ImageBanner />
           <AboutSection />
           <WorkProcess />

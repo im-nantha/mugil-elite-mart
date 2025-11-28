@@ -20,25 +20,27 @@ const HomeDecor = () => {
   return (
     <>
       <Header />
-      <TextBanner bannerText={"Transform your living space into a masterpiece with timeless elegance"} />
-      <div className="mugil-container pt-0" style={{ background: "#f4f4f4" }}>
-        <Title title="Glassware" subtitle="Stylish & Durable for Every Home." />
-        <FeaturedCollections data={GlasswareData} />
-        <Title title="Lights" subtitle="Brighten Your World with Modern Designs." />
-        <FeaturedCollections data={Lights} isSquare={true} />
-        <Title title="Mirrors" subtitle="Reflect Beauty with Elegance." />
-        <FeaturedCollections data={Mirrors} />
-        <Title title="Faucets" subtitle="Flowing Perfection for Kitchens & Baths." />
-        <FeaturedCollections data={Faucets} isSquare={true} />
-        <Title title="Showers" subtitle="Experience Refreshing Luxury." />
-        <FeaturedCollections data={Showers} />
-        <Title title="Chimneys" subtitle="Sleek Performance with Style." />
-        <FeaturedCollections data={Chimneys} isSquare={true} />
-        <Title title="Sinks" subtitle="Crafted for Utility & Class." />
-        <FeaturedCollections data={Sinks} isSquare={true} />
-        <Title title="Bath Elegance" subtitle="Turn Everyday Bathing Into a Spa-Like Luxury Experience." />
-        <FeaturedCollections data={BathElegence} isThreeCol={true} />
-      </div>
+      <main className="main-section">
+        <TextBanner bannerText={"Transform your living space into a masterpiece with timeless elegance"} />
+        <div className="mugil-container pt-0" style={{ background: "#f4f4f4" }}>
+          <Title title="Glassware" subtitle="Stylish & Durable for Every Home." />
+          <FeaturedCollections data={GlasswareData} />
+          <Title title="Lights" subtitle="Brighten Your World with Modern Designs." />
+          <FeaturedCollections data={Lights} isSquare={true} />
+          <Title title="Mirrors" subtitle="Reflect Beauty with Elegance." />
+          <FeaturedCollections data={Mirrors} />
+          <Title title="Faucets" subtitle="Flowing Perfection for Kitchens & Baths." />
+          <FeaturedCollections data={Faucets} isSquare={true} />
+          <Title title="Showers" subtitle="Experience Refreshing Luxury." />
+          <FeaturedCollections data={Showers} />
+          <Title title="Chimneys" subtitle="Sleek Performance with Style." />
+          <FeaturedCollections data={Chimneys} isSquare={true} />
+          <Title title="Sinks" subtitle="Crafted for Utility & Class." />
+          <FeaturedCollections data={Sinks} isSquare={true} />
+          <Title title="Bath Elegance" subtitle="Turn Everyday Bathing Into a Spa-Like Luxury Experience." />
+          <FeaturedCollections data={BathElegence} isThreeCol={true} />
+        </div>
+      </main>
       <Footer />
     </>
   );

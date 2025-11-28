@@ -22,9 +22,9 @@ function FaqPage() {
   return (
     <>
       <Header />
-      <section>
+      <main className="main-section">
         <FaqTabs faqs={allFaqs} showMore={false} />
-      </section>
+      </main>
       <Footer />
     </>
   );

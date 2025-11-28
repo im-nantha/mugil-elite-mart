@@ -8,7 +8,7 @@ const DisclaimerLiabilityPolicy = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-section">
         <TextBanner bannerText={"Disclaimer & Liability Policy"} />
         <div className="mugil-container">
 

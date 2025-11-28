@@ -64,6 +64,13 @@
     width: 100px;
     height: auto;
 
+    @media (max-width: 767px) {
+      top: 8px;
+      left: 6px;
+      width: 65px;
+      height: auto;
+    }
+
     img {
       width: 100%;
       height: auto;

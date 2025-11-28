@@ -10,11 +10,13 @@ function ContactUs() {
   return (
     <>
       <Header />
-      <TextBanner bannerText={"Contact Us"} />
-      <div className="mugil-container">
-        <ContactForm />
-      </div>
-      <IframeMap />
+      <main className="main-section">
+        <TextBanner bannerText={"Contact Us"} />
+        <div className="mugil-container">
+          <ContactForm />
+        </div>
+        <IframeMap />
+      </main>
       <Footer />
     </>
   );

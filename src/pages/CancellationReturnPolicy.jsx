@@ -8,7 +8,7 @@ const CancellationReturnPolicy = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-section">
         <TextBanner bannerText={"Cancellation & Returns Policy"} />
         <div className="mugil-container">
           <h3 className="pb-3">Introduction</h3>
