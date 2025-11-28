@@ -1,1 +1,0 @@
-import{j as e}from"./Header-IYt6G8VY.js";const d=({title:p,subtitle:s,center:r=!1})=>e.jsxs("div",{id:p.toLowerCase().replace(/\s+/g,"-"),children:[e.jsx("h2",{className:`pe-2 pt-3 pb-1 pe-md-4 pt-md-4 pb-md-2 ${r?"text-center":""}`,children:p}),s&&e.jsx("h5",{className:`pe-2 pt-2 pb-1 pe-md-4 pb-md-2 ${r?"text-center":""}`,children:s})]});export{d as T};

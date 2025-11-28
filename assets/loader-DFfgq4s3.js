@@ -1,1 +1,0 @@
-document.body.classList.add("no-scroll");window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("page-loader");setTimeout(()=>{e.classList.add("fade-out"),setTimeout(()=>{document.body.classList.remove("no-scroll"),e.remove()},600)},1e3)});
