@@ -46,15 +46,15 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
   }, [menuOpen]);
 
   const isActive = (path) => {
-    const currentPath = window.location.pathname.replace(/\/$/, ""); // remove trailing slash
-    const normalizedPath = path.replace(/\/$/, ""); // remove trailing slash from input
+    const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+    const normalizedPath = path.replace(/\/$/, "") || "/";
 
-    // Special case: homepage should only be active on exact homepage
-    if (normalizedPath === "/mugil-elite-mart") {
-      return currentPath === normalizedPath;
+    // Homepage should match ONLY "/"
+    if (normalizedPath === "/") {
+      return currentPath === "/";
     }
 
-    // For other pages, highlight if currentPath starts with that path
+    // Other pages: match prefix
     return currentPath.startsWith(normalizedPath);
   };
 
@@ -93,7 +93,7 @@ const SubHeader = ({ menuOpen, onCloseMenu }) => {
           </div>
           <ul className="mugil-mart-navbar-content">
             <li>
-              <a href="/" className={`mugil-mart-nav-wrap ${isActive("/mugil-elite-mart") ? "active" : ""}`}>Home</a>
+              <a href="/" className={`mugil-mart-nav-wrap ${isActive("/") ? "active" : ""}`}>Home</a>
             </li>
             <li>
               <a href="/home-decor" className={`mugil-mart-nav-wrap ${isActive("/home-decor") ? "active" : ""}`}>
