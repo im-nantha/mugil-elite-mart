@@ -13,7 +13,7 @@ const Features = () => {
       <div className="features-card-wrapper">
         <div className="features-card">
           <div className="custom-card">
-            <div className="d-flex align-items-start gap-3">
+            <div className="d-flex gap-3 gap-md-2">
               <div className="icon-round">
                 <i className="bi bi-truck"></i>
               </div>
@@ -26,7 +26,7 @@ const Features = () => {
         </div>
         <div className="features-card">
           <div className="custom-card">
-            <div className=" d-flex align-items-start gap-3">
+            <div className=" d-flex gap-3 gap-md-2">
               <div className="icon-round">
                 <i className="bi bi-gift"></i>
 
@@ -40,7 +40,7 @@ const Features = () => {
         </div>
         <div className="features-card">
           <div className="custom-card">
-            <div className=" d-flex align-items-start gap-3">
+            <div className=" d-flex gap-3 gap-md-2">
               <div className="icon-round">
                 <i className="bi bi-arrow-repeat"></i>
 
@@ -54,7 +54,7 @@ const Features = () => {
         </div>
         <div className="features-card">
           <div className="custom-card">
-            <div className=" d-flex align-items-start gap-3">
+            <div className=" d-flex gap-3 gap-md-2">
               <div className="icon-round">
                 <i className="bi bi-headset"></i>
 

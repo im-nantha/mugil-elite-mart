@@ -63,9 +63,18 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 1168px) {
+      padding: 0 1rem;
+    }
+
     @media (max-width: 992px) {
       padding: 0;
       flex-direction: column;
+    }
+
+    @media (max-width: 992px) {
+      background: var(--blue-gradient);
+      height: 100%;
     }
 
     .logo {
@@ -147,11 +156,19 @@
       background-color: #ffffff;
       padding: 15px 30px;
 
+      @media (max-width: 1168px) {
+        padding: 15px 0;
+      }
+
       @media (max-width: 992px) {
         padding: 2rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+      }
+
+      @media (max-width: 576px) {
+        padding: 1.5rem;
       }
 
       .hamburgers {
@@ -175,6 +192,10 @@
       justify-content: space-between;
       gap: 25px;
 
+      @media (max-width: 1168px) {
+        gap: 10px;
+      }
+
       @media (max-width: 850px) {
         gap: 5px;
       }
@@ -192,6 +213,10 @@
         position: relative;
         display: inline-block;
         color: inherit;
+
+        @media (min-width: 576px) and (max-width: 992px) {
+          font-size: 20px;
+        }
 
         &::after {
           content: "";
@@ -231,16 +256,29 @@
       gap: 8px;
       padding: 15px 0 15px 30px;
 
+      @media (max-width: 1168px) {
+        padding: 15px 0;
+      }
+
+
       .tel-number {
         color: #000000;
         text-decoration: none;
+        @media (max-width: 992px) {
+          color: #ffffff;
+        }
       }
 
       @media (max-width: 992px) {
         display: flex;
         padding: 15px 30px 15px 30px;
-        justify-content: space-evenly;
+        gap: 22px;
+      }
 
+      @media (max-width: 576px) {
+        gap: 10px;
+        padding: 1.5rem;
+        flex-wrap: wrap;
       }
 
       .mugil-mart-items {
@@ -266,9 +304,22 @@
           border-radius: 50%;
           transition: background 0.4s;
 
+          @media (min-width: 576px) and (max-width: 992px) {
+            background: #ffffff;
+            width: 70px;
+            height: 70px;
+          }
+          @media (max-width: 576px) {
+            background: #ffffff;
+          }
+
           &:hover {
             transition: background 0.4s;
             background: rgba(143, 31, 123, 0.15);
+            @media (max-width: 992px) {
+              background: #ffffff;
+            }
+
           }
 
           svg,
@@ -323,6 +374,14 @@
     }
     .address {
       padding: 15px 30px 15px 30px;
+      @media (max-width: 576px) {
+        padding: 1.5rem;
+      }
+      @media (max-width: 992px) {
+        p {
+          color: #ffffff;
+        }
+      }
     }
   }
 }

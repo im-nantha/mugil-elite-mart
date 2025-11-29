@@ -38,11 +38,11 @@ const Home = () => {
           center={true} />
         <StackingCards />
         <BonusGallery />
+        <HeroBanner src={securityBannerImage} />
         <ProductTabs />
         <Title title={"Godrej Locks"} subtitle={"Explore our exclusive collection of Godrej locks, combining security with style."}
           center={true} />
         <Gallery images={godrejImages} spacing={true} />
-        <HeroBanner src={securityBannerImage} />
         <StaticBanner />
         <ShopByCategories />
         <PartnersCarousel />

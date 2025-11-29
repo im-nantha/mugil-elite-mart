@@ -26,6 +26,9 @@
         grid-column: span 6;
         order: 2;
         height: 100%;
+        img {
+          object-fit: unset;
+        }
       }
     }
 
@@ -36,7 +39,9 @@
         grid-column: span 12;
         order: 4;
         .card-logo {
-          width: 56px;
+          width: 40px;
+          top: 0;
+          left: 8px;
         }
       }
     }

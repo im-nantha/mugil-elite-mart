@@ -14,7 +14,7 @@
 
 		@media (max-width: 992px) {
 			flex-wrap: wrap;
-			justify-content: space-between;
+			justify-content: center;
 		}
 
 		.card-title {
@@ -31,15 +31,20 @@
 	}
 
 	.features-card {
-		flex: 1;
+		// flex: 1;
 
 		@media (max-width: 992px) {
-			flex: unset;
-			width: 48%;
+			width: 36%;
 		}
 
 		@media (max-width: 767px) {
-			width: 100%;
+			width: 48%;
+		}
+		@media (max-width: 600px) {
+			width: 80%;
+		}
+		@media (max-width: 400px) {
+			width: 90%;
 		}
 	}
 
